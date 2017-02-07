@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="format-detection" content="telephone=no"/>
+<script>
+function UpdateCertificate()
+{
+    // it is now herein assumed that all chapters have been completed.
+    // code to test this has been removed.
+
+    NumberCredits.innerText = 
+    Name.innerText = parent.opener.document.progress.FirstName() + " " + parent.opener.document.progress.LastName()
+    DatePassed.innerText = parent.opener.document.progress.DateTestPassed()
+    FieldOfStudy.innerText = parent.opener.document.progress.Topic()
+    parent.frame_a.document.getElementById('certificate').innerHTML = document.getElementById('certificate').innerHTML
+    alert("To print your certificate, select Print from your browser's File menu.")
+}
+</script>
+<link rel="stylesheet" href="common/cert-styles.css" type="text/css"/>
+<style>
+body {visibility:hidden;}
+</style>
+</head>
+<body bgcolor="#FFFFFF" onload="UpdateCertificate()">
+
+<div id="certificate">
+   <div id="Layer1" style="position:absolute; left:10px; top:20px; width:659px; z-index:1; border-style:double; border-color:#000000; border-width:10px; font-family:Times New Roman, Times, serif; padding:4px 0px 8px 0px">
+
+      <p class="address">Thomson Tax &amp; Accounting, MicroMash, PO Box 966 Fort Worth, TX 76101 USA</p>
+      <div class="starburst">
+         <img class="certImg" src="common/images/MM_starburst_blk_150.gif"/>
+      </div>
+
+      <div style="padding:20px 20px 0px 20px;">
+
+         <div class="centralDiv">
+            <p class="fluf">This certifies that</p>
+            <p class="name"><span id="Name"></span></p>
+            <p class="fluf">has successfully completed</p>
+            <p class="title">Test01: Level 1</p>
+            <p class="passDate"><span id="DatePassed">12/34/56</span></p>
+         </div>
+
+         <div class="FOSnCredits">
+            <p class="label">Field of Study: <span id="FieldOfStudy">Accounting</span></p>
+            <p class="label">Recommended Interactive Self-Study CPE Credits</p>
+            <p class="nasba">NASBA Registry CPE credits* based on a 50-minute hour: <b><span id="NumberCredits"></span></b></p>
+            <p class="nasbaSecondary">*In accordance with the standards for the National Registry of CPE Sponsors (Registry) program, CPE credits have been granted based on a 50-minute hour. Important: CPAs  should visit NASBA's website at www.nasba.org or contact their state board to determine sponsor registration requirements. NASBA delivery method: Self-study.</p>
+         </div>
+
+         <table class="certTable1">
+            <tr>
+               <td class="certTd" style="padding-right:10px;">
+                  CPE Sponsor Name: MicroMash<br/>
+NASBA National Registry of CPE Sponsor Number: 103104               </td>
+               <td class="certTd">
+                  NJ Sponsor Number: 20CE00206900<br/>
+                  NY Sponsor Number: 000184<br/>
+                  TX Sponsor Number: 001719</td>
+            </tr>
+         </table>
+
+         <table class="certTable2"><tr>
+            <td class="certTd" style="vertical-align:bottom;">
+               <img class="certImg" src="common/images/sig_sp.gif"/><br/>
+               <p class="director">Steve Perreault</p>
+               <p class="director">Director of Continuing Professional Education</p></td>
+            <td class="certTd" style="vertical-align:bottom;text-align:right;">
+               <img class="certImg" src="common/images/tta_logo_blk_150.gif"/></td></tr>
+         </table>
+
+      </div>
+   </div>
+</div>
+
+</body>
+</html>

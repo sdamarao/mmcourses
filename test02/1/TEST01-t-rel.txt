@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE termsum SYSTEM "c:/p5/dtds/termsum.dtd">
+<termsum>
+<course coursecode="TEST01" pool-name="ac">
+<time></time>
+<title>Test01: Level 1</title>
+<item source="course" pool-id="bk8094021" path="c:/xml/mm-gls/ac/0119">Operational review</item>
+<item source="course" pool-id="bk809403" path="c:/xml/mm-gls/ac/0119">Benchmarking</item>
+<item source="course" pool-id="bk809404" path="c:/xml/mm-gls/ac/0119">Cash Conversion Business</item>
+<item source="course" pool-id="bk809402" path="c:/xml/mm-gls/ac/0119">Basic business principles</item>
+<item source="course" pool-id="bk809407" path="c:/xml/mm-gls/ac/0119">Deficiencies</item>
+<item source="course" pool-id="bk8094024" path="c:/xml/mm-gls/ac/0119">Operational reviewer</item>
+<item source="course" pool-id="bk809401" path="c:/xml/mm-gls/ac/0119">80/20 rule</item>
+<item source="course" pool-id="bk8094018" path="c:/xml/mm-gls/ac/0119">Interviewing</item>
+<item source="course" pool-id="bk8094023" path="c:/xml/mm-gls/ac/0119">Operational review triangle</item>
+<item source="course" pool-id="bk8094012" path="c:/xml/mm-gls/ac/0119">Evidence</item>
+<item source="course" pool-id="bk8094031" path="c:/xml/mm-gls/ac/0119">Review phases</item>
+<item source="course" pool-id="bk8094027" path="c:/xml/mm-gls/ac/0119">Planning phase</item>
+<item source="course" pool-id="bk8094013" path="c:/xml/mm-gls/ac/0119">Fieldwork phase</item>
+<item source="course" pool-id="bk8094028" path="c:/xml/mm-gls/ac/0119">Ratio, change, and trend analysis</item>
+<item source="course" pool-id="bk8094036" path="c:/xml/mm-gls/ac/0119">Workpapers</item>
+<item source="course" pool-id="bk8094015" path="c:/xml/mm-gls/ac/0119">Generally accepted accounting principles (GAAP)</item>
+<item source="course" pool-id="bk8094016" path="c:/xml/mm-gls/ac/0119">Horizontal analysis</item>
+<item source="course" pool-id="bk8094037" path="c:/xml/mm-gls/ac/0119">Written report</item>
+<item source="course" pool-id="bk8094035" path="c:/xml/mm-gls/ac/0119">Work program phase</item>
+<item source="course" pool-id="bk809405" path="c:/xml/mm-gls/ac/0119">Consistency</item>
+</course>
+</termsum>

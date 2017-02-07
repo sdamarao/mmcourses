@@ -1,0 +1,303 @@
+<html>
+<head>
+<title>survey</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+.colQ {vertical-align:middle; text-align:right; background-color:#FFFFFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;}
+.colA {vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;}
+.text {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;}
+.r {margin:0px 0px 0px 4px; background-color:pink;}
+.addr {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588; text-align:right; vertical-align:middle; background-color:#FFFFFF; width:80px;}
+</style>
+<script>
+function DoLoad()
+{
+	if ((parent.opener.document.progress.Address1() == "") ||
+	    (parent.opener.document.progress.City()     == "") ||
+	    (parent.opener.document.progress.State()    == "") ||
+	    (parent.opener.document.progress.ZipCode()  == ""))
+	{
+		addressdiv.style.visibility = "visible"
+		surveydiv.style.pixelTop = addressdiv.style.pixelTop + 170
+		document.forms[0].FirstName.value = parent.opener.document.progress.FirstName()
+		document.forms[0].LastName.value  = parent.opener.document.progress.LastName()
+	}
+	else
+	{
+		addressdiv.style.visibility = "hidden"
+		surveydiv.style.pixelTop = 40
+	}
+
+	parent.frame_a.certificate.innerHTML = certificate.innerHTML
+}
+
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" onload="DoLoad()">
+<div id="certificate">
+<div id="div1" style="position:absolute; top:0px; left:0px;  width:700px; height:418px; background-color:#CCCCFF;">
+<div id="div2" style="position:absolute; top:0px; left:30px; width:640px; height:400px; background-image:url(common/images/survey.gif); font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; font-size:11px; color:#555588;">
+<div id="div3" style="position:absolute; top:49px; left:58px; width:557px; height:269px; z-index:8; overflow:auto;">
+
+<span class="text">To register your CPE credit with MicroMash, complete the information below. Then, when connected to the internet, select on the Register Credit button.<br>All information provided to MicroMash remains strictly confidential.</span>
+
+<form>
+<div id="addressdiv" style="visibility:hidden; position:absolute; top:50; left:0">
+<table border="1" bordercolordark="#FFFFFF" bordercolorlight="#CCCCCC" cellspacing="0" cellpadding="3" width="528" style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#333366">
+	<tr>
+		<td class="addr">First name</td>
+		<td><input class="text" type="text" size="20" maxlength="25" name='FirstName' disabled=true></td>
+		<td class="addr">Last name</td>
+		<td colspan="3"><input class="t1" type="text" size="20" maxlength="25" name='LastName' disabled=true></td></tr>
+	<tr>
+		<td class="addr">Address</td>
+		<td colspan="5"><input class="text" type="text" size="45" maxlength="45" name='Address1'></td></tr>
+	<tr>
+		<td class="addr">&nbsp;</td>
+		<td colspan="5"><input class="text" type="text" size="45" maxlength="45" name='Address2'></td></tr>
+	<tr>
+		<td class="addr">City</td>
+		<td><input class="text" type="text" size="20" maxlength="25" name='City'></td>
+		<td class="addr">State code</td>
+		<td><input class="text" type="text" size="2" maxlength="2" name='State'></td>
+		<td class="addr" style="wdith:40px">Zip</td>
+		<td><input class="text" type="text" size="10" maxlength="10" name='Zip'></td></tr>
+	 <tr>
+		<td colspan="6" valign="middle" align="center" bgcolor="#FFFFFF" class="text">The information requested above is required.</td></tr>
+</table>
+</div> <!-- end addressdiv" -->
+
+<div id="surveydiv" style="position:absolute; top:60; left:0;">
+
+	<input type="hidden" name="EvalVersion" value="EvalVersion2">
+
+<div id="div4">
+<p class="text">To help us improve the quality of our courses, please answer the following questions.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="520" style="margin-top:0px; padding-top:0px;">
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588; width:270px"></td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588; width:250px">
+			<table><tr style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; font-weight:bold; color:#555588; line-height:.95;">
+				<td width=83px align=right>strongly<br>agree</td>
+				<td width=83px align=center>don't<br>know</td>
+				<td>strongly<br>disagree</td></tr>
+			</table>
+		</td></tr>
+</table>
+
+<table border="1" cellspacing="0" cellpadding="0" bordercolordark="#FFFFFF" bordercolorlight="#CCCCCC" width="480px">
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFffFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">The information in this course met my professional needs.</td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">
+			<input type="radio" name="A" class="r" value="5" style="width:25px;">
+			<input type="radio" name="A" class="r" value="4" style="width:25px;">
+			<input type="radio" name="A" class="r" value="3" style="width:25px;">
+			<input type="radio" name="A" class="r" value="2" style="width:25px;">
+			<input type="radio" name="A" class="r" value="1" style="width:25px;">
+		</td></tr>
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFffFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">The instructions for enrolling in and taking the course were clear.</td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">
+			<input type="radio" name="B" class="r" value="5" style="width:25px;">
+			<input type="radio" name="B" class="r" value="4" style="width:25px;">
+			<input type="radio" name="B" class="r" value="3" style="width:25px;">
+			<input type="radio" name="B" class="r" value="2" style="width:25px;">
+			<input type="radio" name="B" class="r" value="1" style="width:25px;">
+		</td></tr>
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">If applicable, the advance preparation materials (e.g., self-study courses or pre-reading) contributed to my learning.</td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">
+			<input type="radio" name="C" class="r" value="5" style="width:25px;">
+			<input type="radio" name="C" class="r" value="4" style="width:25px;">
+			<input type="radio" name="C" class="r" value="3" style="width:25px;">
+			<input type="radio" name="C" class="r" value="2" style="width:25px;">
+			<input type="radio" name="C" class="r" value="1" style="width:25px;">
+		</td></tr>
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">The stated learning objectives were met.</td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">
+			<input type="radio" name="D" class="r" value="5" style="width:25px;">
+			<input type="radio" name="D" class="r" value="4" style="width:25px;">
+			<input type="radio" name="D" class="r" value="3" style="width:25px;">
+			<input type="radio" name="D" class="r" value="2" style="width:25px;">
+			<input type="radio" name="D" class="r" value="1" style="width:25px;">
+		</td></tr>
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">If applicable, the prerequisite requirements were appropriate.</td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">
+			<input type="radio" name="E" class="r" value="5" style="width:25px;">
+			<input type="radio" name="E" class="r" value="4" style="width:25px;">
+			<input type="radio" name="E" class="r" value="3" style="width:25px;">
+			<input type="radio" name="E" class="r" value="2" style="width:25px;">
+			<input type="radio" name="E" class="r" value="1" style="width:25px;">
+		</td></tr>
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">The content of the course was well presented.</td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">
+			<input type="radio" name="F" class="r" value="5" style="width:25px;">
+			<input type="radio" name="F" class="r" value="4" style="width:25px;">
+			<input type="radio" name="F" class="r" value="3" style="width:25px;">
+			<input type="radio" name="F" class="r" value="2" style="width:25px;">
+			<input type="radio" name="F" class="r" value="1" style="width:25px;">
+		</td></tr>
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">The lesson study questions were helpful in learning the material.</td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">
+			<input type="radio" name="G" class="r" value="5" style="width:25px;">
+			<input type="radio" name="G" class="r" value="4" style="width:25px;">
+			<input type="radio" name="G" class="r" value="3" style="width:25px;">
+			<input type="radio" name="G" class="r" value="2" style="width:25px;">
+			<input type="radio" name="G" class="r" value="1" style="width:25px;">
+		</td></tr>
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">The content of the course was accurate.</td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">
+			<input type="radio" name="H" class="r" value="5" style="width:25px;">
+			<input type="radio" name="H" class="r" value="4" style="width:25px;">
+			<input type="radio" name="H" class="r" value="3" style="width:25px;">
+			<input type="radio" name="H" class="r" value="2" style="width:25px;">
+			<input type="radio" name="H" class="r" value="1" style="width:25px;">
+		</td></tr>
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">The course materials were relevant and contributed to the achievement of the learning objectives.</td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">
+			<input type="radio" name="I" class="r" value="5" style="width:25px;">
+			<input type="radio" name="I" class="r" value="4" style="width:25px;">
+			<input type="radio" name="I" class="r" value="3" style="width:25px;">
+			<input type="radio" name="I" class="r" value="2" style="width:25px;">
+			<input type="radio" name="I" class="r" value="1" style="width:25px;">
+		</td></tr>
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">The amount of time devoted to practice activities with feedback was appropriate.</td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">
+			<input type="radio" name="J" class="r" value="5" style="width:25px;">
+			<input type="radio" name="J" class="r" value="4" style="width:25px;">
+			<input type="radio" name="J" class="r" value="3" style="width:25px;">
+			<input type="radio" name="J" class="r" value="2" style="width:25px;">
+			<input type="radio" name="J" class="r" value="1" style="width:25px;">
+		</td></tr>
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">The amount of time recommended for the course was appropriate.</td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">
+			<input type="radio" name="K" class="r" value="5" style="width:25px;">
+			<input type="radio" name="K" class="r" value="4" style="width:25px;">
+			<input type="radio" name="K" class="r" value="3" style="width:25px;">
+			<input type="radio" name="K" class="r" value="2" style="width:25px;">
+			<input type="radio" name="K" class="r" value="1" style="width:25px;">
+		</td></tr>
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">The interactive exercises and graphics were appropriate.</td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">
+			<input type="radio" name="L" class="r" value="5" style="width:25px;">
+			<input type="radio" name="L" class="r" value="4" style="width:25px;">
+			<input type="radio" name="L" class="r" value="3" style="width:25px;">
+			<input type="radio" name="L" class="r" value="2" style="width:25px;">
+			<input type="radio" name="L" class="r" value="1" style="width:25px;">
+		</td></tr>
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">If applicable, the audio and video materials were effective.</td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">
+			<input type="radio" name="M" class="r" value="5" style="width:25px;">
+			<input type="radio" name="M" class="r" value="4" style="width:25px;">
+			<input type="radio" name="M" class="r" value="3" style="width:25px;">
+			<input type="radio" name="M" class="r" value="2" style="width:25px;">
+			<input type="radio" name="M" class="r" value="1" style="width:25px;">
+		</td></tr>
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">I would recommend this course to a colleague.</td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">
+			<input type="radio" name="N" class="r" value="5" style="width:25px;">
+			<input type="radio" name="N" class="r" value="4" style="width:25px;">
+			<input type="radio" name="N" class="r" value="3" style="width:25px;">
+			<input type="radio" name="N" class="r" value="2" style="width:25px;">
+			<input type="radio" name="N" class="r" value="1" style="width:25px;">
+		</td></tr>
+	<tr>
+		<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; width:330px; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">I will take another online course.</td>
+		<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; width:150px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588;">
+			<input type="radio" name="O" class="r" value="5" style="width:25px;">
+			<input type="radio" name="O" class="r" value="4" style="width:25px;">
+			<input type="radio" name="O" class="r" value="3" style="width:25px;">
+			<input type="radio" name="O" class="r" value="2" style="width:25px;">
+			<input type="radio" name="O" class="r" value="1" style="width:25px;">
+		</td></tr>
+</table>
+</div> <!-- end div4 -->
+
+<div class="text" style="width:330px;margin-top:20px;">
+	<span align=right>How long did it take to complete this course? Please estimate the total minutes spent reviewing the course content and completing the exam and course evaluation.
+	</span><br>
+	<textarea name="TimeToComplete" cols="40" rows="3"></textarea>
+</div>
+
+<div class="text" style="margin-top:20px">
+	<span align=right>What did you like most about this course?&nbsp;&nbsp;Least?</span><br>
+	<textarea name="LikedMost" cols="40" rows="3"></textarea>
+</div>
+
+<div style="margin-top:20px">
+	<span class="text">
+		What areas are of specific interest to you?
+		<blockquote style="margin-top:2px;">
+		<input type="checkbox" name="WantAccountingAuditing" value="AccountingAuditing">
+		Accounting/Auditing <br>
+		<input type="checkbox" name="WantManagement" value="Management">
+		Management <br>
+		<input type="checkbox" name="WantTaxation" value="Taxation">
+		Taxation<br>
+		<input type="checkbox" name="WantSoftwareApplications" value="SoftwareApplications">
+		Software Applications<br>
+		<input type="checkbox" name="WantPersonalDevelopment" value="PersonalDevelopment">
+		Personal Development<br>
+		<input type="checkbox" name="WantSpecializedKnowledge" value="SpecializedKnowledge">
+		Specialized Knowledge
+		</blockquote>
+	</span>
+</div>
+
+<div style="margin-top:20px">
+	<span class="text">What additional course topics are you interested in<br>that are not currently offered by MicroMash?<br></span>
+	<textarea name="MoreTopics" cols="40" rows="3"></textarea>
+</div>
+
+<div style="margin:20px 0px 20px 0px;">
+	<table border="1" cellspacing="0" cellpadding="0" bordercolordark="#FFFFFF" bordercolorlight="#CCCCCC" width="500px">
+		<tr>
+			<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588; width:390px">May we have your permission to use your comments and attribute them to you in our advertising and promotion?&nbsp;</td>
+			<td style="vertical-align:middle; text-align:left; background-color:#FFffFF; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588; width:110px">
+				<input type="radio" name="UseMeInAds" value="yes">
+				yes&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="UseMeInAds" value="no">
+				no</td></tr>
+		<tr>
+			<td style="vertical-align:middle; text-align:right; background-color:#FFFFFF; padding:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588; width:390px">Would you like to be notified of new MicroMash offerings? </td>
+			<td style="vertical-align:middle; text-align:left; background-color:#FFFFFF; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#555588; width:110px">
+				<input type="radio" name="SendMeAds" value="yes">
+				yes&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="SendMeAds" value="no">
+				no</td></tr>
+	</table>
+</div>
+
+<div class="text" style="width:330px;margin-top:20px;">
+	<span align=right>Please provide any comments on clarity, quality, usefulness, ease of use, etc.
+	</span><br>
+	<textarea name="GeneralComments" cols="40" rows="3"></textarea>
+</div>
+
+</div> <!-- end surveyDiv -->
+
+</form>
+</div> <!-- end div3 -->
+<div style="position:absolute; z-index:7; left:80px; top:345px; width:500; line-height:1.5; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#555588;">
+If you have finished the evaluation form and are connected to the internet, select the Register Credit button.<br>
+</div>
+<div style="position:absolute; z-index:7; left:310; top:364; width:120; height:20; cursor:hand;" onclick="RegisterCredit()"></div>
+
+</div> <!-- end div2 -->
+</div> <!-- end div1 -->
+</div> <!-- end certificate -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>MicroMash CPE</title>
+<script>
+function loadpages()
+{
+	if (parent.window.opener.document!=null)
+	{
+		var URL = parent.window.opener.document.location.href;
+		var d = URL.indexOf("?");
+		if (d != -1)
+		{
+			parameters = URL.substring(d);
+		}
+		else
+		{
+			parameters = "";
+		}
+	}
+	else
+	{
+		parameters = "";
+	}
+	window.frames["frame_a"].document.location.href = "ns_menu.htm" + parameters;
+}
+</script>
+</head>
+	<frameset rows="1,*" frameborder=no border=0 framespacing=0 onload="loadpages()"> 
+		<frame src='blank.htm' name="frame_b" frameborder=0 MARGINHEIGHT=0 MARGINWIDTH=0 noresize scrolling="NO">
+  		<frame src='blank.htm' name="frame_a" frameborder=0 MARGINHEIGHT=0 MARGINWIDTH=0 noresize scrolling="NO">
+	</frameset>
+<noframes><body bgcolor="#FFFFFF">
+
+</body></noframes>
+</html>

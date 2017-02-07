@@ -1,0 +1,42 @@
+.dummy{}
+pre {font-family:Courier New;font-size:12px;}
+h3w {font-size:11pt}
+H2 {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:14pt}
+H3 {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12pt}
+body {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:8pt;color:#330099}
+
+.gterm {
+      font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-size: 11px;
+            color: #330099;
+ background-color: #FFFFFF;
+ }
+
+.gtermb {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:8pt;color:#330099; font-weight:bold;}
+
+.wr {color:#000066;font-weight:bold;background-image:url(images/wrapper_bg.gif);padding:0 10 12 15;margin-top:14px;}
+
+.authority {font-family:Georgia,Times New Roman,Times;font-weight:bold}
+.lt {font-family:Tahoma,Arial,Times New Roman;font-size:8pt}
+.netlinkGterm {color:#330099;text-decoration:underline;cursor:hand}
+.netlinkGT {color:#FFFFFF;text-decoration:underline;cursor:hand}
+.netlinkblue {color:#000066;text-decoration:underline;cursor:hand}
+.wqu {margin-left:25px;margin-right:25px}
+.mt {margin-top:0}
+.ledger {width:10;background-image: url(images/ledger.gif);layer-background-image: url(images/ledger.gif);padding: 5 5 5 5;border:1 solid}
+.nonledger {width:10;background-color: #ffffff;padding:5 5 5 5;border:1 solid}
+.nonledgernb {width:10;background-color: #ffffff;padding:5 5 5 5;}
+.underline {text-decoration:underline}
+
+.td1-li {
+  vertical-align:top;
+  text-align:right;
+  }
+
+.td-li {
+  vertical-align:top;
+  }
+
+a:link  {color:#330099}
+a:visited {color:#330099}
+a:hover {color:#cc0033}

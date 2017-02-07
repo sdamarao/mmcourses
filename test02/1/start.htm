@@ -1,0 +1,116 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;" charset="utf-8"/>
+<title>Checkpoint Learning</title><script>
+function DoResize(win)
+{ 
+if (win!=null)
+{
+if ((screen.width>1024) && (screen.height>768))
+{
+win.resizeTo(1024,768)
+win.moveTo((screen.availWidth-1024)/2,(screen.availHeight-768)/2)
+}
+else
+{
+if (screen.width>1024){
+win.parent.parent.resizeTo(1024,screen.availHeight)
+win.parent.parent.moveTo((screen.availWidth-1024)/2,0)}
+else{
+win.resizeTo(screen.availWidth,screen.availHeight)
+win.moveTo(0,0)}
+}
+}
+}
+function openframeset(){
+var queryString = window.location.search;
+window.location="frameset.htm"+queryString;
+}
+try{
+window.parent.document.title ="Checkpoint Learning";
+}catch(err){}
+</script>
+<script>
+var is508Compliance=true;
+var is508User=false;
+function findSubscription(win){
+ var findSubscriptionTries = 0;
+ try{
+   while ((win.Subscription == null) && (win.parent != null) && (win.parent != win)){
+     findSubscriptionTries++;
+     // Note: 5 is an arbitrary number, but should be more than sufficient
+     if (findSubscriptionTries > 5){
+       if (_MSGTOSHOW){
+         alert("Error finding Subscription object -- too deeply nested.");
+         _MSGTOSHOW = false;
+       }
+       return null;
+     }
+     win = win.parent;
+   }
+   if((win.Subscription== null) && (win.opener != null) && (typeof(win.opener) != "undefined")){
+     var theSubscription = findSubscription(win.opener);
+     return theSubscription;
+   }
+   return win.Subscription;
+ }
+ catch(ex){
+   return null;
+ }
+}
+function getSubscription(){
+ var theSubscription = findSubscription(window);
+ if ((theSubscription == null) && (window.opener != null) && (typeof(window.opener) != "undefined")){
+   theSubscription = findSubscription(window.opener);
+ }
+ if(theSubscription == null){
+   if(_MSGTOSHOW){
+     alert("Unable to find Subscription");
+     _MSGTOSHOW = false;
+   }
+ }
+ return theSubscription;
+}
+function checkUser(){
+ var basePath= window.document.location.href;
+ if(basePath.indexOf("file:/") == -1){
+   var sub = getSubscription();
+   is508User=sub.is508User }
+ if(is508User){
+   alert("Course is not 508 Compliant. Exiting the course");
+   top.close();  }
+ else{
+   document.getElementById("initialAnimationDiv").style.display="";  }}
+</script>
+</head>
+<BODY bgcolor="#FFFFFF" background="common/images/backgrdither.gif" onresize = "DoResize(this)" onLoad="checkUser();" >
+<div id="initialAnimationDiv" style="display:none"> <!-- Aftershock start.swf 3=100 4=100 2=1 18 24=3 25=2 -->
+<SCRIPT LANGUAGE=JavaScript>
+if(document.all){document.write("<OBJECT classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000'")
+document.write("codebase='https://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0'")
+document.write("ID='start' WIDTH='100%' HEIGHT='100%'>")
+document.write("<PARAM NAME='movie' VALUE='common/flash/start.swf' />")
+document.write("<PARAM NAME='loop' VALUE='false' />")
+document.write("<PARAM NAME='quality' VALUE='high' />")
+document.write("<PARAM NAME='wmode' VALUE='transparent' />")
+document.write("<param name='allowScriptAccess' value='always' />")
+document.write("<PARAM NAME='bgcolor' VALUE='#FFFFFF' />")
+document.write("</OBJECT>")
+}
+else
+{
+document.write("<embed ")
+document.write("ID='start' WIDTH='100%' HEIGHT='98%'")
+document.write("src='common/flash/start.swf' ")
+document.write("loop='false' ")
+document.write("quality='high' ")
+document.write("wmode='transparent' ")
+document.write("allowScriptAccess='always' ")
+document.write("bgcolor='#FFFFFF' ")
+document.write("type='application/x-shockwave-flash' ")
+document.write("pluginspage='https://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash' >")
+document.write("</embed>")
+}
+</SCRIPT><!-- EndAftershock start.swf -->
+</div></BODY>
+</HTML>

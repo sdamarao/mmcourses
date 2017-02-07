@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>Launcher</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="common/progress.css" type="text/css">
+<script src="common/BTree.js"></script>
+<script src="common/object.js"></script>
+<script src="default.js"></script>
+<style type="text/css">
+body {
+    background-color:#FFFFFF;
+    margin-top:30px;
+    align:center;
+    text-align:center;
+}
+.standard {
+    font-size:12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color:#333366;
+    line-height:18px;
+}
+.courseTitle {
+    font-size:16px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color:#333366;
+    font-weight:bold;
+}
+.popupNotice {
+    color:black;
+    border:2 solid black;
+    background-color:#FFF6F6;
+    padding:10px;
+    width:300px;
+}
+</style>
+<script language=javascript>
+
+// globals needed so myOpenWindow can pass to testNewWin within setTimeout; locals expire during timer
+
+var globalNewWin = null
+var globalFileName
+var globalManner
+var globalFeatures
+
+function CheckAppletStartup()
+{
+    if (!document.progress.InitOk())
+    {
+        alert("Launch.htm has encountered an initilization error.");
+    }
+}
+
+function makeNewWindow(sFile, sManner, sFeatures)
+{
+    var newWindow = null
+    newWindow = window.open(sFile, sManner, sFeatures)
+    return(newWindow)
+}
+
+function rollOverLink(something)
+{
+    something.style.color = "#ff0000";
+    something.style.cursor = "hand"
+}
+
+function rollOffLink(something)
+{
+    something.style.color = "#0000ff";
+    something.style.cursor = "normal"
+}
+
+function testNewWin(newWinObj, fName, manner, features)
+{
+    if ((newWinObj == null)
+     || (typeof(newWinObj) == "undefined")
+     || (typeof(newWinObj.location.hash) != "string")
+    )
+    {
+        sMsg = "<p>A popup blocker has been detected.</p><p>To start your course, <span id='theLink' style='text-decoration:underline; color:#0000FF' onclick='makeNewWindow(\"" + fName + "\", \"" + manner + "\", \"" + features + "\");' onMouseOver='rollOverLink(this)' onMouseOut='rollOffLink(this)'>click here</span>.</p><p>If that doesn't work, call MicroMash technical support at 1-800-231-1860.</p>";
+
+        document.getElementById("notice").innerHTML = sMsg;
+        document.getElementById("notice").className = "popupNotice";
+    }
+}
+
+function myOpenWindow(fName, manner, features)
+{
+    globalNewWin   = window.open(fName, manner, features);
+    globalFileName = fName
+    globalManner   = manner
+    globalFeatures = features
+
+    setTimeout("testNewWin(globalNewWin, globalFileName, globalManner, globalFeatures)", 700)
+    return(globalNewWin)
+}
+
+function StartCourse()
+{
+    document.progress = new clsProgress(document.all.ProgressData, "TEST01")
+    CheckAppletStartup();
+
+    if (document.progress.Online())
+    {
+        courselist.style.display = ""
+        courselistlink.href = "http://www.micromash.net/cgiwin/onlinelogin.dll?CustomerNumber=" + document.progress.WWWCustomerID()
+   }
+
+    var sFeatures = "directories=no, location=no, menubar=no, resizable=no, scrollbars=no, status=no, toolbar=no, titlebar=no"
+    var sManner   = "replace"
+
+    if (document.progress.Registered())
+    {
+        var MainWin = null
+        if ((screen.width > 1024) && (screen.height > 768))
+        {
+            sFeatures = sFeatures + ", left=112, top=70, width=1024, height=768"
+            var sFileName = "start.htm"
+            MainWin = myOpenWindow(sFileName, sManner, sFeatures)
+            if (MainWin != null)
+                MainWin.moveTo((screen.availWidth-1024)/2,(screen.availHeight-768)/2)
+        }
+        else
+        {
+            if (screen.width > 1024)
+            {
+                sFeatures = sFeatures + ", left=112, top=0, width=1024"
+                var sFileName = "start.htm"
+                MainWin = myOpenWindow(sFileName, sManner, sFeatures)
+                if (MainWin != null)
+                {
+                    MainWin.moveTo((screen.availWidth-1024)/2,0)
+                    MainWin.resizeTo(1024,screen.availHeight)
+                }
+            }
+            else
+            {
+                sFeatures = sFeatures + ", left=0, top=0"
+                var sFileName = "start.htm"
+                MainWin = myOpenWindow(sFileName, sManner, sFeatures)
+                if (MainWin != null)
+                    MainWin.resizeTo(screen.availWidth,screen.availHeight)
+            }
+        }
+        if (MainWin != null)
+            MainWin.focus()
+    }
+    else
+    {
+        sFeatures = sFeatures + ", left=160, top=50, width=480, height=460"
+        var sFileName = "eula.htm"
+        var RegWin = null
+        RegWin = myOpenWindow(sFileName, sManner, sFeatures)
+        if (RegWin != null)
+            RegWin.focus()
+    }
+}
+</script>
+</head>
+
+<body onload="StartCourse()">
+<p class="courseTitle">Test01: Level 1</p>
+<p align="center"><img src="common/images/logo.gif"></p>
+
+<div id=notice>
+<p id="courselist" class="standard" style="display:none">To access your online courses, go to the <a id="courselistlink" href="." style="color:#333366">MicroMash Online Course Center</a>.</p>
+<p class="standard" align="center">MicroMash has over one hundred other Continuing Professional Education courses.<br>
+Precise, pertinent, timely training available when you need it.<br>
+Explore your options at <a href="http://www.MicroMashCPE.com" style="color:#333366">www.MicroMashCPE.com</a>.<br>1-800-231-1860</p>
+</div>
+
+<p align="center"><img src="common/images/logoTTA.gif"></p>
+<div class="userData" id="ProgressData"></div>
+</body>
+</html>

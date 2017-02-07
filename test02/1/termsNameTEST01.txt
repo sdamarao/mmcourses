@@ -1,0 +1,20 @@
+bk8094021.ent  Operational review
+bk809403.ent  Benchmarking
+bk809404.ent  Cash Conversion Business
+bk809402.ent  Basic business principles
+bk809407.ent  Deficiencies
+bk8094024.ent  Operational reviewer
+bk809401.ent  80/20 rule
+bk8094018.ent  Interviewing
+bk8094023.ent  Operational review triangle
+bk8094012.ent  Evidence
+bk8094031.ent  Review phases
+bk8094027.ent  Planning phase
+bk8094013.ent  Fieldwork phase
+bk8094028.ent  Ratio, change, and trend analysis
+bk8094036.ent  Workpapers
+bk8094015.ent  Generally accepted accounting principles (GAAP)
+bk8094016.ent  Horizontal analysis
+bk8094037.ent  Written report
+bk8094035.ent  Work program phase
+bk809405.ent  Consistency
