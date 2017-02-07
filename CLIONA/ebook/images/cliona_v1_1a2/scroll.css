@@ -1,0 +1,73 @@
+﻿.Container {
+  
+}
+
+.DataContainer {
+ 
+}
+
+#Scroller-1 { 
+  
+ 
+}
+
+#DataScroller-1 { 
+ 
+}
+
+#Scroller-1 p {
+ 
+}
+
+.Scroller-Container {
+  position: relative;
+  top: 0px; 
+  left: 0px;
+  padding:6px;	
+ width:715px
+  height:500px;
+  }
+  
+.Scroller-Container1 {
+  position: relative;
+  top: 0px; 
+  left: 0px;
+  padding:6px;	
+ width:515px
+  height:80px;
+  }
+ 
+ 
+.Scrollbar-Up {
+  cursor: pointer;
+  position: absolute;
+  top: 0px; left: 310px;
+  border:0;
+  width:18px;  
+}
+
+.Image-Up
+{
+	
+}
+
+.Scrollbar-Down {
+  cursor: pointer;
+  position: absolute;
+  border:0;
+  width:18px;
+
+}
+
+.Link-Up {
+ 
+}
+
+.Scroller-ContainerForGTB {
+  position: absolute;
+  top: 0px; 
+  left: 0px;
+  padding:6px;	
+  width:560px;
+  height:339px; 
+}

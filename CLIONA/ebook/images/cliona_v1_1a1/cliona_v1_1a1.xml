@@ -1,0 +1,282 @@
+<Interaction name="Flip the Book" version="7.7" iscompliancerequired="False" type="Regular" height="500" width="715" swfHeight="500" swfWidth="715" trackingThrough="" SharedObjectName="" RtoLflag="False" ShowPropFlag="False">
+  <node id="Background Type"><![CDATA[Background Image]]></node>
+  <node id="Background Image"><![CDATA[]]></node>
+  <node id="Background ImageWidth"><![CDATA[100]]></node>
+  <node id="Background ImageHeight"><![CDATA[100]]></node>
+  <node id="Background Color"><![CDATA[0x008040]]></node>
+  <node id="Introduction Sound File"><![CDATA[]]></node>
+  <node id="Play Introduction Sound"><![CDATA[False]]></node>
+  <node id="Show Audio Control"><![CDATA[False]]></node>
+  <node id="Audio Control Image Type"><![CDATA[Default Audio Graphic]]></node>
+  <node id="Image for audio ON"><![CDATA[]]></node>
+  <node id="Image for audio ONWidth"><![CDATA[]]></node>
+  <node id="Image for audio ONHeight"><![CDATA[]]></node>
+  <node id="Image for audio OFF"><![CDATA[]]></node>
+  <node id="Image for audio OFFWidth"><![CDATA[]]></node>
+  <node id="Image for audio OFFHeight"><![CDATA[]]></node>
+  <node id="Select Title Type"><![CDATA[Title Text]]></node>
+  <node id="Title Text"><![CDATA[]]></node>
+  <node id="Title Image"><![CDATA[]]></node>
+  <node id="Title ImageWidth"><![CDATA[]]></node>
+  <node id="Title ImageHeight"><![CDATA[]]></node>
+  <node id="Title FontFace"><![CDATA[Verdana]]></node>
+  <node id="Title FontSize"><![CDATA[14]]></node>
+  <node id="Title FontBold"><![CDATA[True]]></node>
+  <node id="Title FontItalic"><![CDATA[False]]></node>
+  <node id="Title Color"><![CDATA[0x000000]]></node>
+  <node id="TitlePosition" type="POSITION"><![CDATA[20$4.8$394.45$29.05$1]]></node>
+  <node id="Select Instruction Type"><![CDATA[Instruction Text]]></node>
+  <node id="Instruction Text"><![CDATA[<html><p align="Left"><Font face="Verdana" size="14" color="#000000"><textformat tabstops='[20]' leftmargin='0'>Flip the pages by selecting the corners or selecting the mouse and dragging the page.</textformat></Font></p></html>]]></node>
+  <node id="Instruction Image"><![CDATA[]]></node>
+  <node id="Instruction ImageWidth"><![CDATA[]]></node>
+  <node id="Instruction ImageHeight"><![CDATA[]]></node>
+  <node id="Instruction FontFace"><![CDATA[Arial]]></node>
+  <node id="Instruction FontSize"><![CDATA[14]]></node>
+  <node id="Instruction FontBold"><![CDATA[False]]></node>
+  <node id="Instruction FontItalic"><![CDATA[True]]></node>
+  <node id="Instruction Color"><![CDATA[0xffffff]]></node>
+  <node id="InstructionPosition" type="POSITION"><![CDATA[63$212$254.5$125.15$1]]></node>
+  <node id="SndPosition" type="POSITION"><![CDATA[683$119$21$23.2$1]]></node>
+  <node id="Cover Page Type"><![CDATA[Only Text]]></node>
+  <node id="Cover Page Video"><![CDATA[]]></node>
+  <node id="Page Text as Image"><![CDATA[]]></node>
+  <node id="Page Text as ImageWidth"><![CDATA[]]></node>
+  <node id="Page Text as ImageHeight"><![CDATA[]]></node>
+  <node id="Page Text Alignment"><![CDATA[Center]]></node>
+  <node id="Page Text"><![CDATA[<html><p align="Center"><Font face="Verdana" size="16" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>
+</B></textformat></Font></p>
+</p>
+</p>
+<p align="Center"><Font face="Verdana" size="16" color="#000000" ><textformat tabstops='[20]' leftmargin='0'><B>The three important components included in the definition of fair value that are important to understand are:</B></textformat></Font></p>
+</p>
+</p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'><B>    1. Price</B></textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'><B>    2. Principal market</B></textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'><B>    3. Market participants</B></textformat></Font></p></html>]]></node>
+  <node id="Cover Page Image"><![CDATA[Flip_Book_coverpage.png]]></node>
+  <node id="Cover Page ImageWidth"><![CDATA[300]]></node>
+  <node id="Cover Page ImageHeight"><![CDATA[400]]></node>
+  <node id="Cover Page Background Color"><![CDATA[0xFFFFFF]]></node>
+  <node id="Show Page Number"><![CDATA[True]]></node>
+  <node id="Number Alignment"><![CDATA[Right]]></node>
+  <node id="Number Font"><![CDATA[Verdana]]></node>
+  <node id="Number Font Style"><![CDATA[Regular]]></node>
+  <node id="Number Font Size"><![CDATA[10]]></node>
+  <node id="Number Color"><![CDATA[0x000000]]></node>
+  <node id="Number of Pairs"><![CDATA[5]]></node>
+  <node id="Page Sound1"><![CDATA[]]></node>
+  <node id="eBook Template1"><![CDATA[Only Image]]></node>
+  <node id="Page Video1"><![CDATA[]]></node>
+  <node id="Page Text1"><![CDATA[<html><p align="Left"><Font face="Microsoft Sans Serif" size="14" color="#000000"><textformat tabstops='[20]' leftmargin='0'>
+</textformat></Font></p>
+</p>
+<p align="Center"><Font face="Verdana" size="15" color="#ffffff" ><textformat tabstops='[20]' leftmargin='0'>Page Pair 1 </textformat></Font></p>
+</p>
+<p align="Center"><Font face="Verdana" size="15" color="#ffffff" ><textformat tabstops='[20]' leftmargin='0'>Add fun to presentations by displaying content in a flip book format.</textformat></Font></p></html>]]></node>
+  <node id="Page Text Image1"><![CDATA[]]></node>
+  <node id="Page Text ImageWidth1"><![CDATA[]]></node>
+  <node id="Page Text ImageHeight1"><![CDATA[]]></node>
+  <node id="Page Image1"><![CDATA[124654.jpg]]></node>
+  <node id="Page ImageWidth1"><![CDATA[606]]></node>
+  <node id="Page ImageHeight1"><![CDATA[565]]></node>
+  <node id="Page Color1"><![CDATA[0xFFFFCC]]></node>
+  <node id="Select Page Information Type1"><![CDATA[Page Information Text]]></node>
+  <node id="Page Information Text1"><![CDATA[Page 2]]></node>
+  <node id="Page Information Image1"><![CDATA[]]></node>
+  <node id="Page Information ImageWidth1"><![CDATA[]]></node>
+  <node id="Page Information ImageHeight1"><![CDATA[565]]></node>
+  <node id="eBook Template 1"><![CDATA[Only Text]]></node>
+  <node id="Page Video 1"><![CDATA[]]></node>
+  <node id="Page Text 1"><![CDATA[<html><p align="Left"><Font face="Verdana" size="14" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>
+Price:</B> The hypothetical transaction is assumed to have occurred in an orderly fashion. In other words, the holder of the asset or liability is able to take advantage of normal market activities for the transaction in question. The item being valued is considered to be exposed to the market for an appropriate amount of time prior to the measurement date. Furthermore, this is not a sale made under conditions of forced liquidation or distress.</textformat></Font></p></html>]]></node>
+  <node id="Page Text Image 1"><![CDATA[]]></node>
+  <node id="Page Text Image Width1"><![CDATA[]]></node>
+  <node id="Page Text Image Height1"><![CDATA[]]></node>
+  <node id="Page Image 1"><![CDATA[Flip_Book_im1.png]]></node>
+  <node id="Page Image Width1"><![CDATA[260]]></node>
+  <node id="Page Image Height1"><![CDATA[360]]></node>
+  <node id="Page Color 1"><![CDATA[0xC0CDD1]]></node>
+  <node id="Select Page Information Type 1"><![CDATA[Page Information Text]]></node>
+  <node id="Page Information Text 1"><![CDATA[Page 3]]></node>
+  <node id="Page Information Image 1"><![CDATA[]]></node>
+  <node id="Page Information Image Width1"><![CDATA[]]></node>
+  <node id="Page Information Image Height1"><![CDATA[360]]></node>
+  <node id="Page Pair Accessibility Text1"><![CDATA[Francesco Raibolini
+                                                        
+                                                        Francesco di Marco di Giacomo Raibolini was born in 1450. He was originally a goldsmith. His early works were influenced by the Ferrarese painter Lorenzo Costa (c. 1460-1535), though the strongest influences on his style were the works of Perugino and Raphael. His workshop produced numerous sweet, excessively refined Madonnas; he also specialized in portraiture. ]]></node>
+  <node id="Shortcut Key1"><![CDATA[1]]></node>
+  <node id="Page Sound2"><![CDATA[]]></node>
+  <node id="eBook Template2"><![CDATA[Only Image]]></node>
+  <node id="Page Video2"><![CDATA[]]></node>
+  <node id="Page Text2"><![CDATA[<html><p align="Left"><Font face="Verdana" size="14" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Principal market:</B> It is assumed that the hypothetical transaction occurred in either the principal market for such a transaction, or in the absence of such a market, the most advantageous market. <I>Principal market</I> is defined as the market where the holder of the asset or liability could find the greatest volume of asset sales or liability transfers similar to the item in question. <I>Most advantageous market</I> is the one where the price received for the asset sale is maximized, or the transfer cost of the liability is minimized.</textformat></Font></p></html>]]></node>
+  <node id="Page Text Image2"><![CDATA[]]></node>
+  <node id="Page Text ImageWidth2"><![CDATA[]]></node>
+  <node id="Page Text ImageHeight2"><![CDATA[]]></node>
+  <node id="Page Image2"><![CDATA[iStock_90124611_SMALL.jpg]]></node>
+  <node id="Page ImageWidth2"><![CDATA[566]]></node>
+  <node id="Page ImageHeight2"><![CDATA[848]]></node>
+  <node id="Page Color2"><![CDATA[0xFFFFCC]]></node>
+  <node id="Select Page Information Type2"><![CDATA[Page Information Text]]></node>
+  <node id="Page Information Text2"><![CDATA[Page 4]]></node>
+  <node id="Page Information Image2"><![CDATA[]]></node>
+  <node id="Page Information ImageWidth2"><![CDATA[]]></node>
+  <node id="Page Information ImageHeight2"><![CDATA[848]]></node>
+  <node id="eBook Template 2"><![CDATA[Only Text]]></node>
+  <node id="Page Video 2"><![CDATA[]]></node>
+  <node id="Page Text 2"><![CDATA[<html><p align="Left"><Font face="Verdana" size="14" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>
+Principal market:</B> It is assumed that the hypothetical transaction occurred in either the principal market for such a transaction, or in the absence of such a market, the most advantageous market. <I>Principal market</I> is defined as the market where the holder of the asset or liability could find the greatest volume of asset sales or liability transfers similar to the item in question. </textformat></Font></p></html>]]></node>
+  <node id="Page Text Image 2"><![CDATA[]]></node>
+  <node id="Page Text Image Width2"><![CDATA[]]></node>
+  <node id="Page Text Image Height2"><![CDATA[]]></node>
+  <node id="Page Image 2"><![CDATA[Flip_Book_im2.png]]></node>
+  <node id="Page Image Width2"><![CDATA[260]]></node>
+  <node id="Page Image Height2"><![CDATA[360]]></node>
+  <node id="Page Color 2"><![CDATA[0xC0CDD1]]></node>
+  <node id="Select Page Information Type 2"><![CDATA[Page Information Text]]></node>
+  <node id="Page Information Text 2"><![CDATA[Page 5]]></node>
+  <node id="Page Information Image 2"><![CDATA[]]></node>
+  <node id="Page Information Image Width2"><![CDATA[]]></node>
+  <node id="Page Information Image Height2"><![CDATA[360]]></node>
+  <node id="Page Pair Accessibility Text2"><![CDATA[]]></node>
+  <node id="Shortcut Key2"><![CDATA[]]></node>
+  <node id="Page Sound3"><![CDATA[]]></node>
+  <node id="eBook Template3"><![CDATA[Only Text]]></node>
+  <node id="Page Video3"><![CDATA[]]></node>
+  <node id="Page Text3"><![CDATA[<html><p align="Left"><Font face="Verdana" size="14" color="#000000"><textformat tabstops='[20]' leftmargin='0'><I>
+Most advantageous market</I> is the one where the price received for the asset sale is maximized, or the transfer cost of the liability is minimized.</textformat></Font></p></html>]]></node>
+  <node id="Page Text Image3"><![CDATA[]]></node>
+  <node id="Page Text ImageWidth3"><![CDATA[]]></node>
+  <node id="Page Text ImageHeight3"><![CDATA[]]></node>
+  <node id="Page Image3"><![CDATA[]]></node>
+  <node id="Page ImageWidth3"><![CDATA[]]></node>
+  <node id="Page ImageHeight3"><![CDATA[]]></node>
+  <node id="Page Color3"><![CDATA[0xFFFFCC]]></node>
+  <node id="Select Page Information Type3"><![CDATA[Page Information Text]]></node>
+  <node id="Page Information Text3"><![CDATA[Page 6]]></node>
+  <node id="Page Information Image3"><![CDATA[]]></node>
+  <node id="Page Information ImageWidth3"><![CDATA[]]></node>
+  <node id="Page Information ImageHeight3"><![CDATA[]]></node>
+  <node id="eBook Template 3"><![CDATA[Only Image]]></node>
+  <node id="Page Video 3"><![CDATA[]]></node>
+  <node id="Page Text 3"><![CDATA[]]></node>
+  <node id="Page Text Image 3"><![CDATA[]]></node>
+  <node id="Page Text Image Width3"><![CDATA[]]></node>
+  <node id="Page Text Image Height3"><![CDATA[]]></node>
+  <node id="Page Image 3"><![CDATA[iStock_74670107_SMALL.jpg]]></node>
+  <node id="Page Image Width3"><![CDATA[838]]></node>
+  <node id="Page Image Height3"><![CDATA[572]]></node>
+  <node id="Page Color 3"><![CDATA[0xC0CDD1]]></node>
+  <node id="Select Page Information Type 3"><![CDATA[Page Information Text]]></node>
+  <node id="Page Information Text 3"><![CDATA[Page 7]]></node>
+  <node id="Page Information Image 3"><![CDATA[]]></node>
+  <node id="Page Information Image Width3"><![CDATA[]]></node>
+  <node id="Page Information Image Height3"><![CDATA[572]]></node>
+  <node id="Page Pair Accessibility Text3"><![CDATA[]]></node>
+  <node id="Shortcut Key3"><![CDATA[]]></node>
+  <node id="Page Sound4"><![CDATA[]]></node>
+  <node id="eBook Template4"><![CDATA[Only Image]]></node>
+  <node id="Page Video4"><![CDATA[]]></node>
+  <node id="Page Text4"><![CDATA[]]></node>
+  <node id="Page Text Image4"><![CDATA[]]></node>
+  <node id="Page Text ImageWidth4"><![CDATA[]]></node>
+  <node id="Page Text ImageHeight4"><![CDATA[]]></node>
+  <node id="Page Image4"><![CDATA[iStock_60834578_SMALL.jpg]]></node>
+  <node id="Page ImageWidth4"><![CDATA[848]]></node>
+  <node id="Page ImageHeight4"><![CDATA[565]]></node>
+  <node id="Page Color4"><![CDATA[0xFFFFCC]]></node>
+  <node id="Select Page Information Type4"><![CDATA[Page Information Text]]></node>
+  <node id="Page Information Text4"><![CDATA[Page 8]]></node>
+  <node id="Page Information Image4"><![CDATA[]]></node>
+  <node id="Page Information ImageWidth4"><![CDATA[]]></node>
+  <node id="Page Information ImageHeight4"><![CDATA[565]]></node>
+  <node id="eBook Template 4"><![CDATA[Only Text]]></node>
+  <node id="Page Video 4"><![CDATA[]]></node>
+  <node id="Page Text 4"><![CDATA[<html><p align="Left"><Font face="Verdana" size="14" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>
+Market participants:</B> The market participants are the seller (holder of the asset or liability being valued) and the buyer in the principal (or most advantageous) market for the asset or liability. It is assumed that the seller and buyer are independent, knowledgeable, and have both the ability and willingness to complete the transaction.</textformat></Font></p></html>]]></node>
+  <node id="Page Text Image 4"><![CDATA[]]></node>
+  <node id="Page Text Image Width4"><![CDATA[]]></node>
+  <node id="Page Text Image Height4"><![CDATA[]]></node>
+  <node id="Page Image 4"><![CDATA[Flip_Book_im4.png]]></node>
+  <node id="Page Image Width4"><![CDATA[260]]></node>
+  <node id="Page Image Height4"><![CDATA[360]]></node>
+  <node id="Page Color 4"><![CDATA[0xC0CDD1]]></node>
+  <node id="Select Page Information Type 4"><![CDATA[Page Information Text]]></node>
+  <node id="Page Information Text 4"><![CDATA[Page 9]]></node>
+  <node id="Page Information Image 4"><![CDATA[]]></node>
+  <node id="Page Information Image Width4"><![CDATA[]]></node>
+  <node id="Page Information Image Height4"><![CDATA[360]]></node>
+  <node id="Page Pair Accessibility Text4"><![CDATA[]]></node>
+  <node id="Shortcut Key4"><![CDATA[]]></node>
+  <node id="Page Sound5"><![CDATA[]]></node>
+  <node id="eBook Template5"><![CDATA[Only Text]]></node>
+  <node id="Page Video5"><![CDATA[]]></node>
+  <node id="Page Text5"><![CDATA[]]></node>
+  <node id="Page Text Image5"><![CDATA[]]></node>
+  <node id="Page Text ImageWidth5"><![CDATA[]]></node>
+  <node id="Page Text ImageHeight5"><![CDATA[]]></node>
+  <node id="Page Image5"><![CDATA[Flip_Book_im5.png]]></node>
+  <node id="Page ImageWidth5"><![CDATA[260]]></node>
+  <node id="Page ImageHeight5"><![CDATA[360]]></node>
+  <node id="Page Color5"><![CDATA[0xA6FFA6]]></node>
+  <node id="Select Page Information Type5"><![CDATA[Page Information Text]]></node>
+  <node id="Page Information Text5"><![CDATA[]]></node>
+  <node id="Page Information Image5"><![CDATA[]]></node>
+  <node id="Page Information ImageWidth5"><![CDATA[]]></node>
+  <node id="Page Information ImageHeight5"><![CDATA[360]]></node>
+  <node id="eBook Template 5"><![CDATA[Only Image]]></node>
+  <node id="Page Video 5"><![CDATA[]]></node>
+  <node id="Page Text 5"><![CDATA[]]></node>
+  <node id="Page Text Image 5"><![CDATA[]]></node>
+  <node id="Page Text Image Width5"><![CDATA[]]></node>
+  <node id="Page Text Image Height5"><![CDATA[]]></node>
+  <node id="Page Image 5"><![CDATA[Flip_Book_im5.png]]></node>
+  <node id="Page Image Width5"><![CDATA[260]]></node>
+  <node id="Page Image Height5"><![CDATA[360]]></node>
+  <node id="Page Color 5"><![CDATA[0xC0CDD1]]></node>
+  <node id="Select Page Information Type 5"><![CDATA[Page Information Text]]></node>
+  <node id="Page Information Text 5"><![CDATA[]]></node>
+  <node id="Page Information Image 5"><![CDATA[]]></node>
+  <node id="Page Information Image Width5"><![CDATA[]]></node>
+  <node id="Page Information Image Height5"><![CDATA[360]]></node>
+  <node id="Page Pair Accessibility Text5"><![CDATA[]]></node>
+  <node id="Shortcut Key5"><![CDATA[]]></node>
+  <node id="Play Flip Sound"><![CDATA[True]]></node>
+  <node id="Image Scaling"><![CDATA[Stretch]]></node>
+  <node id="Display Panel Color"><![CDATA[0x808080]]></node>
+  <node id="Number of Nodes"><![CDATA[1]]></node>
+  <node id="ToolBoxPosition" type="POSITION"><![CDATA[20$375$1$1$1]]></node>
+  <node id="Node1" type="POSITION"><![CDATA[650$15$20$20$1]]></node>
+  <node id="Select Object Type1"><![CDATA[Text]]></node>
+  <node id="Set Image1"><![CDATA[]]></node>
+  <node id="Set ImageWidth1"><![CDATA[]]></node>
+  <node id="Set ImageHeight1"><![CDATA[]]></node>
+  <node id="Set Text1"><![CDATA[]]></node>
+  <node id="Set Video1"><![CDATA[]]></node>
+  <node id="Set Video Size1"><![CDATA[Small]]></node>
+  <node id="Video Skin Background Color1"><![CDATA[0x999999]]></node>
+  <node id="Mute other Audio1"><![CDATA[True]]></node>
+  <node id="Select Button Label Type1"><![CDATA[Button Text]]></node>
+  <node id="Button Template1"><![CDATA[Rectangle Button]]></node>
+  <node id="Button Image1"><![CDATA[]]></node>
+  <node id="Button ImageWidth1"><![CDATA[]]></node>
+  <node id="Button ImageHeight1"><![CDATA[]]></node>
+  <node id="Button Text1"><![CDATA[]]></node>
+  <node id="Button Background Color1"><![CDATA[0xCCCCCC]]></node>
+  <node id="Button Action Type1"><![CDATA[Popup Text]]></node>
+  <node id="Set Popup Title1"><![CDATA[]]></node>
+  <node id="Set Popup Image1"><![CDATA[]]></node>
+  <node id="Set Popup ImageWidth1"><![CDATA[]]></node>
+  <node id="Set Popup ImageHeight1"><![CDATA[]]></node>
+  <node id="Set Popup Text1"><![CDATA[]]></node>
+  <node id="Set Popup Video1"><![CDATA[]]></node>
+  <node id="Set Popup Background Color1"><![CDATA[0xC6D9EC]]></node>
+  <node id="Link1"><![CDATA[]]></node>
+  <node id="TrialImagePosition"><![CDATA[405$1$263$28$1]]></node>
+  <node id="ButtonPopupDisplayText"><![CDATA[10$20$540$18$1]]></node>
+  <node id="ButtonPopupVideo"><![CDATA[70$40$450$320$1]]></node>
+  <node id="ButtonPopupText"><![CDATA[10$50$565$300$1]]></node>
+  <node id="ButtonPopupImage"><![CDATA[90$50$400$300$1]]></node>
+  <node id="ButtonPopupPosition"><![CDATA[60$60$583$380$1]]></node>
+  <node id="CloseButtonPosition"><![CDATA[556$20$18$18$1]]></node>
+  <node id="ScrollPosition"><![CDATA[0$0$15$20$1]]></node>
+</Interaction>

@@ -1,0 +1,42 @@
+﻿.txtControl
+{
+}
+
+/* it's a good idea to define a height and width for quickFlip */
+
+body {
+    min-width: 600px;
+}
+
+/*.quickFlip {
+    height: 200px;
+    width: 153px;
+}
+
+*/
+
+
+
+.redPanel, .blackPanel {
+    text-align: center;
+}
+
+/**** panels ****/
+
+.quickFlip {
+    font-family: "Trebuchet MS", Verdana, Sans-serif, sans;
+    font-size: 13px;
+    position: relative;
+}
+.quickFlipCta {
+    cursor: pointer;
+}
+
+.Scroller-ContainerForGTB {
+  position: absolute;
+  top: 0px; 
+  left: 0px;
+  padding:6px;	
+  width:560px;
+  height:339px; 
+  }

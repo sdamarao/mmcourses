@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<course-publish>
+   <course-metadata-id>10414</course-metadata-id>
+   <course-version>12_00</course-version>
+   <course-publish-mode>PilotTest</course-publish-mode>
+   <course-delivery-format>
+      <media-format type="online"  course-activity-id="628869"/>
+      <media-format type="download"  course-activity-id="628870"/>
+      <media-format type="cd"  course-activity-id="628871"/>
+   </course-delivery-format>
+</course-publish>

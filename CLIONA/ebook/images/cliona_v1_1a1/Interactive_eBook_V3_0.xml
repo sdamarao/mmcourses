@@ -1,0 +1,16 @@
+<Interaction name="Interactive_eBook_V3_0.xml" version="7.3" > 
+ <node id="TrialImagePosition"><![CDATA[405$1$263$28$1]]></node> 
+ <!--Additional Media Related Nodes -->
+ <node id="ButtonPopupDisplayText"><![CDATA[10$20$540$18$1]]></node>
+ <node id="ButtonPopupVideo"><![CDATA[70$40$450$320$1]]></node>
+ <node id="ButtonPopupText"><![CDATA[10$50$565$300$1]]></node>
+ <node id="ButtonPopupImage"><![CDATA[90$50$400$300$1]]></node>
+ <node id="ButtonPopupPosition"><![CDATA[60$60$583$380$1]]></node> 
+ <node id="CloseButtonPosition"><![CDATA[556$20$18$18$1]]></node>  
+  <!--Additional Media Related Nodes - Up TO This-->  
+  
+   
+ 
+ 
+ <node id="ScrollPosition"><![CDATA[0$0$15$20$1]]></node>
+</Interaction>

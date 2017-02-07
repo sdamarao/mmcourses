@@ -1,0 +1,135 @@
+<!doctype html><!--HRB: Added to support IE9 browser-->
+<html>
+<head>
+<meta name = "viewport" content = "width = device-width, initial-scale = 1.0, user-scalable = no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Thomson Reuters</title>
+<!-- Start HRB: Added for compliance updating course status -->
+<script src="common/CommonFunctions.js"></script>
+<style type="text/css">
+	 /* start basic spinner styles*/
+    
+    div.spinner {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+    }
+    
+    div.spinner div {
+      width: 12%;
+      height: 26%;
+      background: #000;
+      position: absolute;
+      left: 44.5%;
+      top: 37%;
+      opacity: 0;
+      -webkit-animation: fade 1s linear infinite;
+      -webkit-border-radius: 50px;
+      -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    }
+    
+    div.spinner div.bar1 {-webkit-transform:rotate(0deg) translate(0, -142%); -webkit-animation-delay: 0s;}    
+    div.spinner div.bar2 {-webkit-transform:rotate(30deg) translate(0, -142%); -webkit-animation-delay: -0.9167s;}
+    div.spinner div.bar3 {-webkit-transform:rotate(60deg) translate(0, -142%); -webkit-animation-delay: -0.833s;}
+    div.spinner div.bar4 {-webkit-transform:rotate(90deg) translate(0, -142%); -webkit-animation-delay: -0.75s;}
+    div.spinner div.bar5 {-webkit-transform:rotate(120deg) translate(0, -142%); -webkit-animation-delay: -0.667s;}
+    div.spinner div.bar6 {-webkit-transform:rotate(150deg) translate(0, -142%); -webkit-animation-delay: -0.5833s;}
+    div.spinner div.bar7 {-webkit-transform:rotate(180deg) translate(0, -142%); -webkit-animation-delay: -0.5s;}
+    div.spinner div.bar8 {-webkit-transform:rotate(210deg) translate(0, -142%); -webkit-animation-delay: -0.41667s;}
+    div.spinner div.bar9 {-webkit-transform:rotate(240deg) translate(0, -142%); -webkit-animation-delay: -0.333s;}
+    div.spinner div.bar10 {-webkit-transform:rotate(270deg) translate(0, -142%); -webkit-animation-delay: -0.25s;}
+    div.spinner div.bar11 {-webkit-transform:rotate(300deg) translate(0, -142%); -webkit-animation-delay: -0.1667s;}
+    div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -webkit-animation-delay: -0.0833s;}
+
+     @-webkit-keyframes fade {
+      from {opacity: 1;}
+      to {opacity: 0.25;}
+    }
+    
+    /* end basic spinner styles*/
+    
+    
+    
+   
+    
+    div.container.grey div.spinner {
+	  top:288px;
+	  left:444px;
+      width: 60px;
+      height: 60px;
+    }
+    
+    div.container div.spinner div {background: #fff;}
+      
+	</style>
+<script language="javascript">
+function updateCourse(){	
+	// update progress information only in case of online.
+	var basePath= window.document.location.href;
+	
+	if ((basePath.indexOf("file:/") == -1) ){
+		var sub = getSubscription();
+		if(!sub.offlinePlayer)
+		{
+			if(!sub.isInternetConnected)
+			{
+				return;
+			}
+		}	
+		if(window.frames["frame_1"].frames["frame_a"].g_flagfinish == false){
+			window.frames["frame_1"].frames["frame_a"].exitCourseFromClose();			
+			
+			alert('This will end your session, in future, please use \'Exit\' menu to close the session.');
+		}	
+	}
+}
+
+function removeBounce(){
+	document.ontocuhmove=function (e){
+		e.preventDefault();
+	}
+	if( navigator.userAgent.match(/iPad/i) == null ) {
+		document.getElementById("loadMyPage").style.height = "710px";
+		document.getElementById("frame_1").style.height = "710px";
+	}
+}
+
+if( navigator.userAgent.match(/iPad/i) == null )
+{
+	window.onbeforeunload=updateCourse;
+}else{
+	window.onunload= updateCourse;
+}
+</script>
+<!-- End HRB: Added for compliance updating course status -->
+</head>
+ 
+<body bgcolor="#FFFFFF" style="margin:0px;" onload="removeBounce();" style="height:710px;">
+<div id="loadMyPage" style="height:710px;width:1020px;position:absolute;z-index:2;opacity:0.5;background:gray;">
+<div class="container grey">
+    <div class="spinner">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <div class="bar4"></div>
+      <div class="bar5"></div>
+      <div class="bar6"></div>
+      <div class="bar7"></div>
+      <div class="bar8"></div>
+      <div class="bar9"></div>
+      <div class="bar10"></div>
+      <div class="bar11"></div>
+      <div class="bar12"></div>
+    </div>
+  </div>
+</div>
+<iframe src ="frameset1.htm" style="margin:0px; padding:0px; border:0px;" name="frame_1" id="frame_1" width="1024px" height="710px" scrolling="no">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>
+<iframe src ="blank.htm" name="frame_2" id="frame_2" width="0%" style="display:none">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="36px" height="28px" xml:space="preserve" style="cursor:pointer;" onclick="parent.document.getElementById('containerdiv').style.height=370;parent.HideMenu(0,1);">
+<defs>
+</defs>
+<image display="none" overflow="visible" width="22" height="20" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
+EAMCAwYAAAFrAAABdgAAAZf/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX
+Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa
+JjAjHh4eHiMwKy4nJycuKzU1MDA1NUBAP0BAQEBAQEBAQEBAQP/CABEIABQAFgMBIgACEQEDEQH/
+xABeAAEBAAAAAAAAAAAAAAAAAAAABwEBAAAAAAAAAAAAAAAAAAAAABABAQAAAAAAAAAAAAAAAAAA
+IDARAQAAAAAAAAAAAAAAAAAAADASAQAAAAAAAAAAAAAAAAAAACD/2gAMAwEAAhEDEQAAAKAAAAD/
+2gAIAQIAAQUAH//aAAgBAwABBQAf/9oACAEBAAEFAI//2gAIAQICBj8AH//aAAgBAwIGPwAf/9oA
+CAEBAQY/AB//2Q==">
+</image>
+<g>
+	<defs>
+		<polygon id="SVGID_1_" points="12,1.001 1,10 12,19.002 12,13 21,13 21,7.001 12,7.001 12,1.001 		"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	
+		<image overflow="visible" clip-path="url(#SVGID_2_)" width="22" height="20" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
+EAMCAwYAAAFrAAABdgAAAZf/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX
+Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa
+JjAjHh4eHiMwKy4nJycuKzU1MDA1NUBAP0BAQEBAQEBAQEBAQP/CABEIABQAFgMBIgACEQEDEQH/
+xABeAAEBAAAAAAAAAAAAAAAAAAAABAEBAAAAAAAAAAAAAAAAAAAAABABAQAAAAAAAAAAAAAAAAAA
+IDARAQAAAAAAAAAAAAAAAAAAADASAQAAAAAAAAAAAAAAAAAAACD/2gAMAwEAAhEDEQAAAIgAAAf/
+2gAIAQIAAQUAH//aAAgBAwABBQAf/9oACAEBAAEFAI//2gAIAQICBj8AH//aAAgBAwIGPwAf/9oA
+CAEBAQY/AB//2Q==">
+	</image>
+</g>
+</svg>

@@ -1,0 +1,204 @@
+<html   >
+  <head><meta http-equiv='X-UA-Compatible' content='IE=Edge' />
+    <META http-equiv="Content-Type" content="text/html; charset=utf-16"><script src="./jquery-1.4.2.js" type="text/javascript"></script><script src="jsScroller.js" type="text/javascript"></script><script src="processactivity.js" type="text/javascript"></script><link href="scroll.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=715"><script type="text/javascript">
+
+          var FontDifference=4;
+          var PlayIntroductionSound='False';
+          var picPath='./';
+          var wavePath='./';
+          var videoPath='./';
+          
+              var OnImage = 'sound_on.png';
+              var OffImage = 'sound_of.png';
+            
+
+          var BackGroundType='None';
+          
+
+          var ProcessElementCount = 7;
+          var LineelementCount = 1;
+
+          var autobuild = 'False';
+          var DescriptionboxEffect = 'Fade';
+
+          
+          var LineColor = '#ffffff';
+
+          var RtoLflag = 'False';
+
+          var TimeIntProcessArray = new Array(
+          1000
+        ,2000
+        ,3000
+        ,4000
+        ,5000
+        ,6000
+        ,7000);
+
+          var TimeIntLineArray = new Array(
+          2000);
+
+          var diamondShapeColor = new Array(
+          
+        '#F0F0F0'
+      
+        ,'#F0F0F0'
+      
+        ,'#F0F0F0'
+      
+        ,'#F0F0F0'
+      
+        ,'#F0F0F0'
+      
+        ,'#F0F0F0'
+      
+        ,'#F0F0F0'
+      );
+
+
+          var TargetViewSizeFactor = 1;
+          </script><style type="text/css">
+          .scrollArrowClass
+          {
+          position:absolute;
+          top:0px;
+          left:0px;
+          width:17px;
+          height:19px;
+          border:none;
+          }
+
+          .Scroller{overflow:hidden;position:absolute;top:0px;left:0px;}
+
+          .Scrollbar-Up1{cursor:pointer;right:0px;position:absolute;top:0px;z-index:10;}
+          .Scrollbar-Down1{cursor:pointer;right:0px;position:absolute;bottom:0px;z-index:10;}
+          .ScrIcons{
+          width:17px;
+          height:19px;
+          }
+          .Scroller-Container1{left:0;position:absolute;top:0}
+
+        </style>
+  </head>
+  <body>
+    <div id="mainPanel" sound="./" style="position: absolute; top: 0px; left: 0px; overflow: hidden; width:715px; height:500px">
+      <div id="interactionTitleText" class="txtControl" style="position:absolute;top:20.45px;left:655px;width:59.85px;height:28.55px;overflow:hidden;margin:0 0 0 0 0;z-index:auto"></div>
+      <div id="interactionInstructionText" class="txtControl" style="position:absolute;top:33.4px;left:359.8px;width:343.9px;height:29.55px;overflow:hidden;margin:0 0 0 0 0;z-index:auto"><html><p align="Right"><Font face="Verdana" size="13" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B><I>Select each box to learn more.</I></B></textformat></Font></p></html></div><canvas id="pathCanvas1" height="0.65" width="0.65" style="position: absolute; top: 87.3px;left: 696.8px;display:block" arrowtype="Dig3"></canvas><div id="dummydiv" style="display:none;z-index:110;background-color:#E0D727;opacity:0;position: absolute; top: 0px; left: 0px; overflow: hidden; width:715px; height:500px"></div>
+      <div id="processdiv1" style="cursor:pointer;background-color:#F0F0F0;background-image:url('Process_Rectangle.png');background-size:100% 100%;z-index:9;display:block;position:absolute;top:61px;left:154px;width:396px;height:37px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="onProcessClicked(1);">
+        <div id="processRectangletext1" class="txtControl" style="z-index:9;position:relative;cursor:pointer;top:5px;left:5px;width:380px;height:27.05px;word-wrap:break-word;overflow:hidden"><html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Net book value</B></textformat></Font></p></html></div>
+      </div>
+      <div id="processdiv2" style="cursor:pointer;background-color:#F0F0F0;background-image:url('Process_Rectangle.png');background-size:100% 100%;z-index:9;display:block;position:absolute;top:114.55px;left:154.85px;width:396px;height:37px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="onProcessClicked(2);">
+        <div id="processRectangletext2" class="txtControl" style="z-index:9;position:relative;cursor:pointer;top:4px;left:8px;width:373.65px;height:25.05px;word-wrap:break-word;overflow:hidden"><html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Liquidation value</B></textformat></Font></p></html></div>
+      </div>
+      <div id="processdiv3" style="cursor:pointer;background-color:#F0F0F0;background-image:url('Process_Rectangle.png');background-size:100% 100%;z-index:9;display:block;position:absolute;top:170px;left:153.45px;width:396px;height:37px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="onProcessClicked(3);">
+        <div id="processRectangletext3" class="txtControl" style="z-index:9;position:relative;cursor:pointer;top:6.050000000000011px;left:6.25px;width:377px;height:25.05px;word-wrap:break-word;overflow:hidden"><html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Investment value</B></textformat></Font></p></html></div>
+      </div>
+      <div id="processdiv4" style="cursor:pointer;background-color:#F0F0F0;background-image:url('Process_Rectangle.png');background-size:100% 100%;z-index:9;display:block;position:absolute;top:223px;left:154px;width:396px;height:38px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="onProcessClicked(4);">
+        <div id="processRectangletext4" class="txtControl" style="z-index:9;position:relative;cursor:pointer;top:7.25px;left:5.449999999999989px;width:377.55px;height:25.05px;word-wrap:break-word;overflow:hidden"><html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Intrinsic value</B></textformat></Font></p></html></div>
+      </div>
+      <div id="processdiv5" style="cursor:pointer;background-color:#F0F0F0;background-image:url('Process_Rectangle.png');background-size:100% 100%;z-index:9;display:block;position:absolute;top:277px;left:154px;width:396px;height:37px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="onProcessClicked(5);">
+        <div id="processRectangletext5" class="txtControl" style="z-index:9;position:relative;cursor:pointer;top:7px;left:5.449999999999989px;width:376.4px;height:25.05px;word-wrap:break-word;overflow:hidden"><html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Market value</B></textformat></Font></p></html></div>
+      </div>
+      <div id="processdiv6" style="cursor:pointer;background-color:#F0F0F0;background-image:url('Process_Rectangle.png');background-size:100% 100%;z-index:9;display:block;position:absolute;top:331px;left:154px;width:396px;height:37px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="onProcessClicked(6);">
+        <div id="processRectangletext6" class="txtControl" style="z-index:9;position:relative;cursor:pointer;top:7px;left:5.449999999999989px;width:377.55px;height:25.05px;word-wrap:break-word;overflow:hidden"><html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Going concern value</B></textformat></Font></p></html></div>
+      </div>
+      <div id="processdiv7" style="cursor:pointer;background-color:#F0F0F0;background-image:url('Process_Rectangle.png');background-size:100% 100%;z-index:9;display:block;position:absolute;top:385px;left:154px;width:396px;height:37px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="onProcessClicked(7);">
+        <div id="processRectangletext7" class="txtControl" style="z-index:9;position:relative;cursor:pointer;top:8.149999999999977px;left:5.449999999999989px;width:375.25px;height:25.05px;word-wrap:break-word;overflow:hidden"><html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Fair market value</B></textformat></Font></p></html></div>
+      </div>
+      <div id="descContainer1" style="z-index:110;display:none;position:absolute;top:33.5px;left:40px;width:639px;height:433px;border-style:none;overflow: hidden">
+        <div id="processDescriptiondiv1" sound="./" style="background-image:url('process_Description.png');border-radius:10px;background-color:#DFE4E6;background-size:100% 100%;z-index:11;display:none;position:relative;top:0px;left:0px;width:639px;height:433px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none">
+          <div id="processdescCloseBtn" style="cursor:pointer;background-image:url('process_close.png');background-size:100% 100%;z-index:11;position:relative;cursor:pointer;top:15px;left:610px;width:18px;height:18px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="closeDescPopup();"></div>
+          <div id="processDesctitle1" class="txtControl" style="overflow:hidden;z-index:9;position:absolute;top:15px;left:15px;width:590px;height:20px"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Net book value</B></textformat></Font></p></html></div>
+          <style>
+            .scrClass1{width: 579px;}
+          </style>
+          <div class="fbMsgPanel1" style="position:relative;width:600px;height:345px;top:50px;left:15px"><img src="arrow_top.png" class="Scrollbar-Up1 ScrIcons" onmouseover="scrollerFb.startScroll(0, 5);" onmouseout="scrollerFb.stopScroll();"><img src="arrow_down.png" class="Scrollbar-Down1 ScrIcons" onmouseover="scrollerFb.startScroll(0, -5);" onmouseout="scrollerFb.stopScroll();"><div id="FbScroller1" class="Scroller" style="position:absolute;width:600px;height:345px">
+              <div class="fbMsgContainer Scroller-Container1 txtControl"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The difference between assets (net of accumulated depreciation, depletion, and amortization) and liabilities as they appear on the balance sheet.</textformat></Font></p></html></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="descContainer2" style="z-index:110;display:none;position:absolute;top:33.5px;left:40px;width:639px;height:433px;border-style:none;overflow: hidden">
+        <div id="processDescriptiondiv2" sound="./" style="background-image:url('process_Description.png');border-radius:10px;background-color:#DFE4E6;background-size:100% 100%;z-index:11;display:none;position:relative;top:0px;left:0px;width:639px;height:433px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none">
+          <div id="processdescCloseBtn" style="cursor:pointer;background-image:url('process_close.png');background-size:100% 100%;z-index:11;position:relative;cursor:pointer;top:15px;left:610px;width:18px;height:18px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="closeDescPopup();"></div>
+          <div id="processDesctitle2" class="txtControl" style="overflow:hidden;z-index:9;position:absolute;top:15px;left:15px;width:590px;height:20px"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Liquidation value</B></textformat></Font></p></html></div>
+          <style>
+            .scrClass2{width: 579px;}
+          </style>
+          <div class="fbMsgPanel2" style="position:relative;width:600px;height:345px;top:50px;left:15px"><img src="arrow_top.png" class="Scrollbar-Up1 ScrIcons" onmouseover="scrollerFb.startScroll(0, 5);" onmouseout="scrollerFb.stopScroll();"><img src="arrow_down.png" class="Scrollbar-Down1 ScrIcons" onmouseover="scrollerFb.startScroll(0, -5);" onmouseout="scrollerFb.stopScroll();"><div id="FbScroller2" class="Scroller" style="position:absolute;width:600px;height:345px">
+              <div class="fbMsgContainer Scroller-Container1 txtControl"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The net amount that is expected to be received from the sale of an organization's assets and the settlement of its debts. Liquidation can be conducted in either a forced or orderly fashion resulting in different ultimate values.</textformat></Font></p></html></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="descContainer3" style="z-index:110;display:none;position:absolute;top:33.5px;left:40px;width:639px;height:433px;border-style:none;overflow: hidden">
+        <div id="processDescriptiondiv3" sound="./" style="background-image:url('process_Description.png');border-radius:10px;background-color:#DFE4E6;background-size:100% 100%;z-index:11;display:none;position:relative;top:0px;left:0px;width:639px;height:433px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none">
+          <div id="processdescCloseBtn" style="cursor:pointer;background-image:url('process_close.png');background-size:100% 100%;z-index:11;position:relative;cursor:pointer;top:15px;left:610px;width:18px;height:18px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="closeDescPopup();"></div>
+          <div id="processDesctitle3" class="txtControl" style="overflow:hidden;z-index:9;position:absolute;top:15px;left:15px;width:590px;height:20px"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Investment value</B></textformat></Font></p></html></div>
+          <style>
+            .scrClass3{width: 579px;}
+          </style>
+          <div class="fbMsgPanel3" style="position:relative;width:600px;height:345px;top:50px;left:15px"><img src="arrow_top.png" class="Scrollbar-Up1 ScrIcons" onmouseover="scrollerFb.startScroll(0, 5);" onmouseout="scrollerFb.stopScroll();"><img src="arrow_down.png" class="Scrollbar-Down1 ScrIcons" onmouseover="scrollerFb.startScroll(0, -5);" onmouseout="scrollerFb.stopScroll();"><div id="FbScroller3" class="Scroller" style="position:absolute;width:600px;height:345px">
+              <div class="fbMsgContainer Scroller-Container1 txtControl"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The value that a particular investor places on a business, taking into consideration projected income, projected cash flow, and risk. In other words, the analyst is concerned about the real value of the asset that can be determined only with a higher level of knowledge than the typical investor about the item being valued. For example, the real value of an asset may be different than the price exchanged between a willing buyer and a willing seller since the focus is on a particular investor.</textformat></Font></p></html></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="descContainer4" style="z-index:110;display:none;position:absolute;top:33.5px;left:40px;width:639px;height:433px;border-style:none;overflow: hidden">
+        <div id="processDescriptiondiv4" sound="./" style="background-image:url('process_Description.png');border-radius:10px;background-color:#DFE4E6;background-size:100% 100%;z-index:11;display:none;position:relative;top:0px;left:0px;width:639px;height:433px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none">
+          <div id="processdescCloseBtn" style="cursor:pointer;background-image:url('process_close.png');background-size:100% 100%;z-index:11;position:relative;cursor:pointer;top:15px;left:610px;width:18px;height:18px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="closeDescPopup();"></div>
+          <div id="processDesctitle4" class="txtControl" style="overflow:hidden;z-index:9;position:absolute;top:15px;left:15px;width:590px;height:20px"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Intrinsic value</B></textformat></Font></p></html></div>
+          <style>
+            .scrClass4{width: 579px;}
+          </style>
+          <div class="fbMsgPanel4" style="position:relative;width:600px;height:345px;top:50px;left:15px"><img src="arrow_top.png" class="Scrollbar-Up1 ScrIcons" onmouseover="scrollerFb.startScroll(0, 5);" onmouseout="scrollerFb.stopScroll();"><img src="arrow_down.png" class="Scrollbar-Down1 ScrIcons" onmouseover="scrollerFb.startScroll(0, -5);" onmouseout="scrollerFb.stopScroll();"><div id="FbScroller4" class="Scroller" style="position:absolute;width:600px;height:345px">
+              <div class="fbMsgContainer Scroller-Container1 txtControl"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The value that is placed on a business, taking into consideration projected income, projected cash flow, and risk as interpreted by an analyst. In other words, the analyst is concerned about the real value of the asset that can be determined only with a higher level of knowledge than held by the typical investor about the item being valued. For example, the real value of an asset may be different than the current market value.</textformat></Font></p></html></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="descContainer5" style="z-index:110;display:none;position:absolute;top:33.5px;left:40px;width:639px;height:433px;border-style:none;overflow: hidden">
+        <div id="processDescriptiondiv5" sound="./" style="background-image:url('process_Description.png');border-radius:10px;background-color:#DFE4E6;background-size:100% 100%;z-index:11;display:none;position:relative;top:0px;left:0px;width:639px;height:433px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none">
+          <div id="processdescCloseBtn" style="cursor:pointer;background-image:url('process_close.png');background-size:100% 100%;z-index:11;position:relative;cursor:pointer;top:15px;left:610px;width:18px;height:18px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="closeDescPopup();"></div>
+          <div id="processDesctitle5" class="txtControl" style="overflow:hidden;z-index:9;position:absolute;top:15px;left:15px;width:590px;height:20px"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Market value</B></textformat></Font></p></html></div>
+          <style>
+            .scrClass5{width: 579px;}
+          </style>
+          <div class="fbMsgPanel5" style="position:relative;width:600px;height:345px;top:50px;left:15px"><img src="arrow_top.png" class="Scrollbar-Up1 ScrIcons" onmouseover="scrollerFb.startScroll(0, 5);" onmouseout="scrollerFb.stopScroll();"><img src="arrow_down.png" class="Scrollbar-Down1 ScrIcons" onmouseover="scrollerFb.startScroll(0, -5);" onmouseout="scrollerFb.stopScroll();"><div id="FbScroller5" class="Scroller" style="position:absolute;width:600px;height:345px">
+              <div class="fbMsgContainer Scroller-Container1 txtControl"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>A type of value, stated as an opinion, that presumes the transfer of property (i.e., a right of ownership or a bundle of such rights), as of a certain date, under specific conditions set forth in the definition of the term identified by the appraiser as applicable in an appraisal. (USPAP 2016-2017 Edition, Definitions, p.3, Lines 92-94)</textformat></Font></p></html></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="descContainer6" style="z-index:110;display:none;position:absolute;top:33.5px;left:40px;width:639px;height:433px;border-style:none;overflow: hidden">
+        <div id="processDescriptiondiv6" sound="./" style="background-image:url('process_Description.png');border-radius:10px;background-color:#DFE4E6;background-size:100% 100%;z-index:11;display:none;position:relative;top:0px;left:0px;width:639px;height:433px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none">
+          <div id="processdescCloseBtn" style="cursor:pointer;background-image:url('process_close.png');background-size:100% 100%;z-index:11;position:relative;cursor:pointer;top:15px;left:610px;width:18px;height:18px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="closeDescPopup();"></div>
+          <div id="processDesctitle6" class="txtControl" style="overflow:hidden;z-index:9;position:absolute;top:15px;left:15px;width:590px;height:20px"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Going concern value</B></textformat></Font></p></html></div>
+          <style>
+            .scrClass6{width: 579px;}
+          </style>
+          <div class="fbMsgPanel6" style="position:relative;width:600px;height:345px;top:50px;left:15px"><img src="arrow_top.png" class="Scrollbar-Up1 ScrIcons" onmouseover="scrollerFb.startScroll(0, 5);" onmouseout="scrollerFb.stopScroll();"><img src="arrow_down.png" class="Scrollbar-Down1 ScrIcons" onmouseover="scrollerFb.startScroll(0, -5);" onmouseout="scrollerFb.stopScroll();"><div id="FbScroller6" class="Scroller" style="position:absolute;width:600px;height:345px">
+              <div class="fbMsgContainer Scroller-Container1 txtControl"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The value of a business enterprise that is expected to continue to operate into the future. The value created in a company as the result of intangibles, such as an expert workforce or a loyal, established customer base, are part of the going concern value.</textformat></Font></p></html></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="descContainer7" style="z-index:110;display:none;position:absolute;top:33.5px;left:40px;width:639px;height:433px;border-style:none;overflow: hidden">
+        <div id="processDescriptiondiv7" sound="./" style="background-image:url('process_Description.png');border-radius:10px;background-color:#DFE4E6;background-size:100% 100%;z-index:11;display:none;position:relative;top:0px;left:0px;width:639px;height:433px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none">
+          <div id="processdescCloseBtn" style="cursor:pointer;background-image:url('process_close.png');background-size:100% 100%;z-index:11;position:relative;cursor:pointer;top:15px;left:610px;width:18px;height:18px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="closeDescPopup();"></div>
+          <div id="processDesctitle7" class="txtControl" style="overflow:hidden;z-index:9;position:absolute;top:15px;left:15px;width:590px;height:20px"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Fair market value</B></textformat></Font></p></html></div>
+          <style>
+            .scrClass7{width: 579px;}
+          </style>
+          <div class="fbMsgPanel7" style="position:relative;width:600px;height:345px;top:50px;left:15px"><img src="arrow_top.png" class="Scrollbar-Up1 ScrIcons" onmouseover="scrollerFb.startScroll(0, 5);" onmouseout="scrollerFb.stopScroll();"><img src="arrow_down.png" class="Scrollbar-Down1 ScrIcons" onmouseover="scrollerFb.startScroll(0, -5);" onmouseout="scrollerFb.stopScroll();"><div id="FbScroller7" class="Scroller" style="position:absolute;width:600px;height:345px">
+              <div class="fbMsgContainer Scroller-Container1 txtControl"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The amount for which a business would exchange hands given a willing buyer and a willing seller who are both knowledgeable about the relevant facts of the transaction, are under no compulsion to enter into the transaction, and have no special relationship.</textformat></Font></p></html></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="MediaText1" class="txtControl" style="z-Index:50;position:absolute;top:0px;left:58px;width:585.7px;height:37px;overflow:hidden;margin:0 0 0 0 0;"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The following are some examples of business value definitions:</B></textformat></Font></p></html></div>
+    </div>
+    <div id="logMsg" style="overflow:auto;width:100px;height:100px"></div>
+  </body>
+</html>

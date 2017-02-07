@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE termsum SYSTEM "c:/p5/dtds/termsum.dtd">
+<termsum>
+<course coursecode="CLIONA" pool-name="ac">
+<time></time>
+<title>Introduction to Business Valuation and Use of Comparables</title>
+<item source="course" pool-id="pf40" path="c:/xml/mm-gls/ac/0005">Business Valuation</item>
+<item source="course" pool-id="d1010" path="c:/xml/mm-gls/ac/0019">Fair Market Value (FMV)</item>
+<item source="course" pool-id="d362" path="c:/xml/mm-gls/ac/0041">Property</item>
+<item source="course" pool-id="d1001" path="c:/xml/mm-gls/ac/0032">Merger</item>
+<item source="course" pool-id="djb102" path="c:/xml/mm-gls/ac/0023">Going Concern</item>
+<item source="course" pool-id="pf41" path="c:/xml/mm-gls/ac/0044">Revenue Ruling 59-60</item>
+<item source="course" pool-id="d641" path="c:/xml/mm-gls/ac/0013">Debt-to-Equity Ratio</item>
+<item source="course" pool-id="d987" path="c:/xml/mm-gls/ac/0005">Business Segment</item>
+</course>
+</termsum>

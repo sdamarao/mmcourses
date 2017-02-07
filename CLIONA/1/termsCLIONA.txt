@@ -1,0 +1,8 @@
+c:/xml/mm-gls/ac/0005/pf40.ent
+c:/xml/mm-gls/ac/0019/d1010.ent
+c:/xml/mm-gls/ac/0041/d362.ent
+c:/xml/mm-gls/ac/0032/d1001.ent
+c:/xml/mm-gls/ac/0023/djb102.ent
+c:/xml/mm-gls/ac/0044/pf41.ent
+c:/xml/mm-gls/ac/0013/d641.ent
+c:/xml/mm-gls/ac/0005/d987.ent

@@ -1,0 +1,403 @@
+<html>
+	<title>Calculator</title>
+	<head>
+		<script type="text/javascript">
+<!-- variable  display_value= print the numbers in the result box -->
+var display_value = 0;
+var first_value = 0;
+var next_value = 0;
+var counter = 0;
+var result = 0;
+var Operation  = 0;
+var final_value = 0;
+var memory = 0;
+var zeroFlag = false;
+var resultFlag = false;
+var zeroOperator_flag = false;
+var adddotFlag = false;
+var isOperatorSet = false;
+var tmp = 0;
+var resFlag = false;
+var setme = false;
+var setMemory = false;
+			
+	// on the click of the number the number will be display on the result text 
+	function onClickNumber(value)
+	{	
+		// If the result flag is true then we cant add the numbers into the result string.
+		if (resultFlag && isOperatorSet==false)
+		{
+			resultFlag = false;
+			resFlag=false;
+			Clear();
+		}
+		
+		if(counter == 0)
+		{
+			// Can't enter 0 as a first digit.
+			if(value != "0")
+			{
+				display_value = value;
+				document.getElementById('result').value = value;
+				counter = counter + 1;
+				lenCounter = 1;
+				zeroFlag = true;
+			}
+		}
+		else
+		{
+			if (zeroFlag || adddotFlag)
+			{
+				display_value =  display_value.toString() + value.toString();
+				strLen = display_value.length;
+				if (strLen <= 10)
+				{
+					document.getElementById('result').value = display_value;
+					final_value = display_value;
+				}
+				display_value =  final_value;
+				counter = counter + 1;
+			}
+		}
+		setme=true;
+		document.getElementById('result').focus();
+	}
+			
+	function addDot()
+	{
+		if(document.getElementById("result").value == "Error") {
+			display_value = 0;
+			document.getElementById("result").value = display_value;
+			return;
+		}
+		
+		if (display_value.toString().indexOf(".") == -1){
+			display_value =  display_value.toString() + '.';
+			adddotFlag = true;
+			if(counter==0){
+				counter = counter + 2;
+			}else{
+				counter = counter + 1;
+			}
+		}
+		document.getElementById('result').focus();
+	}
+
+	function addMinusSign()
+	{
+		if(document.getElementById("result").value == "Error") {
+			display_value = 0;
+			document.getElementById("result").value = display_value;
+			return;
+		}
+		
+		// This function add the minus sign to the number.for eg no ->5 result is no -> -5
+		if(counter!=0){
+			display_value =  0 - display_value;
+			document.getElementById('result').value = display_value;
+			counter = counter + 1;
+		}
+	}
+			
+			// This function add the digits and display into the final result td.
+	function Operate(op)            //STORE OPERATION e.g. + * / etc.
+	{
+		if(document.getElementById("result").value == "Error") {
+			display_value = 0;
+			document.getElementById("result").value = display_value;
+			return;
+		}
+			
+		if(counter==0 && setMemory == false)
+		{
+			zeroOperator_flag = true;
+		}
+		if(counter!=0 || setMemory == true)
+		{
+			if (op.indexOf("*") > -1) { Operation = 1; };       //codes for *
+			if (op.indexOf("/") > -1) { Operation = 2; };       // slash (divide)
+			if (op.indexOf("+") > -1) { Operation = 3; };       // sum
+			if (op.indexOf("-") > -1) { Operation = 4; };       // difference
+
+			
+			
+			if(resultFlag==false && isOperatorSet){
+			var op = 0;
+				if(tmp!=Operation){
+					if(resFlag==false){
+						op = Operation;
+						Operation = tmp;
+						Calculate(1);
+						Operation = op;
+					}
+				}else{
+					Calculate(1);
+				}
+			}else{
+				if(resultFlag==true && isOperatorSet==true){
+					if(tmp!=Operation){
+						op = Operation;
+						Operation = tmp;
+						Calculate(1);
+						Operation = op;
+					}else{
+						Calculate(1);
+					}
+				}else{	
+					first_value = display_value;
+				}
+			}
+			display_value="";
+			isOperatorSet = true;
+			tmp = Operation;
+		}
+		setme=true;
+	}
+			
+			// Perform calculation on the click of =.
+	function Calculate(flag)
+	{	
+		if(zeroOperator_flag)
+		{
+			first_value = 0 - first_value;
+			zeroOperator_flag = false;
+		}
+	
+		if(display_value!='' && isOperatorSet)
+			next_value = display_value;
+		
+		if(counter==0 && setMemory==true)
+		{
+			next_value=document.getElementById('result').value;
+			setMemory=false;
+		}
+		if(counter>0 && setme==true)
+		{
+			next_value=document.getElementById('result').value;
+			setme=false;
+		}
+		
+			
+		if (Operation == 1)
+		{
+			display_value =  eval(first_value) *  eval(next_value);
+
+			if(first_value.toString().indexOf("-")==0 && next_value.toString().indexOf("-")==0)
+			{
+				minus_multiplication_op =  eval(first_value) * eval(next_value);
+				display_value =  minus_multiplication_op;
+			}
+			displayResult();
+		}
+		
+		if (Operation == 2)
+		{
+			display_value = eval(first_value) /  eval(next_value);
+			displayResult();
+		}
+		
+		if (Operation == 3)
+		{	
+			display_value = eval(first_value) +  eval(next_value);
+			displayResult();
+		}
+		
+		if (Operation == 4)
+		{
+			
+			display_value =  eval(first_value) - eval(next_value);
+			
+			if(first_value.toString().indexOf("-")==0 && next_value.toString().indexOf("-")==0)
+			{
+				minus_op =  eval(first_value) + eval(next_value);
+				display_value =  minus_op;
+			}
+			displayResult();
+		}
+		
+		if(flag!=1){
+			isOperatorSet = false;
+			first_value = display_value;
+			document.getElementById('result').value = (isNaN(display_value) && (display_value!="Error"))?0:display_value;
+			resultFlag = true;
+		}else{
+			isOperatorSet = false;
+			first_value = display_value;
+			resultFlag = false;
+			resFlag = true;
+		}
+	}
+
+	// This function clear the display area and put 0 into the display area.
+	function Clear()                
+	{ 
+		if(setMemory == false)
+		{
+			Operation = 0;
+			display_value = 0;
+			isOperatorSet = false;
+			resultFlag = false;
+			resFlag = false;
+			first_value = 0;
+			next_value=0;
+			document.getElementById('result').value = "0";
+		}
+		//For set counter 0 to avoid the string concat. issue.
+		counter = 0;
+	}
+	
+	// This function clear the display area and put 0 into the display area.
+	function directClear()                
+	{ 
+		Operation = 0;
+		display_value = 0;
+		isOperatorSet = false;
+		resultFlag = false;
+		resFlag = false;
+		setMemory = false;
+		first_value = 0;
+		next_value=0;
+		document.getElementById('result').value = "0";
+		//For set counter 0 to avoid the string concat. issue.
+		counter = 0;
+	}
+			 
+	// This function add the result into the memory.
+	mem_counter = 0;
+	function addResultInMemory()
+	{
+		if(mem_counter == 0)
+		{
+			memory = display_value;
+			mem_counter = mem_counter + 1;
+		}
+		else
+		{
+			memory = eval(memory) + eval(display_value);
+			mem_counter = mem_counter + 1;
+		}
+
+		// The counter is set 0 for when we type the numbet it will not add into the memory value.like memory=16 it will not add the 8.
+		counter = 0;
+		setMemory = false;
+
+		document.getElementById('mr').disabled=false;
+		document.getElementById('mr').style.display = "block";
+	}
+			 
+	// This function substract the result from the memory.
+	mem_sub_counter = 0
+	function subResultFromMemory()
+	{
+		if(mem_sub_counter == 0)
+		{
+			memory = eval(memory) - eval(display_value);
+			mem_sub_counter = mem_sub_counter + 1;
+		}
+		else
+		{
+			memory = eval(memory) - eval(display_value);
+			mem_sub_counter = mem_sub_counter + 1;
+		}
+		document.getElementById('mr').disabled=false;
+		document.getElementById('mr').style.display = "block";
+
+		//For set counter 0 to avoid the string concat. issue.
+		counter = 0;
+		setMemory = false;
+	}
+			 
+	//This function recalls the memory.
+	function recallMemory()
+	{
+		display_value = memory;
+		document.getElementById('result').value = memory;
+		document.getElementById('mc').style.display = "block";
+		//For set counter 0 to avoid the string concat. issue.
+		counter = 0;
+		setMemory = true;
+	}
+			 
+	//This function clears the memory.
+	function clearMemory()
+	{
+		memory = "0";
+		document.getElementById('result').value = display_value;
+		document.getElementById('mr').style.display = "block";
+		setMemory = false;
+	}
+			 
+	function displayResult(){
+		if (display_value.toString().indexOf(".") !=-1)					
+			display_value = display_value.toFixed(2);
+
+		if(display_value.toString().length>10){
+			try {
+				display_value = display_value.toExponential(2);
+			}
+			catch(error) {
+				display_value="Error";
+			}
+		}
+		document.getElementById('result').value = display_value;
+		document.getElementById('result').focus();
+	}
+		</script>
+		<STYLE type="text/css">
+			img{
+				width:100%;
+				height:100%;
+			}
+	    </style>
+	</head>
+
+	<body style = "-webkit-user-select:none;">
+		<table cellspacing="0" cellpadding="0" style="border:0;position:relative;left:2px;" onClick="previouskey=event.srcElement.innerText">
+			<tr>
+				<td>
+					<input type="text" value="0" id="result" readonly="true" style="background-color:#FAFAFA;border:none;height:68px;width:100%;font-size:50px;text-align:right;padding:0px;margin:0px;"/>
+				</td>
+			</tr>
+			<tr>
+			<td>
+				<table border="0" cellspacing="0" cellpadding="0" style="font:bold 20px Verdana;">
+					<tr>
+						<td><div id="mc" value="mc" onclick="clearMemory()" aria-labelledby="mcbutton" role="button" ><embed src="../images/calc-mc-button.svg" style="width:68px;height:36px;"></embed><p style="display:none;" id="mcbutton">clear memory</p></div></td>
+						<td><div id="m+" value="m+" onclick="addResultInMemory()"   aria-labelledby="m+button" role="button"><embed src="../images/calc-m-plus-button.svg"  style="width:68px;height:36px;" ></embed><p style="display:none;" id="m+button">add result in memory</p></div></td>						
+						<td><div id="m-" value="m-" onclick="subResultFromMemory()" aria-labelledby="m-button" role="button" ><embed src="../images/calc-m-minus-button.svg"  style="width:68px;height:36px;"></embed><p style="display:none;" id="m-button" >subtract result from memory</p></div></td>						
+						<td rowspan="2"><div id="C" value="C" onclick="directClear()" aria-labelledby="Cbutton" role="button" ><embed src="../images/calc-c-button.svg"  style="width:66px;height:70px;"></embed><p style="display:none;" id="Cbutton">clear</p></div></td>						
+					</tr>
+					<tr>
+						<td colspan="2" style="text-align:center"><div id="plus_min" value="plus_min" onclick="addMinusSign()" aria-labelledby="plus_minbutton" role="button" style="position:relative;left:-3px;"><embed src="../images/calc-plus-minus-button.svg" style="width:151px;height:33px;" ></embed><p style="display:none;" id="plus_minbutton">plus minus</p></div></td>						
+						<td><div id="mr" value="mr" onclick="recallMemory()" aria-labelledby="mrbutton" role="button"><embed src="../images/calc-mr-button.svg" style="width:68px;height:36px;"></embed><p style="display:none;" id="mrbutton">memory recall</p></div></td>
+					</tr>
+					<tr>
+						<td><div id="number7" value="7" onclick="onClickNumber(7)" aria-labelledby="number7button" role="button"><embed src="../images/calc-7-button.svg"  style="width:65px;height:63px;"></embed><p style="display:none;" id="number7button">7</p></div></td>
+						<td><div id="number8" value="8" onclick="onClickNumber(8)" aria-labelledby="number8button" role="button"><embed src="../images/calc-8-button.svg" style="width:65px;height:63px;"></embed><p style="display:none;" id="number8button">8</p></div></td>						
+						<td><div id="number9" value="9" onclick="onClickNumber(9)" aria-labelledby="number9button" role="button"><embed src="../images/calc-9-button.svg" style="width:65px;height:63px;"></embed><p style="display:none;" id="number9button">9</p></div></td>						
+						<td><div id="divideby" value="/" onclick="Operate('/')" aria-labelledby="dividebybutton" role="button"><embed src="../images/calc-division-button.svg" style="width:65px;height:63px;"></embed><p style="display:none;" id="dividebybutton">divide</p></div></td>						
+					</tr>
+					<tr>
+						<td><div id="number4" value="4" onclick="onClickNumber(4)" aria-labelledby="number4button" role="button"><embed src="../images/calc-4-button.svg" style="width:65px;height:63px;"></embed><p style="display:none;" id="number4button">4</p></div></td>
+						<td><div id="number5" value="5" onclick="onClickNumber(5)" aria-labelledby="number5button" role="button"><embed src="../images/calc-5-button.svg" style="width:65px;height:63px;"></embed><p style="display:none;" id="number5button">5</p></div></td>						
+						<td><div id="number6" value="6" onclick="onClickNumber(6)" aria-labelledby="number6button" role="button"><embed src="../images/calc-6-button.svg" style="width:65px;height:63px;"></embed><p style="display:none;" id="number6button">6</p></div></td>						
+						<td><div id="multiplyby" value="*" onclick="Operate('*')" aria-labelledby="multiplybutton" role="button"><embed src="../images/calc-mul-button.svg" style="width:65px;height:63px;"></embed><p style="display:none;" id="multiplybutton">multiply</p></div></td>						
+					</tr>
+					<tr>
+						<td><div id="number1" value="1" onclick="onClickNumber(1)" aria-labelledby="number1button" role="button"><embed src="../images/calc-1-button.svg" style="width:65px;height:63px;"></embed><p style="display:none;" id="number1button">1</p></div></td>
+						<td><div id="number2" value="2" onclick="onClickNumber(2)" aria-labelledby="number2button" role="button"><embed src="../images/calc-2-button.svg" style="width:65px;height:63px;"></embed><p style="display:none;" id="number2button">2</p></div></td>						
+						<td><div id="number3" value="3" onclick="onClickNumber(3)" aria-labelledby="number3button" role="button"><embed src="../images/calc-3-button.svg" style="width:65px;height:63px;"></embed><p style="display:none;" id="number3button">3</p></div></td>						
+						<td><div id="minus" value="-" onclick="Operate('-')" aria-labelledby="subtractbutton" role="button"><embed src="../images/calc-minus-button.svg" style="width:65px;height:63px;"></embed><p style="display:none;" id="subtractbutton">subtract</p></div></td>
+					</tr>
+					<tr>
+						<td><div id="number0" value="0" onclick="onClickNumber(0);;" aria-labelledby="number0button" role="button"><embed src="../images/calc-0-button.svg" style="width:65px;height:63px;"></embed><p style="display:none;" id="number0button">0</p></div></td>
+						<td><div id="dot" value="." onclick="addDot()" aria-labelledby="dotbutton" role="button"><embed src="../images/calc-dot-button.svg" style="width:65px;height:63px;"></embed><p style="display:none;" id="dotbutton">decimal</p></div></td>
+						<td><div id="equalto" value="=" onclick="Calculate()" aria-labelledby="equaltobutton" role="button"><embed src="../images/calc-equal-button.svg"style="width:65px;height:63px;"></embed><p style="display:none;" id="equaltobutton">equals</p></div></td>
+						<td><div id="plus" value="+" onclick="Operate('+')" aria-labelledby="plusbutton" role="button"><embed src="../images/calc-plus-button.svg" style="width:65px;height:63px;"></embed><p style="display:none;" id="plusbutton">add</p></div></td>
+					</tr>
+				</table>
+			</td>
+			</tr>
+		</table>
+	</body>
+</html>

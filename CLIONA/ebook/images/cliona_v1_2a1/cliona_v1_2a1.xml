@@ -1,0 +1,125 @@
+<Interaction name="Process Activity" version="6.9" iscompliancerequired="False" type="Regular" height="500" width="715" swfHeight="500" swfWidth="715" trackingThrough="" SharedObjectName="" RtoLflag="False" ShowPropFlag="False">
+  <node id="Play Introduction Sound"><![CDATA[False]]></node>
+  <node id="Introduction Sound File"><![CDATA[]]></node>
+  <node id="Show Audio Control"><![CDATA[False]]></node>
+  <node id="Audio Control Image Type"><![CDATA[Default Audio Graphic]]></node>
+  <node id="Image for audio ON"><![CDATA[]]></node>
+  <node id="Image for audio ONWidth"><![CDATA[]]></node>
+  <node id="Image for audio ONHeight"><![CDATA[]]></node>
+  <node id="Image for audio OFF"><![CDATA[]]></node>
+  <node id="Image for audio OFFWidth"><![CDATA[]]></node>
+  <node id="Image for audio OFFHeight"><![CDATA[]]></node>
+  <node id="Select Background Type"><![CDATA[Background Image]]></node>
+  <node id="Background Image"><![CDATA[121111.jpg]]></node>
+  <node id="Background ImageWidth"><![CDATA[690]]></node>
+  <node id="Background ImageHeight"><![CDATA[694]]></node>
+  <node id="Image Scaling"><![CDATA[Stretch]]></node>
+  <node id="Background Color"><![CDATA[0x253341]]></node>
+  <node id="TitlePosition" type="POSITION"><![CDATA[7.2$11.6$701$170.7$1]]></node>
+  <node id="InstructionPosition" type="POSITION"><![CDATA[12$464$687.15$35.55$1]]></node>
+  <node id="SndPosition" type="POSITION"><![CDATA[678$16$1$1$1]]></node>
+  <node id="DescriptionPosition" type="POSITION"><![CDATA[39$5.1$183.1$145$1]]></node>
+  <node id="Title"><![CDATA[<html><p align="Center"><Font face="Verdana" size="16" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The Earning Capacity of the Company</B></textformat></Font></p>
+</p>
+<p align="Left"><Font face="Verdana" size="14" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Revenue Ruling 59-60 states that detailed, representative income statements for a period of preferably five or more years immediately preceding the valuation date need to be acquired. It is important to review the following:</textformat></Font></p>
+</p>
+<p align="Center"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'><B><I>Select each image to learn more.</I></B></textformat></Font></p></html>]]></node>
+  <node id="Instruction"><![CDATA[<html><p align="Left"><Font face="Verdana" size="14" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Rev. Rul. 59-60, §4.02(d-f)</B></textformat></Font></p></html>]]></node>
+  <node id="Number of Process Elements"><![CDATA[4]]></node>
+  <node id="Auto Build-Up"><![CDATA[False]]></node>
+  <node id="Select Description Box Color"><![CDATA[0xF2F9FF]]></node>
+  <node id="Description Box Transition Effect"><![CDATA[Iris]]></node>
+  <node id="Picture1"><![CDATA[]]></node>
+  <node id="Time Interval (milliseconds)1"><![CDATA[1000]]></node>
+  <node id="Select Process Type1"><![CDATA[Image]]></node>
+  <node id="Process Text1"><![CDATA[]]></node>
+  <node id="Process Image1"><![CDATA[iStock_80825829_SMALL.jpg]]></node>
+  <node id="Process ImageWidth1"><![CDATA[848]]></node>
+  <node id="Process ImageHeight1"><![CDATA[565]]></node>
+  <node id="Process Color1"><![CDATA[0x99CDE5]]></node>
+  <node id="Process Shape1"><![CDATA[Rectangle]]></node>
+  <node id="ProcessPosition1" type="POSITION"><![CDATA[76$209$137$204$1]]></node>
+  <node id="ProcessImagePosition1" type="POSITION"><![CDATA[76$209$137$204$1]]></node>
+  <node id="Description Type1"><![CDATA[Text only]]></node>
+  <node id="Description Box Title1"><![CDATA[]]></node>
+  <node id="Description Text1"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>
+<B>Gross revenue by principle items:</B> This is important so that the business valuator can determine the lifecycle and potential of the products or services sold by the organization. Principle expenses include operating expenses, interest expense, depreciation, officer's salaries, contributions, taxes, and non-operating costs. It is important that the valuator determine whether these categories are reasonable and industry or region appropriate.</textformat></Font></p></html>]]></node>
+  <node id="Description Image1"><![CDATA[ProcessBased_Mission.png]]></node>
+  <node id="Description ImageWidth1"><![CDATA[280]]></node>
+  <node id="Description ImageHeight1"><![CDATA[210]]></node>
+  <node id="Description Audio1"><![CDATA[]]></node>
+  <node id="Description Video1"><![CDATA[]]></node>
+  <node id="Picture2"><![CDATA[]]></node>
+  <node id="Time Interval (milliseconds)2"><![CDATA[2000]]></node>
+  <node id="Select Process Type2"><![CDATA[Image]]></node>
+  <node id="Process Text2"><![CDATA[]]></node>
+  <node id="Process Image2"><![CDATA[iStock_27645247_SMALL.jpg]]></node>
+  <node id="Process ImageWidth2"><![CDATA[848]]></node>
+  <node id="Process ImageHeight2"><![CDATA[565]]></node>
+  <node id="Process Color2"><![CDATA[0x99CDE5]]></node>
+  <node id="Process Shape2"><![CDATA[Rectangle]]></node>
+  <node id="ProcessPosition2" type="POSITION"><![CDATA[218$209$137$204$1]]></node>
+  <node id="ProcessImagePosition2" type="POSITION"><![CDATA[218$209$137$204$1]]></node>
+  <node id="Description Type2"><![CDATA[Text only]]></node>
+  <node id="Description Box Title2"><![CDATA[]]></node>
+  <node id="Description Text2"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>
+<B>Net income and net income available for dividends:</B> Since value is closely tied to profitability, it is important to examine the profit capacity of the organization as well as determine whether the organization has the cash flow necessary to pay dividends.</textformat></Font></p></html>]]></node>
+  <node id="Description Image2"><![CDATA[ProcessBased_Mission.png]]></node>
+  <node id="Description ImageWidth2"><![CDATA[280]]></node>
+  <node id="Description ImageHeight2"><![CDATA[210]]></node>
+  <node id="Description Audio2"><![CDATA[]]></node>
+  <node id="Description Video2"><![CDATA[]]></node>
+  <node id="Picture3"><![CDATA[]]></node>
+  <node id="Time Interval (milliseconds)3"><![CDATA[3000]]></node>
+  <node id="Select Process Type3"><![CDATA[Image]]></node>
+  <node id="Process Text3"><![CDATA[]]></node>
+  <node id="Process Image3"><![CDATA[iStock_68605719_SMALL.jpg]]></node>
+  <node id="Process ImageWidth3"><![CDATA[869]]></node>
+  <node id="Process ImageHeight3"><![CDATA[551]]></node>
+  <node id="Process Color3"><![CDATA[0x99CDE5]]></node>
+  <node id="Process Shape3"><![CDATA[Rectangle]]></node>
+  <node id="ProcessPosition3" type="POSITION"><![CDATA[359.9$209$137$204$1]]></node>
+  <node id="ProcessImagePosition3" type="POSITION"><![CDATA[359.65$209$136.35$204$1]]></node>
+  <node id="Description Type3"><![CDATA[Text only]]></node>
+  <node id="Description Box Title3"><![CDATA[]]></node>
+  <node id="Description Text3"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>
+<B>Rates and amounts of dividends paid on each class of stock:</B> This is perhaps one of the trickier areas of the valuation since many small companies try to avoid the double taxation of dividends by increasing officer's income and reducing dividends.</textformat></Font></p></html>]]></node>
+  <node id="Description Image3"><![CDATA[ProcessBased_Mission.png]]></node>
+  <node id="Description ImageWidth3"><![CDATA[280]]></node>
+  <node id="Description ImageHeight3"><![CDATA[210]]></node>
+  <node id="Description Audio3"><![CDATA[]]></node>
+  <node id="Description Video3"><![CDATA[]]></node>
+  <node id="Picture4"><![CDATA[]]></node>
+  <node id="Time Interval (milliseconds)4"><![CDATA[4000]]></node>
+  <node id="Select Process Type4"><![CDATA[Image]]></node>
+  <node id="Process Text4"><![CDATA[]]></node>
+  <node id="Process Image4"><![CDATA[iStock_71795353_SMALL.jpg]]></node>
+  <node id="Process ImageWidth4"><![CDATA[851]]></node>
+  <node id="Process ImageHeight4"><![CDATA[563]]></node>
+  <node id="Process Color4"><![CDATA[0x99CDE5]]></node>
+  <node id="Process Shape4"><![CDATA[Rectangle]]></node>
+  <node id="ProcessPosition4" type="POSITION"><![CDATA[500$209$137$204$1]]></node>
+  <node id="ProcessImagePosition4" type="POSITION"><![CDATA[500$209$137$204$1]]></node>
+  <node id="Description Type4"><![CDATA[Text only]]></node>
+  <node id="Description Box Title4"><![CDATA[]]></node>
+  <node id="Description Text4"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>
+<B>Level of profits retained in the business:</B> It is important to determine whether the company is retaining enough of the profits in the organization to support growth without the need for external financing.</textformat></Font></p></html>]]></node>
+  <node id="Description Image4"><![CDATA[ProcessBased_Mission.png]]></node>
+  <node id="Description ImageWidth4"><![CDATA[280]]></node>
+  <node id="Description ImageHeight4"><![CDATA[210]]></node>
+  <node id="Description Audio4"><![CDATA[]]></node>
+  <node id="Description Video4"><![CDATA[]]></node>
+  <node id="Number of Gestures"><![CDATA[1]]></node>
+  <node id="Line Color"><![CDATA[0xffffff]]></node>
+  <node id="Select Line Type"><![CDATA[Dotted]]></node>
+  <node id="Path1" type="POSITION"><![CDATA[514.8$385$0$0$1$Dig1]]></node>
+  <node id="Time Interval (milliseconds) 1"><![CDATA[8000]]></node>
+  <node id="TrialImagePosition"><![CDATA[405$1$263$28$1]]></node>
+  <node id="ButtonPopupDisplayText"><![CDATA[10$20$540$18$1]]></node>
+  <node id="ButtonPopupVideo"><![CDATA[70$40$450$320$1]]></node>
+  <node id="ButtonPopupText"><![CDATA[10$50$560$300$1]]></node>
+  <node id="ButtonPopupImage"><![CDATA[90$50$400$300$1]]></node>
+  <node id="ButtonPopupPosition"><![CDATA[60$60$583$380$1]]></node>
+  <node id="CloseButtonPosition"><![CDATA[556$20$18$18$1]]></node>
+  <node id="ScrollPosition"><![CDATA[0$0$17$19$1]]></node>
+</Interaction>

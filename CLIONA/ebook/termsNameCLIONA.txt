@@ -1,0 +1,8 @@
+pf40.ent  Business Valuation
+d1010.ent  Fair Market Value (FMV)
+d362.ent  Property
+d1001.ent  Merger
+djb102.ent  Going Concern
+pf41.ent  Revenue Ruling 59-60
+d641.ent  Debt-to-Equity Ratio
+d987.ent  Business Segment

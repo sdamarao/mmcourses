@@ -1,0 +1,8 @@
+<html>
+<head>
+<title>Thomson Reuters</title>
+<meta http-equiv="Content-Type" content="text/html;" charset="utf-8"/>
+</head>
+<body onload="if(parent.frames.frame_a && parent.frames.frame_a.document.getElementById('content')){ parent.frames.frame_a.LoadContent();parent.frames.frame_a.displayFinalExamFailPage();}">
+<div id="content"><div id="statusDiv"  style="position:absolute;left:80px;top:10px;z-index:120;border:none;font-family:K-Light; font-size:18px;"></br><span id="scorepercent">Sorry! Your score is </span></b>.</br></br>You needed 70.00% to pass this exam.</br>You will need to pass this exam in order to receive CPE credit.</br></br>Please choose your next course of action by selecting on one <br/>of the buttons below.</br></br>“Review the course material” will take you to the first page of the course. <br/>You will essentially be required to retake the entire course. In so doing, <br/>you may access exam from the outline at anytime.</br></br><div id="review" class="btnNormalDefault" style = "cursor:pointer;width:200px" onclick="fnReviewChapter();">Review course materials</div></br>“Retake the exam” will take you back through only the exam <br/>questions sequentially. No course content will be shown or reviewed.</br></br><div id="retake" class="btnNormalDefault" style = "cursor:pointer;width:200px;" onclick="if(!(noOfattempts == testAttempts || noOfattempts &gt;= CHAPTER_TEST_PASSED)){fnRetakeTest();}">Retake the exam</div></br><span id="nomoreAttempts" style="visibility='hidden'"></br>You can no longer receive CPE credit for this course.</br>You may, however, continue with the course for educational purposes.</span></div></body>
+</html>

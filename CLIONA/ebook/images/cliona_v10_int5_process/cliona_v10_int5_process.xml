@@ -1,0 +1,128 @@
+<Interaction name="Process" version="7.7" iscompliancerequired="False" type="Regular" height="500" width="715" swfHeight="500" swfWidth="715" trackingThrough="" SharedObjectName="" RtoLflag="False" ShowPropFlag="False">
+  <node id="Image Scaling"><![CDATA[Stretch]]></node>
+  <node id="Select Background Type"><![CDATA[Background Image]]></node>
+  <node id="Background Image"><![CDATA[clgisp_backgroung1.jpg]]></node>
+  <node id="Background ImageWidth"><![CDATA[715]]></node>
+  <node id="Background ImageHeight"><![CDATA[500]]></node>
+  <node id="Background Color"><![CDATA[0x253341]]></node>
+  <node id="TitlePosition" type="POSITION"><![CDATA[627.7$8.6$26.95$29.55$1]]></node>
+  <node id="InstructionPosition" type="POSITION"><![CDATA[11.8$17.75$641$18.5$1]]></node>
+  <node id="SndPosition" type="POSITION"><![CDATA[678$16$1$1$1]]></node>
+  <node id="DescriptionPosition" type="POSITION"><![CDATA[39$5.1$183.1$145$1]]></node>
+  <node id="Play Introduction Sound"><![CDATA[False]]></node>
+  <node id="Introduction Sound File"><![CDATA[]]></node>
+  <node id="Show Audio Control"><![CDATA[False]]></node>
+  <node id="Audio Control Image Type"><![CDATA[Default Audio Graphic]]></node>
+  <node id="Image for audio ON"><![CDATA[]]></node>
+  <node id="Image for audio ONWidth"><![CDATA[]]></node>
+  <node id="Image for audio ONHeight"><![CDATA[]]></node>
+  <node id="Image for audio OFF"><![CDATA[]]></node>
+  <node id="Image for audio OFFWidth"><![CDATA[]]></node>
+  <node id="Image for audio OFFHeight"><![CDATA[]]></node>
+  <node id="Title"><![CDATA[]]></node>
+  <node id="Instruction"><![CDATA[<html><p align="Left"><Font face="Verdana" size="13" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B><I>Select each box to learn more.</I></B></textformat></Font></p></html>]]></node>
+  <node id="Number of Process Elements"><![CDATA[3]]></node>
+  <node id="Auto Build-Up"><![CDATA[False]]></node>
+  <node id="Select Description Box Color"><![CDATA[0xDFE4E6]]></node>
+  <node id="Description Box Transition Effect"><![CDATA[Fade]]></node>
+  <node id="Picture1"><![CDATA[]]></node>
+  <node id="Time Interval (milliseconds)1"><![CDATA[1000]]></node>
+  <node id="Select Process Type1"><![CDATA[Text]]></node>
+  <node id="Process Text1"><![CDATA[<html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Profitability Ratios</B></textformat></Font></p></html>]]></node>
+  <node id="Process Image1"><![CDATA[]]></node>
+  <node id="Process ImageWidth1"><![CDATA[100]]></node>
+  <node id="Process ImageHeight1"><![CDATA[100]]></node>
+  <node id="Process Color1"><![CDATA[0xD7EBFF]]></node>
+  <node id="Process Shape1"><![CDATA[Rectangle]]></node>
+  <node id="ProcessPosition1" type="POSITION"><![CDATA[219.5$44$231.4$37$1]]></node>
+  <node id="ProcessImagePosition1" type="POSITION"><![CDATA[233.75$49$191.05$27.05$1]]></node>
+  <node id="Description Type1"><![CDATA[Text only]]></node>
+  <node id="Description Box Title1"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Profitability Ratios</B></textformat></Font></p></html>]]></node>
+  <node id="Description Text1"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>Profitability is the measure of success in terms of income defined by varying means over a period of time. In analyzing profitability, earnings are compared to a base such as sales, productive assets, or equity. Increased profitability provides the potential for increased dividend payments and stock appreciation. Increased profitability also provides greater security for debt holders.</textformat></Font></p></html>]]></node>
+  <node id="Description Image1"><![CDATA[]]></node>
+  <node id="Description ImageWidth1"><![CDATA[100]]></node>
+  <node id="Description ImageHeight1"><![CDATA[100]]></node>
+  <node id="Description Audio1"><![CDATA[]]></node>
+  <node id="Description Video1"><![CDATA[]]></node>
+  <node id="Picture2"><![CDATA[]]></node>
+  <node id="Time Interval (milliseconds)2"><![CDATA[2000]]></node>
+  <node id="Select Process Type2"><![CDATA[Text]]></node>
+  <node id="Process Text2"><![CDATA[<html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The asset turnover ratio</B></textformat></Font></p></html>]]></node>
+  <node id="Process Image2"><![CDATA[]]></node>
+  <node id="Process ImageWidth2"><![CDATA[]]></node>
+  <node id="Process ImageHeight2"><![CDATA[]]></node>
+  <node id="Process Color2"><![CDATA[0xD7EBFF]]></node>
+  <node id="Process Shape2"><![CDATA[Rectangle]]></node>
+  <node id="ProcessPosition2" type="POSITION"><![CDATA[4.8$154$271.45$45$1]]></node>
+  <node id="ProcessImagePosition2" type="POSITION"><![CDATA[10.05$161.7$257.7$25.15$1]]></node>
+  <node id="Description Type2"><![CDATA[Text only]]></node>
+  <node id="Description Box Title2"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The asset turnover ratio</B></textformat></Font></p></html>]]></node>
+  <node id="Description Text2"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The asset turnover ratio indicates how many dollars of sales were created by each dollar of total assets. It helps to determine whether the available assets were used efficiently to create sales. The goal of management is to create the highest possible amount of sales per dollar of invested capital. Note that a reasonable range for this ratio may be determined for each industry.</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Asset Turnover = Sales/Average Assets</textformat></Font></p></html>]]></node>
+  <node id="Description Image2"><![CDATA[Process_Activity_Image2.png]]></node>
+  <node id="Description ImageWidth2"><![CDATA[280]]></node>
+  <node id="Description ImageHeight2"><![CDATA[210]]></node>
+  <node id="Description Audio2"><![CDATA[]]></node>
+  <node id="Description Video2"><![CDATA[]]></node>
+  <node id="Picture3"><![CDATA[]]></node>
+  <node id="Time Interval (milliseconds)3"><![CDATA[3000]]></node>
+  <node id="Select Process Type3"><![CDATA[Text]]></node>
+  <node id="Process Text3"><![CDATA[<html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The return on assets ratio</B></textformat></Font></p></html>]]></node>
+  <node id="Process Image3"><![CDATA[]]></node>
+  <node id="Process ImageWidth3"><![CDATA[]]></node>
+  <node id="Process ImageHeight3"><![CDATA[]]></node>
+  <node id="Process Color3"><![CDATA[0xD7EBFF]]></node>
+  <node id="Process Shape3"><![CDATA[Rectangle]]></node>
+  <node id="ProcessPosition3" type="POSITION"><![CDATA[408.4$155$285.55$44$1]]></node>
+  <node id="ProcessImagePosition3" type="POSITION"><![CDATA[411.9$162.25$275.75$25.05$1]]></node>
+  <node id="Description Type3"><![CDATA[Text only]]></node>
+  <node id="Description Box Title3"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The return on assets ratio</B></textformat></Font></p></html>]]></node>
+  <node id="Description Text3"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The return on assets ratio measures the productivity of assets in terms of producing income. This ratio depends upon the organization's ability to get a high profit from each sales dollar while creating high sales per dollar of invested capital. A consistently high ROA is an indication that management is making effective decisions, and that the organization is a “growth company.”</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Return Assets = Income/Average Total Assets</textformat></Font></p></html>]]></node>
+  <node id="Description Image3"><![CDATA[]]></node>
+  <node id="Description ImageWidth3"><![CDATA[]]></node>
+  <node id="Description ImageHeight3"><![CDATA[]]></node>
+  <node id="Description Audio3"><![CDATA[]]></node>
+  <node id="Description Video3"><![CDATA[]]></node>
+  <node id="Number of Gestures"><![CDATA[1]]></node>
+  <node id="Line Color"><![CDATA[0xffffff]]></node>
+  <node id="Select Line Type"><![CDATA[Dotted]]></node>
+  <node id="Path1" type="POSITION"><![CDATA[696.8$87.3$0.65$0.65$1$Dig3]]></node>
+  <node id="Time Interval (milliseconds) 1"><![CDATA[2000]]></node>
+  <node id="Number of Nodes"><![CDATA[1]]></node>
+  <node id="ToolBoxPosition" type="POSITION"><![CDATA[3.6$384.5$1$1$1]]></node>
+  <node id="Node1" type="POSITION"><![CDATA[686$17$29$22$1]]></node>
+  <node id="Select Object Type1"><![CDATA[Text]]></node>
+  <node id="Set Image1"><![CDATA[]]></node>
+  <node id="Set ImageWidth1"><![CDATA[]]></node>
+  <node id="Set ImageHeight1"><![CDATA[]]></node>
+  <node id="Set Text1"><![CDATA[]]></node>
+  <node id="Set Video1"><![CDATA[]]></node>
+  <node id="Set Video Size1"><![CDATA[Small]]></node>
+  <node id="Video Skin Background Color1"><![CDATA[0x999999]]></node>
+  <node id="Mute other Audio1"><![CDATA[True]]></node>
+  <node id="Select Button Label Type1"><![CDATA[Button Text]]></node>
+  <node id="Button Template1"><![CDATA[Rectangle Button]]></node>
+  <node id="Button Image1"><![CDATA[]]></node>
+  <node id="Button ImageWidth1"><![CDATA[]]></node>
+  <node id="Button ImageHeight1"><![CDATA[]]></node>
+  <node id="Button Text1"><![CDATA[]]></node>
+  <node id="Button Background Color1"><![CDATA[0xCCCCCC]]></node>
+  <node id="Button Action Type1"><![CDATA[Popup Text]]></node>
+  <node id="Set Popup Title1"><![CDATA[]]></node>
+  <node id="Set Popup Image1"><![CDATA[]]></node>
+  <node id="Set Popup ImageWidth1"><![CDATA[]]></node>
+  <node id="Set Popup ImageHeight1"><![CDATA[]]></node>
+  <node id="Set Popup Text1"><![CDATA[]]></node>
+  <node id="Set Popup Video1"><![CDATA[]]></node>
+  <node id="Set Popup Background Color1"><![CDATA[0xC6D9EC]]></node>
+  <node id="Link1"><![CDATA[]]></node>
+  <node id="TrialImagePosition"><![CDATA[405$1$263$28$1]]></node>
+  <node id="ButtonPopupDisplayText"><![CDATA[10$20$540$18$1]]></node>
+  <node id="ButtonPopupVideo"><![CDATA[70$40$450$320$1]]></node>
+  <node id="ButtonPopupText"><![CDATA[10$50$560$300$1]]></node>
+  <node id="ButtonPopupImage"><![CDATA[90$50$400$300$1]]></node>
+  <node id="ButtonPopupPosition"><![CDATA[60$60$583$380$1]]></node>
+  <node id="CloseButtonPosition"><![CDATA[556$20$18$18$1]]></node>
+  <node id="ScrollPosition"><![CDATA[0$0$17$19$1]]></node>
+</Interaction>

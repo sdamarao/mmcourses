@@ -1,0 +1,117 @@
+<Interaction name="Circle Periphery" version="7.1" iscompliancerequired="False" type="Regular" height="500" width="715" swfHeight="500" swfWidth="715" trackingThrough="" SharedObjectName="" RtoLflag="False" ShowPropFlag="False">
+  <node id="Show Restart Button"><![CDATA[False]]></node>
+  <node id="Restart Button Image"><![CDATA[]]></node>
+  <node id="Restart Button ImageWidth"><![CDATA[100]]></node>
+  <node id="Restart Button ImageHeight"><![CDATA[100]]></node>
+  <node id="Image Scaling"><![CDATA[Stretch]]></node>
+  <node id="Background Type"><![CDATA[Background Image]]></node>
+  <node id="Background Image"><![CDATA[Untitled-12.jpg]]></node>
+  <node id="Background ImageWidth"><![CDATA[750]]></node>
+  <node id="Background ImageHeight"><![CDATA[500]]></node>
+  <node id="Background Color"><![CDATA[0x55ADCA]]></node>
+  <node id="Introduction Sound File"><![CDATA[]]></node>
+  <node id="Play Introduction Sound"><![CDATA[False]]></node>
+  <node id="Show Audio Control"><![CDATA[False]]></node>
+  <node id="Audio Control Image Type"><![CDATA[Default Audio Graphic]]></node>
+  <node id="Image for audio ON"><![CDATA[]]></node>
+  <node id="Image for audio ONWidth"><![CDATA[]]></node>
+  <node id="Image for audio ONHeight"><![CDATA[]]></node>
+  <node id="Image for audio OFF"><![CDATA[]]></node>
+  <node id="Image for audio OFFWidth"><![CDATA[]]></node>
+  <node id="Image for audio OFFHeight"><![CDATA[]]></node>
+  <node id="sndPosition" type="POSITION"><![CDATA[684$20$1$1$1]]></node>
+  <node id="Title Text"><![CDATA[]]></node>
+  <node id="HeadingPosition" type="POSITION"><![CDATA[22$6$547$38.05$1]]></node>
+  <node id="PopPosition" type="POSITION"><![CDATA[471$93$224$329$1]]></node>
+  <node id="InstructionPosition" type="POSITION"><![CDATA[4.6$3.45$505.4$70.1$1]]></node>
+  <node id="Instruction Text"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Select each tab for more information.</B></textformat></Font></p></html>]]></node>
+  <node id="imageclipPosition" type="POSITION"><![CDATA[170$74$388$426$1]]></node>
+  <node id="mainTextPosition" type="POSITION"><![CDATA[674.2$14.35$9.35$5$1]]></node>
+  <node id="RestartPosition" type="POSITION"><![CDATA[630$466$77$29$1]]></node>
+  <node id="ElementTextPosition1" type="POSITION"><![CDATA[16.7$183.45$355.75$36.05$1]]></node>
+  <node id="ElementTextPosition2" type="POSITION"><![CDATA[19$245.4$352.6$40.05$2]]></node>
+  <node id="ElementTextPosition3" type="POSITION"><![CDATA[22$304.15$347.35$57.05$3]]></node>
+  <node id="ElementTextPosition4" type="POSITION"><![CDATA[25$248$297$31.05$4]]></node>
+  <node id="ElementTextPosition5" type="POSITION"><![CDATA[68$268$146$30.05$5]]></node>
+  <node id="ElementTextPosition6" type="POSITION"><![CDATA[80$284$129$44.05$6]]></node>
+  <node id="ElementTextPosition7" type="POSITION"><![CDATA[10$50$55$25$7]]></node>
+  <node id="ElementTextPosition8" type="POSITION"><![CDATA[10$50$55$25$8]]></node>
+  <node id="ElementTextPosition9" type="POSITION"><![CDATA[10$50$55$25$9]]></node>
+  <node id="ElementTextPosition10" type="POSITION"><![CDATA[10$50$55$25$10]]></node>
+  <node id="ElementTextPosition11" type="POSITION"><![CDATA[10$50$55$25$11]]></node>
+  <node id="ElementTextPosition12" type="POSITION"><![CDATA[10$50$55$25$12]]></node>
+  <node id="ElementTextPosition13" type="POSITION"><![CDATA[10$50$55$25$13]]></node>
+  <node id="ElementTextPosition14" type="POSITION"><![CDATA[10$50$55$25$14]]></node>
+  <node id="ElementTextPosition15" type="POSITION"><![CDATA[10$50$55$25$15]]></node>
+  <node id="Element Appearance Type"><![CDATA[On Click]]></node>
+  <node id="Time Interval (in milliseconds) for Animation"><![CDATA[1500]]></node>
+  <node id="Element Animation Appearance"><![CDATA[Wipe]]></node>
+  <node id="Element Highlight Color"><![CDATA[0xD6D6D6]]></node>
+  <node id="Show Element Shapes"><![CDATA[True]]></node>
+  <node id="Element Type"><![CDATA[Text Only]]></node>
+  <node id="Element Text"><![CDATA[]]></node>
+  <node id="Element Image"><![CDATA[]]></node>
+  <node id="Element ImageWidth"><![CDATA[100]]></node>
+  <node id="Element ImageHeight"><![CDATA[100]]></node>
+  <node id="Element Sound"><![CDATA[]]></node>
+  <node id="Number of Parts"><![CDATA[2]]></node>
+  <node id="Element1" type="POSITION"><![CDATA[16.7$174.4$358.4$48.95$1]]></node>
+  <node id="Element Type1"><![CDATA[Text Only]]></node>
+  <node id="Element Title1"><![CDATA[<html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The debt to equity ratio</B></textformat></Font></p></html>]]></node>
+  <node id="Element Box Text1"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The debt to equity ratio measures the relationship of debt to capital sources. The ratio of the dollars of debt per dollar of equity is determined. It shows the degree to which stockholders have a stake in the organization.</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Debt to Equity = Total Debt/Total Stockholder Equity</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>The company's ability to meet long-term obligations is measured. From a creditor's point of view, the lower the ratio, the lower the risk of insolvency.</textformat></Font></p></html>]]></node>
+  <node id="Element Box Image1"><![CDATA[]]></node>
+  <node id="Element Box ImageWidth1"><![CDATA[100]]></node>
+  <node id="Element Box ImageHeight1"><![CDATA[100]]></node>
+  <node id="Element Box Sound1"><![CDATA[]]></node>
+  <node id="Element Box Video1"><![CDATA[]]></node>
+  <node id="Element Box Background Color1"><![CDATA[0xD6D6D6]]></node>
+  <node id="Element Shape1"><![CDATA[No Arrow]]></node>
+  <node id="Element Shape Color1"><![CDATA[0x83C2D8]]></node>
+  <node id="ElementText1" type="POSITION"><![CDATA[15.5$26$414$224.25$1]]></node>
+  <node id="ElementImage1" type="POSITION"><![CDATA[345$30$114$175$1]]></node>
+  <node id="Element2" type="POSITION"><![CDATA[19$236.4$359.4$53.1$2]]></node>
+  <node id="Element Type2"><![CDATA[Text Only]]></node>
+  <node id="Element Title2"><![CDATA[<html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The times interest earned ratio</B></textformat></Font></p></html>]]></node>
+  <node id="Element Box Text2"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The times interest earned ratio measures the ability of the company to cover interest charges. This is important because, at minimum, a company would need to pay current interest charges.</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Times Interest Earned = Net Income Before Interest and Taxes/Interest Expense</textformat></Font></p></html>]]></node>
+  <node id="Element Box Image2"><![CDATA[lat_stk_auditor4.JPG]]></node>
+  <node id="Element Box ImageWidth2"><![CDATA[256]]></node>
+  <node id="Element Box ImageHeight2"><![CDATA[384]]></node>
+  <node id="Element Box Sound2"><![CDATA[]]></node>
+  <node id="Element Box Video2"><![CDATA[]]></node>
+  <node id="Element Box Background Color2"><![CDATA[0xD6D6D6]]></node>
+  <node id="Element Shape2"><![CDATA[No Arrow]]></node>
+  <node id="Element Shape Color2"><![CDATA[0x83C2D8]]></node>
+  <node id="ElementText2" type="POSITION"><![CDATA[8.5$24$462$270.3$2]]></node>
+  <node id="ElementImage2" type="POSITION"><![CDATA[351.5$33$118$164$2]]></node>
+  <node id="Number of Nodes"><![CDATA[1]]></node>
+  <node id="ToolBoxPosition" type="POSITION"><![CDATA[420$430$1$1$1]]></node>
+  <node id="Node1" type="POSITION"><![CDATA[688$16.3$26.15$25.05$1]]></node>
+  <node id="Select Object Type1"><![CDATA[Text]]></node>
+  <node id="Set Image1"><![CDATA[]]></node>
+  <node id="Set ImageWidth1"><![CDATA[]]></node>
+  <node id="Set ImageHeight1"><![CDATA[]]></node>
+  <node id="Set Text1"><![CDATA[]]></node>
+  <node id="Set Video1"><![CDATA[]]></node>
+  <node id="Set Video Size1"><![CDATA[Small]]></node>
+  <node id="Video Skin Background Color1"><![CDATA[0x999999]]></node>
+  <node id="Mute other Audio1"><![CDATA[True]]></node>
+  <node id="Select Button Label Type1"><![CDATA[Button Text]]></node>
+  <node id="Button Template1"><![CDATA[Rectangle Button]]></node>
+  <node id="Button Image1"><![CDATA[]]></node>
+  <node id="Button ImageWidth1"><![CDATA[]]></node>
+  <node id="Button ImageHeight1"><![CDATA[]]></node>
+  <node id="Button Text1"><![CDATA[]]></node>
+  <node id="Button Background Color1"><![CDATA[0xCCCCCC]]></node>
+  <node id="Button Action Type1"><![CDATA[Popup Text]]></node>
+  <node id="Set Popup Title1"><![CDATA[]]></node>
+  <node id="Set Popup Image1"><![CDATA[]]></node>
+  <node id="Set Popup ImageWidth1"><![CDATA[]]></node>
+  <node id="Set Popup ImageHeight1"><![CDATA[]]></node>
+  <node id="Set Popup Text1"><![CDATA[]]></node>
+  <node id="Set Popup Video1"><![CDATA[]]></node>
+  <node id="Set Popup Background Color1"><![CDATA[0xC6D9EC]]></node>
+  <node id="Link1"><![CDATA[]]></node>
+</Interaction>

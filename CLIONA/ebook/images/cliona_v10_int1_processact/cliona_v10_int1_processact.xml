@@ -1,0 +1,202 @@
+<Interaction name="Process" version="7.7" iscompliancerequired="False" type="Regular" height="500" width="715" swfHeight="500" swfWidth="715" trackingThrough="" SharedObjectName="" RtoLflag="False" ShowPropFlag="False">
+  <node id="Image Scaling"><![CDATA[Stretch]]></node>
+  <node id="Select Background Type"><![CDATA[None]]></node>
+  <node id="Background Image"><![CDATA[ProcessBased_Bg.jpg]]></node>
+  <node id="Background ImageWidth"><![CDATA[715]]></node>
+  <node id="Background ImageHeight"><![CDATA[500]]></node>
+  <node id="Background Color"><![CDATA[0x253341]]></node>
+  <node id="TitlePosition" type="POSITION"><![CDATA[655$20.45$59.85$30.55$1]]></node>
+  <node id="InstructionPosition" type="POSITION"><![CDATA[359.8$33.4$343.9$29.55$1]]></node>
+  <node id="SndPosition" type="POSITION"><![CDATA[678$16$1$1$1]]></node>
+  <node id="DescriptionPosition" type="POSITION"><![CDATA[39$5.1$183.1$145$1]]></node>
+  <node id="Play Introduction Sound"><![CDATA[False]]></node>
+  <node id="Introduction Sound File"><![CDATA[]]></node>
+  <node id="Show Audio Control"><![CDATA[False]]></node>
+  <node id="Audio Control Image Type"><![CDATA[Default Audio Graphic]]></node>
+  <node id="Image for audio ON"><![CDATA[]]></node>
+  <node id="Image for audio ONWidth"><![CDATA[]]></node>
+  <node id="Image for audio ONHeight"><![CDATA[]]></node>
+  <node id="Image for audio OFF"><![CDATA[]]></node>
+  <node id="Image for audio OFFWidth"><![CDATA[]]></node>
+  <node id="Image for audio OFFHeight"><![CDATA[]]></node>
+  <node id="Title"><![CDATA[]]></node>
+  <node id="Instruction"><![CDATA[<html><p align="Right"><Font face="Verdana" size="13" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B><I>Select each box to learn more.</I></B></textformat></Font></p></html>]]></node>
+  <node id="Number of Process Elements"><![CDATA[7]]></node>
+  <node id="Auto Build-Up"><![CDATA[False]]></node>
+  <node id="Select Description Box Color"><![CDATA[0xDFE4E6]]></node>
+  <node id="Description Box Transition Effect"><![CDATA[Fade]]></node>
+  <node id="Picture1"><![CDATA[]]></node>
+  <node id="Time Interval (milliseconds)1"><![CDATA[1000]]></node>
+  <node id="Select Process Type1"><![CDATA[Text]]></node>
+  <node id="Process Text1"><![CDATA[<html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Net book value</B></textformat></Font></p></html>]]></node>
+  <node id="Process Image1"><![CDATA[]]></node>
+  <node id="Process ImageWidth1"><![CDATA[100]]></node>
+  <node id="Process ImageHeight1"><![CDATA[100]]></node>
+  <node id="Process Color1"><![CDATA[0xF0F0F0]]></node>
+  <node id="Process Shape1"><![CDATA[Rectangle]]></node>
+  <node id="ProcessPosition1" type="POSITION"><![CDATA[154$61$396$37$1]]></node>
+  <node id="ProcessImagePosition1" type="POSITION"><![CDATA[159$66$380$27.05$1]]></node>
+  <node id="Description Type1"><![CDATA[Text only]]></node>
+  <node id="Description Box Title1"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Net book value</B></textformat></Font></p></html>]]></node>
+  <node id="Description Text1"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The difference between assets (net of accumulated depreciation, depletion, and amortization) and liabilities as they appear on the balance sheet.</textformat></Font></p></html>]]></node>
+  <node id="Description Image1"><![CDATA[img10.jpg]]></node>
+  <node id="Description ImageWidth1"><![CDATA[345]]></node>
+  <node id="Description ImageHeight1"><![CDATA[275]]></node>
+  <node id="Description Audio1"><![CDATA[]]></node>
+  <node id="Description Video1"><![CDATA[]]></node>
+  <node id="Picture2"><![CDATA[]]></node>
+  <node id="Time Interval (milliseconds)2"><![CDATA[2000]]></node>
+  <node id="Select Process Type2"><![CDATA[Text]]></node>
+  <node id="Process Text2"><![CDATA[<html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Liquidation value</B></textformat></Font></p></html>]]></node>
+  <node id="Process Image2"><![CDATA[]]></node>
+  <node id="Process ImageWidth2"><![CDATA[]]></node>
+  <node id="Process ImageHeight2"><![CDATA[]]></node>
+  <node id="Process Color2"><![CDATA[0xF0F0F0]]></node>
+  <node id="Process Shape2"><![CDATA[Rectangle]]></node>
+  <node id="ProcessPosition2" type="POSITION"><![CDATA[154.85$114.55$396$37$1]]></node>
+  <node id="ProcessImagePosition2" type="POSITION"><![CDATA[162.85$118.55$373.65$25.05$1]]></node>
+  <node id="Description Type2"><![CDATA[Text only]]></node>
+  <node id="Description Box Title2"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Liquidation value</B></textformat></Font></p></html>]]></node>
+  <node id="Description Text2"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The net amount that is expected to be received from the sale of an organization's assets and the settlement of its debts. Liquidation can be conducted in either a forced or orderly fashion resulting in different ultimate values.</textformat></Font></p></html>]]></node>
+  <node id="Description Image2"><![CDATA[img11.jpg]]></node>
+  <node id="Description ImageWidth2"><![CDATA[339]]></node>
+  <node id="Description ImageHeight2"><![CDATA[274]]></node>
+  <node id="Description Audio2"><![CDATA[]]></node>
+  <node id="Description Video2"><![CDATA[]]></node>
+  <node id="Picture3"><![CDATA[]]></node>
+  <node id="Time Interval (milliseconds)3"><![CDATA[3000]]></node>
+  <node id="Select Process Type3"><![CDATA[Text]]></node>
+  <node id="Process Text3"><![CDATA[<html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Investment value</B></textformat></Font></p></html>]]></node>
+  <node id="Process Image3"><![CDATA[]]></node>
+  <node id="Process ImageWidth3"><![CDATA[]]></node>
+  <node id="Process ImageHeight3"><![CDATA[]]></node>
+  <node id="Process Color3"><![CDATA[0xF0F0F0]]></node>
+  <node id="Process Shape3"><![CDATA[Rectangle]]></node>
+  <node id="ProcessPosition3" type="POSITION"><![CDATA[153.45$170$396$37$1]]></node>
+  <node id="ProcessImagePosition3" type="POSITION"><![CDATA[159.7$176.05$377$25.05$1]]></node>
+  <node id="Description Type3"><![CDATA[Text only]]></node>
+  <node id="Description Box Title3"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Investment value</B></textformat></Font></p></html>]]></node>
+  <node id="Description Text3"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The value that a particular investor places on a business, taking into consideration projected income, projected cash flow, and risk. In other words, the analyst is concerned about the real value of the asset that can be determined only with a higher level of knowledge than the typical investor about the item being valued. For example, the real value of an asset may be different than the price exchanged between a willing buyer and a willing seller since the focus is on a particular investor.</textformat></Font></p></html>]]></node>
+  <node id="Description Image3"><![CDATA[img11.jpg]]></node>
+  <node id="Description ImageWidth3"><![CDATA[339]]></node>
+  <node id="Description ImageHeight3"><![CDATA[274]]></node>
+  <node id="Description Audio3"><![CDATA[]]></node>
+  <node id="Description Video3"><![CDATA[]]></node>
+  <node id="Picture4"><![CDATA[]]></node>
+  <node id="Time Interval (milliseconds)4"><![CDATA[4000]]></node>
+  <node id="Select Process Type4"><![CDATA[Text]]></node>
+  <node id="Process Text4"><![CDATA[<html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Intrinsic value</B></textformat></Font></p></html>]]></node>
+  <node id="Process Image4"><![CDATA[]]></node>
+  <node id="Process ImageWidth4"><![CDATA[]]></node>
+  <node id="Process ImageHeight4"><![CDATA[]]></node>
+  <node id="Process Color4"><![CDATA[0xF0F0F0]]></node>
+  <node id="Process Shape4"><![CDATA[Rectangle]]></node>
+  <node id="ProcessPosition4" type="POSITION"><![CDATA[154$223$396$38$1]]></node>
+  <node id="ProcessImagePosition4" type="POSITION"><![CDATA[159.45$230.25$377.55$25.05$1]]></node>
+  <node id="Description Type4"><![CDATA[Text only]]></node>
+  <node id="Description Box Title4"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Intrinsic value</B></textformat></Font></p></html>]]></node>
+  <node id="Description Text4"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The value that is placed on a business, taking into consideration projected income, projected cash flow, and risk as interpreted by an analyst. In other words, the analyst is concerned about the real value of the asset that can be determined only with a higher level of knowledge than held by the typical investor about the item being valued. For example, the real value of an asset may be different than the current market value.</textformat></Font></p></html>]]></node>
+  <node id="Description Image4"><![CDATA[img11.jpg]]></node>
+  <node id="Description ImageWidth4"><![CDATA[339]]></node>
+  <node id="Description ImageHeight4"><![CDATA[274]]></node>
+  <node id="Description Audio4"><![CDATA[]]></node>
+  <node id="Description Video4"><![CDATA[]]></node>
+  <node id="Picture5"><![CDATA[]]></node>
+  <node id="Time Interval (milliseconds)5"><![CDATA[5000]]></node>
+  <node id="Select Process Type5"><![CDATA[Text]]></node>
+  <node id="Process Text5"><![CDATA[<html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Market value</B></textformat></Font></p></html>]]></node>
+  <node id="Process Image5"><![CDATA[]]></node>
+  <node id="Process ImageWidth5"><![CDATA[]]></node>
+  <node id="Process ImageHeight5"><![CDATA[]]></node>
+  <node id="Process Color5"><![CDATA[0xF0F0F0]]></node>
+  <node id="Process Shape5"><![CDATA[Rectangle]]></node>
+  <node id="ProcessPosition5" type="POSITION"><![CDATA[154$277$396$37$1]]></node>
+  <node id="ProcessImagePosition5" type="POSITION"><![CDATA[159.45$284$376.4$25.05$1]]></node>
+  <node id="Description Type5"><![CDATA[Text only]]></node>
+  <node id="Description Box Title5"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Market value</B></textformat></Font></p></html>]]></node>
+  <node id="Description Text5"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>A type of value, stated as an opinion, that presumes the transfer of property (i.e., a right of ownership or a bundle of such rights), as of a certain date, under specific conditions set forth in the definition of the term identified by the appraiser as applicable in an appraisal. (USPAP 2016-2017 Edition, Definitions, p.3, Lines 92-94)</textformat></Font></p></html>]]></node>
+  <node id="Description Image5"><![CDATA[img11.jpg]]></node>
+  <node id="Description ImageWidth5"><![CDATA[339]]></node>
+  <node id="Description ImageHeight5"><![CDATA[274]]></node>
+  <node id="Description Audio5"><![CDATA[]]></node>
+  <node id="Description Video5"><![CDATA[]]></node>
+  <node id="Picture6"><![CDATA[]]></node>
+  <node id="Time Interval (milliseconds)6"><![CDATA[6000]]></node>
+  <node id="Select Process Type6"><![CDATA[Text]]></node>
+  <node id="Process Text6"><![CDATA[<html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Going concern value</B></textformat></Font></p></html>]]></node>
+  <node id="Process Image6"><![CDATA[]]></node>
+  <node id="Process ImageWidth6"><![CDATA[]]></node>
+  <node id="Process ImageHeight6"><![CDATA[]]></node>
+  <node id="Process Color6"><![CDATA[0xF0F0F0]]></node>
+  <node id="Process Shape6"><![CDATA[Rectangle]]></node>
+  <node id="ProcessPosition6" type="POSITION"><![CDATA[154$331$396$37$1]]></node>
+  <node id="ProcessImagePosition6" type="POSITION"><![CDATA[159.45$338$377.55$25.05$1]]></node>
+  <node id="Description Type6"><![CDATA[Text only]]></node>
+  <node id="Description Box Title6"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Going concern value</B></textformat></Font></p></html>]]></node>
+  <node id="Description Text6"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The value of a business enterprise that is expected to continue to operate into the future. The value created in a company as the result of intangibles, such as an expert workforce or a loyal, established customer base, are part of the going concern value.</textformat></Font></p></html>]]></node>
+  <node id="Description Image6"><![CDATA[img11.jpg]]></node>
+  <node id="Description ImageWidth6"><![CDATA[339]]></node>
+  <node id="Description ImageHeight6"><![CDATA[274]]></node>
+  <node id="Description Audio6"><![CDATA[]]></node>
+  <node id="Description Video6"><![CDATA[]]></node>
+  <node id="Picture7"><![CDATA[]]></node>
+  <node id="Time Interval (milliseconds)7"><![CDATA[7000]]></node>
+  <node id="Select Process Type7"><![CDATA[Text]]></node>
+  <node id="Process Text7"><![CDATA[<html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Fair market value</B></textformat></Font></p></html>]]></node>
+  <node id="Process Image7"><![CDATA[]]></node>
+  <node id="Process ImageWidth7"><![CDATA[]]></node>
+  <node id="Process ImageHeight7"><![CDATA[]]></node>
+  <node id="Process Color7"><![CDATA[0xF0F0F0]]></node>
+  <node id="Process Shape7"><![CDATA[Rectangle]]></node>
+  <node id="ProcessPosition7" type="POSITION"><![CDATA[154$385$396$37$1]]></node>
+  <node id="ProcessImagePosition7" type="POSITION"><![CDATA[159.45$393.15$375.25$25.05$1]]></node>
+  <node id="Description Type7"><![CDATA[Text only]]></node>
+  <node id="Description Box Title7"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Fair market value</B></textformat></Font></p></html>]]></node>
+  <node id="Description Text7"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The amount for which a business would exchange hands given a willing buyer and a willing seller who are both knowledgeable about the relevant facts of the transaction, are under no compulsion to enter into the transaction, and have no special relationship.</textformat></Font></p></html>]]></node>
+  <node id="Description Image7"><![CDATA[img11.jpg]]></node>
+  <node id="Description ImageWidth7"><![CDATA[339]]></node>
+  <node id="Description ImageHeight7"><![CDATA[274]]></node>
+  <node id="Description Audio7"><![CDATA[]]></node>
+  <node id="Description Video7"><![CDATA[]]></node>
+  <node id="Number of Gestures"><![CDATA[1]]></node>
+  <node id="Line Color"><![CDATA[0xffffff]]></node>
+  <node id="Select Line Type"><![CDATA[Dotted]]></node>
+  <node id="Path1" type="POSITION"><![CDATA[696.8$87.3$0.65$0.65$1$Dig3]]></node>
+  <node id="Time Interval (milliseconds) 1"><![CDATA[2000]]></node>
+  <node id="Number of Nodes"><![CDATA[1]]></node>
+  <node id="ToolBoxPosition" type="POSITION"><![CDATA[5.9$384.5$1$1$1]]></node>
+  <node id="Node1" type="POSITION"><![CDATA[58$0$585.7$37$1]]></node>
+  <node id="Select Object Type1"><![CDATA[Text]]></node>
+  <node id="Set Image1"><![CDATA[]]></node>
+  <node id="Set ImageWidth1"><![CDATA[]]></node>
+  <node id="Set ImageHeight1"><![CDATA[]]></node>
+  <node id="Set Text1"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The following are some examples of business value definitions:</B></textformat></Font></p></html>]]></node>
+  <node id="Set Video1"><![CDATA[]]></node>
+  <node id="Set Video Size1"><![CDATA[Small]]></node>
+  <node id="Video Skin Background Color1"><![CDATA[0x999999]]></node>
+  <node id="Mute other Audio1"><![CDATA[True]]></node>
+  <node id="Select Button Label Type1"><![CDATA[Button Text]]></node>
+  <node id="Button Template1"><![CDATA[Rectangle Button]]></node>
+  <node id="Button Image1"><![CDATA[]]></node>
+  <node id="Button ImageWidth1"><![CDATA[]]></node>
+  <node id="Button ImageHeight1"><![CDATA[]]></node>
+  <node id="Button Text1"><![CDATA[]]></node>
+  <node id="Button Background Color1"><![CDATA[0xCCCCCC]]></node>
+  <node id="Button Action Type1"><![CDATA[Popup Text]]></node>
+  <node id="Set Popup Title1"><![CDATA[]]></node>
+  <node id="Set Popup Image1"><![CDATA[]]></node>
+  <node id="Set Popup ImageWidth1"><![CDATA[]]></node>
+  <node id="Set Popup ImageHeight1"><![CDATA[]]></node>
+  <node id="Set Popup Text1"><![CDATA[]]></node>
+  <node id="Set Popup Video1"><![CDATA[]]></node>
+  <node id="Set Popup Background Color1"><![CDATA[0xC6D9EC]]></node>
+  <node id="Link1"><![CDATA[]]></node>
+  <node id="TrialImagePosition"><![CDATA[405$1$263$28$1]]></node>
+  <node id="ButtonPopupDisplayText"><![CDATA[10$20$540$18$1]]></node>
+  <node id="ButtonPopupVideo"><![CDATA[70$40$450$320$1]]></node>
+  <node id="ButtonPopupText"><![CDATA[10$50$560$300$1]]></node>
+  <node id="ButtonPopupImage"><![CDATA[90$50$400$300$1]]></node>
+  <node id="ButtonPopupPosition"><![CDATA[60$60$583$380$1]]></node>
+  <node id="CloseButtonPosition"><![CDATA[556$20$18$18$1]]></node>
+  <node id="ScrollPosition"><![CDATA[0$0$17$19$1]]></node>
+</Interaction>

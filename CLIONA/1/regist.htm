@@ -1,0 +1,180 @@
+<html>
+<head>
+<style>
+.rfield {position:absolute; left:0; height:17; font-family:Verdana,Arial,Helvetica,sans-serif; font-size:8pt; border: 1 solid #000066;}
+</style>
+<link rel="stylesheet" href="common/progress.css" type="text/css">
+<script src="common/BTree.js"></script>
+<script src="common/object.js"></script>
+<script src="default.js"></script>
+<script language=javascript>
+
+function CheckAppletStartup()
+{
+    document.progress = new clsProgress(document.all.ProgressData, "CLIONA")
+    if (!document.progress.InitOk())
+        {
+            alert("Init Error!!!");
+        }
+}
+
+function Start()
+{
+    if ((document.forms[0].InstallCode.value == "") ||
+        (document.forms[0].FirstName.value == "")   ||
+        (document.forms[0].LastName.value == "")    ||
+        (document.forms[0].Address1.value == "")    ||
+        (document.forms[0].City.value == "")        ||
+        (document.forms[0].State.value == "")       ||
+        (document.forms[0].Zip.value == ""))
+    {
+        alert("Some required information is missing.")
+        return;
+    }
+    document.progress.FirstName(document.forms[0].FirstName.value);
+    document.progress.LastName(document.forms[0].LastName.value);
+    if (!document.progress.HashKeyOk(document.forms[0].InstallCode.value))
+    {
+        alert("You entered an install code and a name that do not match. Be sure to type your install code and name as they appear on the invoice or on the product package.")
+        return;
+    }
+    if (document.forms[0].Company.value != "")
+        document.progress.Company(document.forms[0].Company.value);
+    document.progress.Address1(document.forms[0].Address1.value);
+    if (document.forms[0].Address2.value != "")
+        document.progress.Address2(document.forms[0].Address2.value);
+    document.progress.Address3("");
+    document.progress.City(document.forms[0].City.value);
+    document.progress.State(document.forms[0].State.value);
+    document.progress.ZipCode(document.forms[0].Zip.value);
+    if (document.forms[0].PhoneNumber.value != "")
+        document.progress.DayPhone(document.forms[0].PhoneNumber.value);
+    if (document.forms[0].Email.value!="")
+        document.progress.eMail(document.forms[0].Email.value);
+
+    var states="";
+    for (i=0; i<document.forms[0].LicenseStates.options.length; i++)
+    {
+        if (document.forms[0].LicenseStates.options(i).selected)
+            states = states + document.forms[0].LicenseStates.options(i).value
+    }
+    if (states != "")
+        document.progress.StatesRegistered(states);
+    document.progress.Registered(true);
+    document.progress.Update();
+
+    if ((screen.width > 800) && (screen.height > 600))
+    {
+        MainWin=window.open("","HelpWindow","left=112, top=70, width=800, height=600, fullscreen=0, toolbar=0, titlebar=1, resizable=1")
+        MainWin.location = "start.htm"
+        MainWin.moveTo((screen.availWidth-800)/2, (screen.availHeight-600)/2)
+    }
+    else
+    {
+        if (screen.width > 800)
+        {
+            MainWin = window.open("","HelpWindow","left=112, top=0, width=800, fullscreen=0, toolbar=0, titlebar=1, resizable=1")
+            MainWin.location = "start.htm"
+            MainWin.moveTo((screen.availWidth-800)/2, 0)
+            MainWin.resizeTo(800, screen.availHeight)
+        }
+        else
+        {
+            MainWin = window.open("", "HelpWindow", "left=0, top=0, fullscreen=0, toolbar=0, titlebar=1, resizable=1")
+            MainWin.location = "start.htm"
+            MainWin.resizeTo(screen.availWidth, screen.availHeight)
+        }
+    }
+    MainWin.focus()
+    window.close();
+}
+</script>
+</head>
+<body bgcolor=#FFFFFF onload="CheckAppletStartup();document.forms[0].InstallCode.focus()">
+
+<div style="position:absolute;top:0;left:0;width:500;height:500;background-image:url(common/images/registration.gif)">
+
+<div style="position:absolute; left:220; top:52; ">
+<form>
+    <input type=text name="InstallCode" class=rfield style="top:  5; width:150;">
+    <input type=text name="FirstName"   class=rfield style="top: 28; width:170;">
+    <input type=text name="LastName"    class=rfield style="top: 51; width:170;">
+    <input type=text name="Company"     class=rfield style="top: 74; width:170;">
+    <input type=text name="Address1"    class=rfield style="top: 97; width:170;">
+    <input type=text name="Address2"    class=rfield style="top:120; width:170;">
+    <input type=text name="City"        class=rfield style="top:143; width:170;">
+    <input type=text name="State"       class=rfield style="top:166; width:170;">
+    <input type=text name="Zip"         class=rfield style="top:189; width:170;">
+    <input type=text name="PhoneNumber" class=rfield style="top:212; width:170;">
+    <input type=text name="Email"       class=rfield style="top:235; width:170;">
+
+<div style="position:absolute; top:258;">
+<SELECT SIZE="2" name="LicenseStates" multiple style="font-family:Verdana,Arial,Helvetica,sans-serif; font-size:8pt; width:170; height:40; border:1 solid red;">
+    <OPTION VALUE="AL">Alabama
+    <OPTION VALUE="AK">Alaska
+    <OPTION VALUE="AZ">Arizona
+    <OPTION VALUE="AR">Arkansas
+    <OPTION VALUE="AA">Armed Forces Americas
+    <OPTION VALUE="AE">Armed Forces Europe
+    <OPTION VALUE="AP">Armed Forces Pacific
+    <OPTION VALUE="CA">California
+    <OPTION VALUE="CO">Colorado
+    <OPTION VALUE="CT">Connecticut
+    <OPTION VALUE="DE">Delaware
+    <OPTION VALUE="DC">District of Columbia
+    <OPTION VALUE="FL">Florida
+    <OPTION VALUE="GA">Georgia
+    <OPTION VALUE="GU">Guam
+    <OPTION VALUE="HI">Hawaii
+    <OPTION VALUE="ID">Idaho
+    <OPTION VALUE="IL">Illinois
+    <OPTION VALUE="IN">Indiana
+    <OPTION VALUE="IA">Iowa
+    <OPTION VALUE="KS">Kansas
+    <OPTION VALUE="KY">Kentucky
+    <OPTION VALUE="LA">Louisiana
+    <OPTION VALUE="ME">Maine
+    <OPTION VALUE="MD">Maryland
+    <OPTION VALUE="MA">Massachusetts
+    <OPTION VALUE="MI">Michigan
+    <OPTION VALUE="MN">Minnesota
+    <OPTION VALUE="MS">Mississippi
+    <OPTION VALUE="MO">Missouri
+    <OPTION VALUE="MT">Montana
+    <OPTION VALUE="NE">Nebraska
+    <OPTION VALUE="NV">Nevada
+    <OPTION VALUE="NH">New Hampshire
+    <OPTION VALUE="NJ">New Jersey
+    <OPTION VALUE="NM">New Mexico
+    <OPTION VALUE="NY">New York
+    <OPTION VALUE="NC">North Carolina
+    <OPTION VALUE="ND">North Dakota
+    <OPTION VALUE="OH">Ohio
+    <OPTION VALUE="OK">Oklahoma
+    <OPTION VALUE="OR">Oregon
+    <OPTION VALUE="PA">Pennsylvania
+    <OPTION VALUE="PR">Puerto Rico
+    <OPTION VALUE="RI">Rhode Island
+    <OPTION VALUE="SC">South Carolina
+    <OPTION VALUE="SD">South Dakota
+    <OPTION VALUE="TN">Tennessee
+    <OPTION VALUE="TX">Texas
+    <OPTION VALUE="VI">US Virgin Islands
+    <OPTION VALUE="UT">Utah
+    <OPTION VALUE="VT">Vermont
+    <OPTION VALUE="VA">Virginia
+    <OPTION VALUE="WA">Washington
+    <OPTION VALUE="WV">West Virginia
+    <OPTION VALUE="WI">Wisconsin
+    <OPTION VALUE="WY">Wyoming
+</SELECT>
+</div>
+</form>
+</div>
+
+<div style="position:absolute; top:416; left:85; width:82; height:21; cursor:hand;" onclick="Start();"></div>
+</div>
+
+<div class="userData" id="ProgressData"></div>
+</body>
+</html>

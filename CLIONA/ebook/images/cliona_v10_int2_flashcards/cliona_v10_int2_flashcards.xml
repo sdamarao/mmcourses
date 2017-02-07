@@ -1,0 +1,133 @@
+<Interaction name="Flash Cards" version="7.4" iscompliancerequired="False" type="Regular" height="500" width="715" swfHeight="500" swfWidth="715" trackingThrough="" SharedObjectName="" RtoLflag="False" ShowPropFlag="True">
+  <node id="Background Type"><![CDATA[Background Image]]></node>
+  <node id="Background Image"><![CDATA[]]></node>
+  <node id="Background ImageWidth"><![CDATA[100]]></node>
+  <node id="Background ImageHeight"><![CDATA[100]]></node>
+  <node id="Background Color"><![CDATA[0x008040]]></node>
+  <node id="Introduction Sound File"><![CDATA[]]></node>
+  <node id="Play Introduction Sound"><![CDATA[False]]></node>
+  <node id="Show Audio Control"><![CDATA[False]]></node>
+  <node id="Audio Control Image Type"><![CDATA[Default Audio Graphic]]></node>
+  <node id="Image for audio ON"><![CDATA[]]></node>
+  <node id="Image for audio ONWidth"><![CDATA[]]></node>
+  <node id="Image for audio ONHeight"><![CDATA[]]></node>
+  <node id="Image for audio OFF"><![CDATA[]]></node>
+  <node id="Image for audio OFFWidth"><![CDATA[]]></node>
+  <node id="Image for audio OFFHeight"><![CDATA[]]></node>
+  <node id="Select Title Type"><![CDATA[Title Text]]></node>
+  <node id="Title Text"><![CDATA[]]></node>
+  <node id="Title Image"><![CDATA[]]></node>
+  <node id="Title ImageWidth"><![CDATA[]]></node>
+  <node id="Title ImageHeight"><![CDATA[]]></node>
+  <node id="TitlePosition" type="POSITION"><![CDATA[42$118$228$37.05$1]]></node>
+  <node id="Select Instruction Type"><![CDATA[Instruction Text]]></node>
+  <node id="Instruction Text"><![CDATA[<html><p align="Left"><Font face="Verdana" size="17" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Excess-income approach</B></textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'><I>The excess earnings (Treasury) method</I> is one of the most common approaches used in the valuation of closely held businesses. It is also an approach that is frequently misapplied. This method is actually a combination of an asset-based approach and an income approach. The excess earnings method separates the income stream into two distinct parts:<B></B></textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="13" color="#000000" ><textformat tabstops='[20]' leftmargin='0'><B>Select the flash cards to learn more.</B></textformat></Font></p></html>]]></node>
+  <node id="Instruction Image"><![CDATA[]]></node>
+  <node id="Instruction ImageWidth"><![CDATA[]]></node>
+  <node id="Instruction ImageHeight"><![CDATA[]]></node>
+  <node id="InstructionPosition" type="POSITION"><![CDATA[0.45$0$704$173.2$1]]></node>
+  <node id="SndPosition" type="POSITION"><![CDATA[678.25$19$1$1$1]]></node>
+  <node id="Front-Side Text Alignment"><![CDATA[Left]]></node>
+  <node id="Front-Side Text FontFace"><![CDATA[Arial]]></node>
+  <node id="Front-Side Text FontSize"><![CDATA[14]]></node>
+  <node id="Front-Side Text FontBold"><![CDATA[True]]></node>
+  <node id="Front-Side Text FontItalic"><![CDATA[False]]></node>
+  <node id="Front-Side Text Color"><![CDATA[0xffffff]]></node>
+  <node id="Reverse Side Text Alignment"><![CDATA[Center]]></node>
+  <node id="Reverse Side Text FontFace"><![CDATA[Verdana]]></node>
+  <node id="Reverse Side Text FontSize"><![CDATA[12]]></node>
+  <node id="Reverse Side Text FontBold"><![CDATA[True]]></node>
+  <node id="Reverse Side Text FontItalic"><![CDATA[False]]></node>
+  <node id="Reverse Side Text Color"><![CDATA[0xffffff]]></node>
+  <node id="Number of Flash Cards"><![CDATA[2]]></node>
+  <node id="Sound1"><![CDATA[]]></node>
+  <node id="CardPosition1" type="POSITION"><![CDATA[15$182.5$306$296$1]]></node>
+  <node id="CardFrontTxtPosition1" type="POSITION"><![CDATA[101.5$306.05$143$70.1$1]]></node>
+  <node id="CardReverseTxtPosition1" type="POSITION"><![CDATA[37.9$208$235$222.25$1]]></node>
+  <node id="Front-Side Image1"><![CDATA[]]></node>
+  <node id="Front-Side ImageWidth1"><![CDATA[100]]></node>
+  <node id="Front-Side ImageHeight1"><![CDATA[100]]></node>
+  <node id="Select Front-Side Text Type1"><![CDATA[Front-Side Text]]></node>
+  <node id="Front-Side Text1"><![CDATA[<html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Part 1</B></textformat></Font></p></html>]]></node>
+  <node id="Front-Side Text Image1"><![CDATA[]]></node>
+  <node id="Front-Side Text ImageWidth1"><![CDATA[]]></node>
+  <node id="Front-Side Text ImageHeight1"><![CDATA[100]]></node>
+  <node id="Front-Side Color1"><![CDATA[0xFFE8B2]]></node>
+  <node id="Reverse Side Image1"><![CDATA[]]></node>
+  <node id="Reverse Side ImageWidth1"><![CDATA[]]></node>
+  <node id="Reverse Side ImageHeight1"><![CDATA[]]></node>
+  <node id="Select Reverse Side Text Type1"><![CDATA[Reverse Side Text]]></node>
+  <node id="Reverse Side Text1"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The normal income created by the net tangible assets of the company</B></textformat></Font></p></html>]]></node>
+  <node id="Reverse Side Text Image1"><![CDATA[]]></node>
+  <node id="Reverse Side Text ImageWidth1"><![CDATA[]]></node>
+  <node id="Reverse Side Text ImageHeight1"><![CDATA[]]></node>
+  <node id="Reverse Side Color1"><![CDATA[0xD9D9D9]]></node>
+  <node id="Front-Side Image Accessibility Text1"><![CDATA[Nicolas Copernicus]]></node>
+  <node id="Reverse Side Image Accessibility Text1"><![CDATA[Nicolas Copernicus
+                                                        Explained retrograde motion without epicycles and propagated the heliocentric solar system.]]></node>
+  <node id="Sound2"><![CDATA[]]></node>
+  <node id="CardPosition2" type="POSITION"><![CDATA[395.2$183$306$296$1]]></node>
+  <node id="CardFrontTxtPosition2" type="POSITION"><![CDATA[476.95$297.2$143$70.1$1]]></node>
+  <node id="CardReverseTxtPosition2" type="POSITION"><![CDATA[415.9$214$259$220.25$1]]></node>
+  <node id="Front-Side Image2"><![CDATA[]]></node>
+  <node id="Front-Side ImageWidth2"><![CDATA[100]]></node>
+  <node id="Front-Side ImageHeight2"><![CDATA[100]]></node>
+  <node id="Select Front-Side Text Type2"><![CDATA[Front-Side Text]]></node>
+  <node id="Front-Side Text2"><![CDATA[<html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Part 2</B></textformat></Font></p></html>]]></node>
+  <node id="Front-Side Text Image2"><![CDATA[]]></node>
+  <node id="Front-Side Text ImageWidth2"><![CDATA[]]></node>
+  <node id="Front-Side Text ImageHeight2"><![CDATA[100]]></node>
+  <node id="Front-Side Color2"><![CDATA[0xFFE8B2]]></node>
+  <node id="Reverse Side Image2"><![CDATA[]]></node>
+  <node id="Reverse Side ImageWidth2"><![CDATA[]]></node>
+  <node id="Reverse Side ImageHeight2"><![CDATA[]]></node>
+  <node id="Select Reverse Side Text Type2"><![CDATA[Reverse Side Text]]></node>
+  <node id="Reverse Side Text2"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The excess income created by the intangible assets of the company</B></textformat></Font></p></html>]]></node>
+  <node id="Reverse Side Text Image2"><![CDATA[]]></node>
+  <node id="Reverse Side Text ImageWidth2"><![CDATA[]]></node>
+  <node id="Reverse Side Text ImageHeight2"><![CDATA[]]></node>
+  <node id="Reverse Side Color2"><![CDATA[0xD9D9D9]]></node>
+  <node id="Front-Side Image Accessibility Text2"><![CDATA[Tycho Brahe ]]></node>
+  <node id="Reverse Side Image Accessibility Text2"><![CDATA[Tycho Brahe 
+                                                        Devised the most precise instruments available before the invention of the telescope for observing the stars and planets.]]></node>
+  <node id="Flash Card Template"><![CDATA[Only Text]]></node>
+  <node id="Image Scaling"><![CDATA[Stretch]]></node>
+  <node id="Number of Nodes"><![CDATA[1]]></node>
+  <node id="ToolBoxPosition" type="POSITION"><![CDATA[20$375$1$1$1]]></node>
+  <node id="Node1" type="POSITION"><![CDATA[650$15$20$20$1]]></node>
+  <node id="Select Object Type1"><![CDATA[Text]]></node>
+  <node id="Set Image1"><![CDATA[]]></node>
+  <node id="Set ImageWidth1"><![CDATA[]]></node>
+  <node id="Set ImageHeight1"><![CDATA[]]></node>
+  <node id="Set Text1"><![CDATA[]]></node>
+  <node id="Set Video1"><![CDATA[]]></node>
+  <node id="Set Video Size1"><![CDATA[Small]]></node>
+  <node id="Video Skin Background Color1"><![CDATA[0x999999]]></node>
+  <node id="Mute other Audio1"><![CDATA[True]]></node>
+  <node id="Select Button Label Type1"><![CDATA[Button Text]]></node>
+  <node id="Button Template1"><![CDATA[Rectangle Button]]></node>
+  <node id="Button Image1"><![CDATA[]]></node>
+  <node id="Button ImageWidth1"><![CDATA[]]></node>
+  <node id="Button ImageHeight1"><![CDATA[]]></node>
+  <node id="Button Text1"><![CDATA[]]></node>
+  <node id="Button Background Color1"><![CDATA[0xCCCCCC]]></node>
+  <node id="Button Action Type1"><![CDATA[Popup Text]]></node>
+  <node id="Set Popup Title1"><![CDATA[]]></node>
+  <node id="Set Popup Image1"><![CDATA[]]></node>
+  <node id="Set Popup ImageWidth1"><![CDATA[]]></node>
+  <node id="Set Popup ImageHeight1"><![CDATA[]]></node>
+  <node id="Set Popup Text1"><![CDATA[]]></node>
+  <node id="Set Popup Video1"><![CDATA[]]></node>
+  <node id="Set Popup Background Color1"><![CDATA[0xC6D9EC]]></node>
+  <node id="Link1"><![CDATA[]]></node>
+  <node id="TrialImagePosition"><![CDATA[405$1$263$28$1]]></node>
+  <node id="ButtonPopupDisplayText"><![CDATA[10$20$540$18$1]]></node>
+  <node id="ButtonPopupVideo"><![CDATA[70$40$450$320$1]]></node>
+  <node id="ButtonPopupText"><![CDATA[10$50$560$300$1]]></node>
+  <node id="ButtonPopupImage"><![CDATA[90$50$400$300$1]]></node>
+  <node id="ButtonPopupPosition"><![CDATA[60$60$583$380$1]]></node>
+  <node id="CloseButtonPosition"><![CDATA[552$20$18$18$1]]></node>
+  <node id="ScrollPosition"><![CDATA[0$0$17$19$1]]></node>
+</Interaction>

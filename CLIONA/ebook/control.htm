@@ -1,0 +1,1066 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>THOMSON REUTERS</title>
+<style>
+
+
+
+			
+body {
+	margin: 0;
+	padding: 0;
+	background-color:#F7F7F7;
+	color: #333;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	
+}
+
+input {
+-webkit-user-select: text;
+-khtml-user-select: text;
+-moz-user-select: text;
+user-select: text;
+font-family:K-Light;
+font-size:16px;
+color:#333333;
+}
+
+input::-ms-clear { display: none; }
+
+* {
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: -moz-none;
+-o-user-select: none;
+user-select: none;
+}
+
+a{
+	color:#F60;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+#book {
+	position: absolute;
+	width: 1824px;
+	height: 670px;
+	margin-left: -513px;
+}
+
+#controlpage {
+    display: block;
+	width: 1024px;
+	height: 675px;
+	position: absolute;
+	left: 815px;
+	top: 0px;
+    overflow: hidden;
+	background-color: #FAFAFA
+}
+
+	
+
+	
+#pageflip-canvas {
+	position: absolute;
+	z-index: 0;
+	/*background-color:#990;
+	opacity:0.5;*/
+}
+#pageflip-pagenum{
+	position:absolute;
+	right:30px;
+	bottom:15px;
+	z-index:104;
+}
+iframe{
+     left:0px;
+    overflow:hidden;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    scrolling:"no";
+    top:1px;
+   // position:absolute;
+    height:634px;
+    width:860px;
+}
+#book a.navBtn {
+	font-size: 80px;
+	color: #900;
+	text-shadow: black 1px 1px 10px;
+	border: 0;
+	background: none;
+	position: absolute;
+	-webkit-tap-highlight-color: rgba(0,0,0,0); 
+}
+#book a.navBtn:hover{
+	text-decoration:none;
+}
+#book a.navBtn:first-of-type{
+	left:815px;
+	z-index:3;
+
+}
+#book a.navBtn:last-of-type{
+	left:1788px;
+	z-index:3;
+
+}
+.ResourcesMenu{
+	left:20px !important;
+}
+
+</style><script type="text/javascript" src="common/courseLayout_ebook.js"></script><link rel="stylesheet" href="common/courseLayout_ebook.css"><script src="common/BrowserSpecificCommon.js"></script><script src="common/BTree.js"></script><script src="common/object.js"></script><script src="default.js"></script><script src="common/CommonFunctions.js"></script><script type="text/javascript" src="common/common_ebook.js"></script><script src="common/APIWrapper.js"></script><script src="common/SCOFunctions.js"></script><script src="common/index.js"></script><script src="common/resources/StringResources_en.js"></script><link rel="stylesheet" href="common/styles_ebook.css" type="text/css">
+<link rel="stylesheet" href="common/progress.css" type="text/css"><script type="text/javascript" src="common/jquery-min.js"></script><script>
+						isMobileUserAgent=true;
+						isIphoneDevice=false;
+						isEbook=true;
+						
+					</script><script>
+					  var searchpopupFlag= false;
+					  var globalStrWordsArr = {};
+					</script><script>
+						var treatment = "c";
+					</script><script> var isEthicCourse = false;</script><script>
+						function initEthicCourse()
+						{
+							if(isEthicCourse)
+							{
+								setCourseOutLine();
+								addGlossaryTerm();
+								setPrintList(); 
+								setToolList(); 
+							}
+						}
+					</script><script>
+						var progress
+						var Search=null
+						var TotalPagesInCourse
+						var executedCommand =""
+						
+						var g_TestAttempts=",,,,"
+						var courseType="MicroMash"
+						var noOfattempts=0
+						var TotalChapters = 2
+						TestQuestionsArray = new Array(TotalChapters)
+						var NoOfQuestionsToDisplayArray = new Array(TotalChapters)
+						var FinalExam ='bycourse'
+						var testAttempts =99
+						var demoChapters =1
+						var gbl_PassingPercent = 70.00
+						var isEbookEthicCourse =false
+
+						var arrSubChapters = new Array(TotalChapters+1)
+						
+						arrSubChapters[0] = 4;
+						
+			arrSubChapters[1] = 4;
+		
+			arrSubChapters[2] = 5;
+		
+						
+						
+						var suppressRemediation ='no'
+						var totalGradedQuestions =0 
+						function BuildGradedQuestions()
+						 { 
+						var GradedQuestions = new Array(totalGradedQuestions)
+
+						return GradedQuestions 
+						 } 
+
+						 var noOfAttemptedTests = new Array(TotalChapters)
+						 
+			noOfAttemptedTests[0] = 0
+		
+			noOfAttemptedTests[1] = 0
+		
+			NoOfQuestionsToDisplayArray[0] = 5
+			TestQuestionsArray[0] = 14
+			NoOfQuestionsToDisplayArray[1] = 5
+			TestQuestionsArray[1] = 14
+
+						function BuildCategoryList()
+						{
+						document.progress = new clsProgress(document.getElementById('ProgressData'), "CLIONA");
+						
+						CategoryList = new Array(11)
+
+						
+					CategoryList[0] = new Category ("1",4,60,"What Is Closely Held Business Valuation?")
+				   
+					CategoryList[1]  = new Category ("1 A",4,15,"Defining a Closely Held Business")  
+				   
+					CategoryList[2]  = new Category ("1 B",16,26,"Defining Value")  
+				   
+					CategoryList[3]  = new Category ("1 C",27,41,"Reasons to Value Closely Held Businesses")  
+				   
+					CategoryList[4]  = new Category ("1 D",42,60,"Methods of Valuation")  
+				   
+					CategoryList[5] = new Category ("2",61,121,"Guideline Companies")
+				   
+					CategoryList[6]  = new Category ("2 A",61,81,"Use of Guidelines for Valuation")  
+				   
+					CategoryList[7]  = new Category ("2 B",82,97,"Beginning the Search for Guideline Companies")  
+				   
+					CategoryList[8]  = new Category ("2 C",98,105,"Guideline Public and Guideline Transaction Valuation Methods")  
+				   
+					CategoryList[9]  = new Category ("2 D",106,112,"Finding Guideline Companies")  
+				   
+					CategoryList[10]  = new Category ("2 E",113,121,"Problems with Guidelines")  
+				   
+						return CategoryList
+						}
+						var versionInfo="12_00";
+						var courseAcronym="CLIONA";
+						var glossaryTerm=new Array();
+						
+				glossaryTerm["g/d987.htm"]="Business Segment"
+				
+
+				glossaryTerm["g/pf40.htm"]="Business Valuation"
+				
+
+				glossaryTerm["g/d641.htm"]="Debt-to-Equity Ratio"
+				
+
+				glossaryTerm["g/d1010.htm"]="Fair Market Value (FMV)"
+				
+
+				glossaryTerm["g/djb102.htm"]="Going Concern"
+				
+
+				glossaryTerm["g/d1001.htm"]="Merger"
+				
+
+				glossaryTerm["g/d362.htm"]="Property"
+				
+
+				glossaryTerm["g/pf41.htm"]="Revenue Ruling 59-60"
+				
+</script></head>
+<body style="overflow: hidden;-webkit-user-select:none;" onload="init();pload(2);selectMenu('courseview');CategoryList = BuildCategoryList();GradedQuestions=BuildGradedQuestions();RestoreState(parent.parent.frames.frame_2.CurrentChapter);" onbeforeunload="SaveState();" onunload="SaveState();" onKeyDown="return fnDisableKeys(event);">
+<div id="outlinebookcontainer" style="position:relative;left:-302px;">
+<div id="courseOutline" style="display:'';">
+<div style="position:absolute;height:100%;z-index:2;right:0.1px;width:1px;background:#D9D9D9;box-shadow:0 0 11px black;"></div>
+<div id="outlinemain1" style="position:relative;top:50px;width:302px;height:606px;display:''">
+<div id="forscroll" onscroll="closeSubChapterPopup();" style="height:574px;width:302px;background:#EBEBEB;overflow-y:auto;">
+<ul style="margin-left:-35px;">
+<li id="mainchapter" style="background:#F0F0F0;margin-top:0px;padding-top:7px;border-top:1px solid #D9D9D9;">
+<div class="outlinecategoryRowTemplate_template" onclick="ShowHideSubChapter(0,this);" style="border-color:#D9D9D9;height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istatCi" style="top:1px;"></div>
+<div class="categoryLabel_template" style="left:20px;">Course Information</div>
+</div>
+<div class="" id="sub_0" style="display:none;">
+<ul style="margin-left:-38px;">
+<li style="margin-top:0px;">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istatTi" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template" onclick="isChapterTestPageShown=false;takeFinalExamFromOutline=false;prevMode='';outlineflag=1;Sc('Ti');ShowHideOutline();">Title</div>
+</div>
+</li>
+<li style="margin-top:0px;">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istatWe1" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template" onclick=" isChapterTestPageShown=false;takeFinalExamFromOutline=false;prevMode='';outlineflag=1;Sc('We1');ShowHideOutline();">Welcome</div>
+</div>
+</li>
+<li style="margin-top:0px;">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istatWe2" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template" onclick=" isChapterTestPageShown=false;takeFinalExamFromOutline=false;prevMode='';outlineflag=1;Sc('We2');ShowHideOutline();">Course Information</div>
+</div>
+</li>
+<li style="margin-top:0px;">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istatLe" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template" onclick=" isChapterTestPageShown=false;takeFinalExamFromOutline=false;prevMode='';outlineflag=1;Sc('Le');ShowHideOutline();">Learning Objectives</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="mainchapter">
+<div class="outlinecategoryRowTemplate_template" style="border-color:#D9D9D9" onclick="ShowHideSubChapter(1,this)">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat1" style="top:1px;"></div>
+<div class="categoryLabel_template">What Is Closely Held Business Valuation?</div>
+<div class="bullet_template" style="font-family:K-Medium !important;"> 1.</div>
+</div>
+<div id="sub_1" style="display:none;">
+<ul style="margin-left:-38px;">
+<li class="subchapterlist">
+<div class="outlinesubCategoryRowTemplate_template">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat1A" style="right:6px;top:1px;"></div>
+<div class="outlinesubChapterLabel_template" onclick="isChapterTestPageShown=false;takeFinalExamFromOutline=false;prevMode='';outlineflag=1;Sc('1 A');ShowHideOutline();">Defining a Closely Held Business</div>
+<div class="bullet_template ">A.</div>
+</div>
+</li>
+<li class="subchapterlist">
+<div class="outlinesubCategoryRowTemplate_template">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat1B" style="right:6px;top:1px;"></div>
+<div class="outlinesubChapterLabel_template" onclick="isChapterTestPageShown=false;takeFinalExamFromOutline=false;prevMode='';outlineflag=1;Sc('1 B');ShowHideOutline();">Defining Value</div>
+<div class="bullet_template ">B.</div>
+</div>
+</li>
+<li class="subchapterlist">
+<div class="outlinesubCategoryRowTemplate_template">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat1C" style="right:6px;top:1px;"></div>
+<div class="outlinesubChapterLabel_template" onclick="isChapterTestPageShown=false;takeFinalExamFromOutline=false;prevMode='';outlineflag=1;Sc('1 C');ShowHideOutline();">Reasons to Value Closely Held Businesses</div>
+<div class="bullet_template ">C.</div>
+</div>
+</li>
+<li class="subchapterlist">
+<div class="outlinesubCategoryRowTemplate_template">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat1D" style="right:6px;top:1px;"></div>
+<div class="outlinesubChapterLabel_template" onclick="isChapterTestPageShown=false;takeFinalExamFromOutline=false;prevMode='';outlineflag=1;Sc('1 D');ShowHideOutline();">Methods of Valuation</div>
+<div class="bullet_template ">D.</div>
+</div>
+</li>
+</ul>
+</div>
+<div id="test_1" style="display:none;">
+<ul style="margin-left:-38px;">
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(1,1)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat1-1TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 1</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(1,2)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat1-2TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 2</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(1,3)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat1-3TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 3</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(1,4)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat1-4TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 4</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(1,5)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat1-5TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 5</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="mainchapter">
+<div class="outlinecategoryRowTemplate_template" style="border-color:#D9D9D9" onclick="ShowHideSubChapter(2,this)">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat2" style="top:1px;"></div>
+<div class="categoryLabel_template">Guideline Companies</div>
+<div class="bullet_template" style="font-family:K-Medium !important;"> 2.</div>
+</div>
+<div id="sub_2" style="display:none;">
+<ul style="margin-left:-38px;">
+<li class="subchapterlist">
+<div class="outlinesubCategoryRowTemplate_template">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat2A" style="right:6px;top:1px;"></div>
+<div class="outlinesubChapterLabel_template" onclick="isChapterTestPageShown=false;takeFinalExamFromOutline=false;prevMode='';outlineflag=1;Sc('2 A');ShowHideOutline();">Use of Guidelines for Valuation</div>
+<div class="bullet_template ">A.</div>
+</div>
+</li>
+<li class="subchapterlist">
+<div class="outlinesubCategoryRowTemplate_template">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat2B" style="right:6px;top:1px;"></div>
+<div class="outlinesubChapterLabel_template" onclick="isChapterTestPageShown=false;takeFinalExamFromOutline=false;prevMode='';outlineflag=1;Sc('2 B');ShowHideOutline();">Beginning the Search for Guideline Companies</div>
+<div class="bullet_template ">B.</div>
+</div>
+</li>
+<li class="subchapterlist">
+<div class="outlinesubCategoryRowTemplate_template">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat2C" style="right:6px;top:1px;"></div>
+<div class="outlinesubChapterLabel_template" onclick="isChapterTestPageShown=false;takeFinalExamFromOutline=false;prevMode='';outlineflag=1;Sc('2 C');ShowHideOutline();">Guideline Public and Guideline Transaction Valuation Methods</div>
+<div class="bullet_template ">C.</div>
+</div>
+</li>
+<li class="subchapterlist">
+<div class="outlinesubCategoryRowTemplate_template">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat2D" style="right:6px;top:1px;"></div>
+<div class="outlinesubChapterLabel_template" onclick="isChapterTestPageShown=false;takeFinalExamFromOutline=false;prevMode='';outlineflag=1;Sc('2 D');ShowHideOutline();">Finding Guideline Companies</div>
+<div class="bullet_template ">D.</div>
+</div>
+</li>
+<li class="subchapterlist">
+<div class="outlinesubCategoryRowTemplate_template">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat2E" style="right:6px;top:1px;"></div>
+<div class="outlinesubChapterLabel_template" onclick="isChapterTestPageShown=false;takeFinalExamFromOutline=false;prevMode='';outlineflag=1;Sc('2 E');ShowHideOutline();">Problems with Guidelines</div>
+<div class="bullet_template ">E.</div>
+</div>
+</li>
+</ul>
+</div>
+<div id="test_2" style="display:none;">
+<ul style="margin-left:-38px;">
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(2,1)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat2-1TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 1</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(2,2)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat2-2TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 2</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(2,3)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat2-3TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 3</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(2,4)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat2-4TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 4</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(2,5)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat2-5TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 5</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="FinalExamNode" class="mainchapter" style="background:#F0F0F0;margin-top:0px;padding-top:7px;">
+<div class="outlinecategoryRowTemplate_template" onclick="showFinalExamPopup(this);" style="border-color:#D9D9D9;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istatFE" style="top:1px;"></div>
+<div class="categoryLabel_template" style="left:20px;">Exam</div>
+</div>
+<div id="test_FE" style="display:none;">
+<ul style="margin-left:-38px;">
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(0,1)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat0-1TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 1</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(0,2)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat0-2TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 2</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(0,3)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat0-3TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 3</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(0,4)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat0-4TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 4</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(0,5)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat0-5TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 5</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(0,6)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat0-6TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 6</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(0,7)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat0-7TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 7</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(0,8)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat0-8TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 8</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(0,9)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat0-9TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 9</div>
+</div>
+</li>
+<li style="margin-top:0px;" onclick="selectTestQuestionFromOutline(0,10)">
+<div class="outlinesubCategoryRowTemplate_template" style="height:40px;">
+<div class="categoryIcon_template categoryIconNotAttempted" id="istat0-10TestQ" style="top:1px;"></div>
+<div class="outlinesubChapterLabel_template">
+							Exam Question 10</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<div style="display:none;cursor:pointer;width:268px;left:10px;top:10px" class="btnNormalDefault" id="certificateDivEle" role="button" onclick="ShowCertificate();ShowHideOutline();">Certificate</div>
+</ul>
+</div>
+</div>
+</div>
+<div id="subChapterdivpointer" style="display:none;position:absolute;left:288px; top:100px;z-index:7;"><img src="common/images/arrow_left.png" alt=""></div>
+<div id="courseOutlinesubchapter" style="display:none;position:absolute;background:#FAFAFA;left:295px; top:100px;  width:293px;height:284px;z-index:6;border-radius:7px;-webkit-border-radius:7px;border:1px solid #DBDBDB;box-shadow:0 0 5px #999999;">
+<div style="position:relative;height:42px;width:293px;top:12px;background:#FAFAFA;">
+<div id="OutlineTestBack" style="z-index:2;position:absolute;left:15px;width:30px;height:20px;visibility:hidden;top:4px;" onclick="curSubChapForTest.onclick();" aria-labelledby="back-button" role="button"><embed src="common/images/outlineback-icon.svg" width="36px" height="28px"></embed></div>
+<p style="display:none;" id="back-button">Back</p>
+<div class="subCategoryRowTemplate_template" style="top:8px;">
+<div id="subChapterHeading" class="subChapterLabel_template" style="text-overflow:ellipsis;white-space:nowrap; text-align:center;overflow:hidden;top:-3px;"></div>
+</div>
+</div>
+<div id="outlinesubchapterL" style="position:relative; top:12px; width:293px; height:230px; background:white; overflow:auto;border-radius:7px;-webkit-border-radius:7px;"></div>
+</div>
+<div id="blockaction" style="position:absolute;display:none; width:1824px; height:710px; margin-left:-513px; z-index:4;" onclick="ShowHideOutline();"></div>
+<div id="book"><canvas id="pageflip-canvas"></canvas><div id="pageflip-pagenum"></div><a id="btnBack" onclick="Prev();" class="navBtn" style="cursor:pointer;"><img style="display:block;border:0px;" src="common/images/Back_page_N.png" alt="Previous Page" role="button"></a><a id="btnNext" onclick="Next();" class="navBtn" style="cursor:pointer;"><img src="common/images/Next_page_N.png" style="border:0px;" alt="Next Page" role="button"></a><div id="controlpage">
+<div id="header">
+<div id="coursetitle">Introduction to Business Valuation and Use of Comparables</div>
+<div class="tabIconDivCommon" style="position:absolute;left:10px;z-index:15;height:30px;" onclick="ShowHideOutline();">
+<div style="text-align:center" aria-labelledby="outline-label" role="button"><embed id="toc-icon" src="common/images/toc-icon.svg" width="36px" height="28px"></embed></div>
+<p id="outline-label" style="display:none;">Course Outline</p>
+</div>
+<div class="tabIconDivCommon" style="left:776px;" onclick="showToolsMenu();">
+<div style="text-align:center" aria-labelledby="tools-label" role="button"><embed id="tools-icon" src="common/images/toolbox-icon.svg" width="36px" height="28px"></embed></div>
+<p id="tools-label" style="display:none;">Resources</p>
+</div>
+<div class="tabIconDivCommon" style="left:838px;" onclick="showBookMarkMenu();" id="help">
+<div style="text-align:center" aria-labelledby="bookmarks-label" role="button"><embed id="bookmarks-icon" src="common/images/bookmarks-icon.svg" width="36px" height="28px"></embed></div>
+<p id="bookmarks-label" style="display:none;">Bookmarks</p>
+</div>
+<div class="tabIconDivCommon" style="left:900px;" onclick="showPrintMenu();" id="print">
+<div style="text-align:center" aria-labelledby="print-label" role="button"><embed id="print-icon" src="common/images/print-icon.svg" width="36px" height="28px"></embed></div>
+<p id="print-label" style="display:none;">Print</p>
+</div>
+<div class="tabIconDivCommon" style="left:962px;" onclick="showSearchMenu();" id="search">
+<div style="text-align:center" aria-labelledby="search-label" role="button"><embed id="search-icon" src="common/images/search-icon.svg" width="36px" height="28px"></embed></div>
+<p id="search-label" style="display:none;">Search</p>
+</div>
+</div>
+<div id="gradedAnsHeader">
+<div id="done" onclick="closeGradedAnswers();showNavButton();" style="float:right;">Done</div>
+</div>
+<div id="toolsheader">
+<div id="done" onclick="closeToolsFrame();closePopUp();" style="float:right;">Done</div>
+</div>
+<div id="certificateHeader">
+<div id="done" onclick="closeCertificateFrame();showNavButton();" style="float:right;">Done</div>
+</div>
+<div id="bookmarkAdd" class="gotosearchpopupL" style="display:none;height:100px;">
+<div class="categoryRowTemplate_template">
+<div style="position:relative;left:25px;float:left;top:11px;font-family:K-Medium;font-size:14px;cursor:pointer;" onclick="closePopUp();">Cancel</div><label for="txtbkDescription"><div style="left:52px;font-size:16px;top:9px;position:relative;float:left;font-family:K-Medium;font-size:18px;cursor:auto;"> Add Bookmark </div></label><div style="left:88px;font-size:16px;top:11px;position:relative;float:left;font-family:K-Medium;font-size:14px;cursor:pointer;" onclick="fnAddBookMark();">Save</div>
+</div>
+<div class="bookmarkSubDiv">
+<div style="position:relative;left:3px; top:10px;width:256px; height:40px; background:#FAFAFA;">
+<div class="subChapterLabel_template" style="left:15px;width:264px;height:27px;border:1px solid #EDEDED;border-radius:7px;-webkit-border-radius:7px;background:white;"><input type="text" id="txtbkDescription" style="border:none;" maxlength="50" placeholder="Bookmark Description" onkeyup="addBookmarkOnEnterKey(event);" onfocus="removeTouchListeners();" onblur="addTouchListeners();"><div id="addbkmrkclear" style="position:absolute;right:2px;top:4px;" onclick="document.getElementById('txtbkDescription').value=''; document.getElementById('txtbkDescription').focus();this.style.display='none';" aria-labelledby="clear-label" role="button"><embed src="common/images/clear-addbk.svg" width="19px" height="19px"></embed></div>
+</div>
+<div id="bkDescription" style="display:none;" class="bkDescription"></div>
+</div>
+</div>
+</div>
+<div id="bookmarkEdit" class="gotosearchpopupL" style="display:none;height:150px;left:701px;top:53px; width:296px;">
+<div style="z-index:2; position:absolute; left:15px; width:30px; height:20px;top:8px;" onclick="EditBookMarkBack();" aria-labelledby="back-button" role="button"><embed src="common/images/bookmarkback-icon.svg" width="36px" height="28px"></embed></div>
+<div class="categoryRowTemplate_template" style="text-align:center;"><label for="txtbkEditDescription"><div class="toolsLabel_template ResourcesMenu" style="font-family:K-Medium;font-size:18px;cursor:auto;top:9px;">Edit Bookmarks</div></label></div>
+<div class="bookmarkSubDiv">
+<div class="subChapterLabel_template" style="position:relative;left:15px;width:264px;height:27px;border:1px solid #EDEDED;border-radius:7px;-webkit-border-radius:7px;background:white;top:15px;"><input type="text" id="txtbkEditDescription" style="border:none;height:26px;width:235px;left:5px;margin-top:1px;position:relative;" maxlength="50" placeholder="Bookmark Description" onkeyup="editBookmarkOnEnterKey(event);" onfocus="removeTouchListeners();" onblur="addTouchListeners();"><div id="editbkmrkclear" style="position:absolute;right:2px;top:4px;" onclick="document.getElementById('txtbkEditDescription').value=''; document.getElementById('txtbkEditDescription').focus();this.style.display='none';" aria-labelledby="clear-label" role="button"><embed src="common/images/clear-editbk.svg" width="19px" height="19px"></embed></div>
+</div>
+</div>
+</div>
+<div id="bookmarkaddedcontainer" style="height:30px; width:165px; position:absolute;top:90px;left:10px;display:none;z-index:2;background:#666666;border-radius:4px;-webkit-border-radius:7px;"><img style="position:absolute;margin-top:-7px;left:52px;" src="common/images/tool-added-bookmark-button-arrow.png"><div style="position:relative;top:6px;left:6px;font-size:14px;color:white;">Removed from Bookmarks</div>
+</div>
+<div id="maincontent">
+<div style="position:absolute;height:35px;width:15px;padding-left:5px;padding-right:5px;left:55px;z-index:2 !important;" onclick="markUnmarkBookmark()">
+<div id="bookmarkDiv" class="bookmark" style="cursor:pointer;" role="button" aria-labelledby="add-bookmark-label"><embed id="markunmarkbookmark" src="common/images/bookmark-icon.svg" width="17px" height="32px"></embed></div>
+<p id="add-bookmark-label" style="display:none;">Add Bookmark</p>
+</div>
+<div id="gradedAnsParent" style="display:none;z-index:12;" name="glsItemMainName">
+<div id="gradedMask" style="height:99%;width:99%;text-align:center;position:absolute;top:50%;"><span>Loading...</span></div>
+<div id="gradedAns" style="visibility:hidden;position:absolute;top:5px;"></div>
+</div>
+<div id="toolsDiv" class="tools" style="display:none;z-index:12;">
+<iframe id="toolsdesc" style="height:100%;width:1020px;padding-left:0px;overflow-y:auto" frameborder="0" src=""></iframe>
+</div>
+<div id="certificateDiv" style="display:none;z-index:12;">
+<iframe id="certificateDesc" style="height:100%;width:100%;padding-left:0px;" frameborder="0" src="certificate_page.htm"></iframe>
+</div>
+<div id="left"></div>
+<div class="divCenterColumn">
+<div id="courseviewmain" class="courseMenuMain showDiv">
+<div id="parentDiv1" style="margin-top:12px;" class="contentDv zindexHigh" onclick="closePopUp();">
+<div id="content" style="visibility:'visible';" ontouchstart="touchStart(event);" ontouchend="touchEnd(event);"></div>
+<div id="content1" onclick="closePopUp()" style="width: 1014px; height: 647px; overflow-x: hidden; overflow-y: hidden;"></div>
+</div>
+<div id="parentDiv2" class="contentDv zindexLow"></div>
+</div>
+<div id="bandwidthopt" style="font-size:11px; position:absolute; width:260px; height:28px; z-index:1; left: 70px; top: 560px;display:none;color:gray">
+<form><span onclick="bandwidthRowSelect(this);" style="display:none;"><input type="radio" disabled="true" id="rdohighbandwidth" name="rdobandwidth" value="high" onClick="fnBandwidthChanged()" checked>High Bandwidth</span><span onclick="bandwidthRowSelect(this);" style="display:none;"><input type="radio" disabled="true" id="rdolowbandwidth" name="rdobandwidth" value="low" onClick="fnBandwidthChanged()">Low Bandwidth</span></form>
+</div>
+<div id="audioOffImg" style="visibility:hidden;position:absolute;left:950px;top:510px;"><img src="" onclick="muteAudio();"></div>
+<div id="audioOnImg" style="visibility:hidden;position:absolute;left:950px;top:510px;"><img src="" onclick="muteAudio();"></div>
+<div id="searchmain" class="courseMenuMain hideDiv" style="">
+<div class="outlineHeader">
+<div class="outlineHeaderTitle"></div>
+</div>
+<div>
+<div class="searchItemMain" name="glsItemMainName" onclick="closePopUp();">
+<div class="categoryView" id="searchItem">
+<ul class="categoryList" id="searchItems"></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="rightmain"></div>
+</div>
+<div id="footer">
+<div>
+<div class="pageTitle">
+<div id="divPageTitle"></div>
+</div>
+<div style="position:absolute;width:101px;height:100%;"></div>
+<div class="navigationBar" id="navigationBar">
+<div class="navigationBarBack" id="OuterProgressBarBlock">
+<div class="navigationBarCompleted" id="InnerProgressBarBlock"></div>
+</div>
+</div>
+<div id="divText" style="left:583px;top:16px;position:relative;">0% Complete</div>
+<div id="buttons" style="position:absolute; width:60px; height:28px; z-index:10; left: 899px; top: 632px">
+<div id="PrevButton" onclick="Prev()" style="position:absolute;cursor:pointer;width:25;height:25;left:2px;top:3px;"><img src=""></div>
+<div id="NextButton" onclick="Next()" style="position:absolute;cursor:pointer;width:25;height:25;left:32px;top:3px;"><img src=""></div>
+<div id="PrevButtonDisabled" style="position:absolute;width:25;height:25;left:2px;top:3px; display:none;"><img src=""></div>
+<div id="NextButtonDisabled" style="position:absolute;width:25;height:25;left:32px;top:3px; display:none;"><img src=""></div>
+</div>
+<div class="tabIconDivCommon" style="position:absolute;left:771px;width:101px;height:100%;"></div>
+</div>
+</div>
+<div class="homebutton" role="button" id="catalog" onclick="exitCourseForIpad();" style="left: 800px;bottom:8px;position:absolute;">Exit &amp; Resume Later</div>
+<div id="subchaptertitle" class="subchaptertitle" style="visibility:hidden"></div>
+<div id="outlinebuttonL" class="outlinebutton" onClick="OutlineShowHide()" style="display:none;">
+						Title Page
+					</div>
+<div id="coursetitle" style="display:none">Ch 6 p 20</div>
+<div id="divPagetitle" style="display:none">Ch 6 p 20</div>
+<div class="userData" id="ProgressData"></div>
+<div id="questionControlPanel" style="position:absolute; left: 670px; top:570; visibility:hidden; z-index:10;display:none;"><select id="selQuestion" onChange="ShowQuestions(this.value);" style="width: 125px; height: 25px"><option id="optq1" value="1">Question 1 </option>
+<option id="optq2" value="2">Question 2</option>
+<option id="optq3" value="3">Question 3</option>
+<option id="optq4" value="4">Question 4</option>
+<option id="optq5" value="5">Question 5</option></select></div>
+<div id="showQuestionNumber" style="position:absolute; left:50px; top: 110px; font:K-Light,Verdana; font-size:16px; color:#FF9000 visibility:hidden"></div>
+<div id="submittest" style="display:none;position:absolute;visibility:hidden;top:570;left:800;width:90px;height:30px;cursor:pointer;z-index:10" onclick="SubmitTest();"></div>
+<div id="submittest_disable" style="display:none;position:absolute;visibility:hidden;top:570;left:800;width:90px;height:30px;z-index:10"></div>
+<div id="divText" style="z-index:10; position:absolute; width:105px; height:18px; left: 870px; top: 677px;visibility:hidden;" class="clsProgressBarText">0%</div>
+<div id="divPageTitle" style="display:none"></div>
+<div id="popupHeaderArrow" style="visibility:hidden;"></div>
+<div id="popupL" style="display:none;visibility:hidden;top:490px;">
+<div id="top">
+<div id="topright"></div>
+<div id="topleft"></div>
+</div>
+<div id="leftimage"></div>
+<div id="scrollpopup" name="glsItemMainName">
+<div id="popupL1"></div>
+</div>
+<div id="rightimage"></div>
+<div id="bottom">
+<div id="bottomright"></div>
+<div id="bottomleft"></div>
+</div>
+</div>
+<div id="popuptitle" class="popupTitle"></div>
+<iframe id="glossiframe" src="" style="visibility:hidden; display:none" onload="setGlossSrcLocation()"></iframe>
+<iframe id="searchiframe" src="" style="visibility:hidden; display:none" onload="setSearchSrcLocation()"></iframe><img id="gotoUpArrow" src="common/images/goto_up_arrow.png" style="display:none" alt=""><div id="gotopopupL" style="display:none;">
+<div id="parentpopup" class="parentPopup">
+<div id="gotoscrollpopup" class="gotoscrollpopup showDiv">
+<div id="gototop"><a id="popupheader" class="popupheader" style=""> Go to </a><div class="catalog" id="subChapterBack" onclick="showPreviousMenu();">Goto</div>
+</div>
+<div id="gotopopupL1" class="contentBackground">
+<div id="tabMenu">
+<div class="floatLeft  menubuttonoutlineInactive" id="outline" onclick="selectMenu('outline'); showOutLine();"></div>
+<div class="floatLeft buttonBg"></div>
+<div class="floatLeft menubuttonglossaryInactive" id="glossary" onclick="selectMenu('glossary'); showGlossary();"></div>
+<div class="floatLeft buttonBg"></div>
+<div class="floatLeft  menubuttonbookmarksInactive" id="bookmarks" onclick="selectMenu('bookmarks'); showBookmarks();"></div>
+</div>
+<div class="contentContainer">
+<div class="glsItemMain" name="glsItemMainName" id="nglossaryPopUp">
+<div class="categoryView" id="glsItem" style="height:494px;overflow:auto;">
+<ul style="margin-left:-83px;">
+<ul>
+<li class="subCategoryRowTemplate_template" onclick="showGlossaryPopup('g/d987.htm','Business Segment',event)">
+<div class="nonChapterLabel_template" style="top:13px;height:15px;">Business Segment</div>
+</li>
+<li class="subCategoryRowTemplate_template" onclick="showGlossaryPopup('g/pf40.htm','Business Valuation',event)">
+<div class="nonChapterLabel_template" style="top:13px;height:15px;">Business Valuation</div>
+</li>
+<li class="subCategoryRowTemplate_template" onclick="showGlossaryPopup('g/d641.htm','Debt-to-Equity Ratio',event)">
+<div class="nonChapterLabel_template" style="top:13px;height:15px;">Debt-to-Equity Ratio</div>
+</li>
+<li class="subCategoryRowTemplate_template" onclick="showGlossaryPopup('g/d1010.htm','Fair Market Value (FMV)',event)">
+<div class="nonChapterLabel_template" style="top:13px;height:15px;">Fair Market Value (FMV)</div>
+</li>
+<li class="subCategoryRowTemplate_template" onclick="showGlossaryPopup('g/djb102.htm','Going Concern',event)">
+<div class="nonChapterLabel_template" style="top:13px;height:15px;">Going Concern</div>
+</li>
+<li class="subCategoryRowTemplate_template" onclick="showGlossaryPopup('g/d1001.htm','Merger',event)">
+<div class="nonChapterLabel_template" style="top:13px;height:15px;">Merger</div>
+</li>
+<li class="subCategoryRowTemplate_template" onclick="showGlossaryPopup('g/d362.htm','Property',event)">
+<div class="nonChapterLabel_template" style="top:13px;height:15px;">Property</div>
+</li>
+<li class="subCategoryRowTemplate_template" onclick="showGlossaryPopup('g/pf41.htm','Revenue Ruling 59-60',event)">
+<div class="nonChapterLabel_template" style="top:13px;height:15px;">Revenue Ruling 59-60</div>
+</li>
+</ul>
+</ul>
+</div>
+</div>
+<div id="bookmarksmain" class="hidePopUpDiv" style="">
+<div>
+<div class="bookmarkItemMain" name="glsItemMainName" id="bookmarkPopUp">
+<div class="categoryView" id="bookmarkItem">
+<ul class="categoryList" id="ulBookmarks"></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outlinesubchapterscrollpopup" class="hideDiv" style="">
+<div id="outlineSubChapters_0" class="outlinesubchapterscrollpopup hideDiv" style="">
+<div id="gototop"><a class="popupheader" style=""></a><div class="catalog" id="subChapterBack" onclick="showPreviousMenu();">Contents</div>
+</div>
+</div>
+<div id="outlineSubChapters_1" class="courseMenuMain hideDiv" style="">
+<div id="gototop"><a class="popupheader" style=""></a><div class="catalog" id="subChapterBack" onclick="showPreviousMenu();">Contents</div>
+</div>
+</div>
+<div id="outlineSubChapters_2" class="courseMenuMain hideDiv" style="">
+<div id="gototop"><a class="popupheader" style=""></a><div class="catalog" id="subChapterBack" onclick="showPreviousMenu();">Contents</div>
+</div>
+</div>
+</div>
+<div id="glossarycontent" class="hideDiv" style="">
+<div id="gototop"><a class="popupheader" style=""></a><div class="catalog subChapterBack" id="glsTextBack" onclick="showPreviousMenu();">Glossary</div>
+</div>
+<div class="courseMenuMain courseMenuMainTopUp">
+<div class="glsItemMain" name="glsItemMainName" id="glossaryTextPopUp">
+<div id="glossaryText" class="glossary "></div>
+</div>
+</div>
+</div>
+<div class="toolItemMain" name="glsItemMainName" id="ntoolsPopUp">
+<div class="categoryView" style="height:200px;overflow:auto;">
+<div style="position:absolute;text-align:center;top:22px;">
+This course does not require supplementary material.
+</div>
+</div>
+</div>
+<div class="toolItemMain" name="glsItemMainName" id="nprintPopUp">
+<div class="categoryView" style="height:161px;overflow:auto;">
+<ul class="categoryList">
+<li class="CategoryRowTemplate_template " onclick="openPrintPage('print_preview.htm');" style="">
+<div class="toolsLabel_template" onclick=""> Entire Course (including glossary)</div>
+<div class="rowArrow_template"><embed src="common/images/gr-arrow.svg" width="8px" height="11px"></embed></div>
+</li>
+<li class="CategoryRowTemplate_template " onclick="openPrintPage('print_preview_video_transcript.htm');">
+<div class="toolsLabel_template" onclick=""> Transcript</div>
+<div class="rowArrow_template"><embed src="common/images/gr-arrow.svg" width="8px" height="11px"></embed></div>
+</li>
+<li class="CategoryRowTemplate_template " onclick="openPrintPage('print_preview_tools.htm');">
+<div class="toolsLabel_template" onclick="">All Resources</div>
+<div class="rowArrow_template"><embed src="common/images/gr-arrow.svg" width="8px" height="11px"></embed></div>
+</li>
+<li class="CategoryRowTemplate_template " onclick="openPrintPage('print_preview_glossary.htm');">
+<div class="toolsLabel_template" onclick="">Glossary</div>
+<div class="rowArrow_template"><embed src="common/images/gr-arrow.svg" width="8px" height="11px"></embed></div>
+</li>
+</ul>
+</div>
+<div class="categoryView" style="height:40px;overflow:auto;position:relative;">
+<ul class="categoryList">
+<li class="CategoryRowTemplate_template " onclick="nShowPrintPopUp();">
+<div class="toolsLabel_template" onclick="">Select Sections of Course</div>
+<div class="rowArrow_template"><embed src="common/images/gr-arrow.svg" width="8px" height="11px"></embed></div>
+</li>
+</ul>
+</div>
+</div>
+<div id="nprintChaptersPopUp">
+<div class="categoryView" style="height:201px;overflow:auto;">
+<ul style="margin-left:-40px;background:white;">
+<li class="CategoryRowTemplate_template " onclick="openPrintPage('p1.htm ')">
+<div class="toolsLabel_template" onclick="">
+						Chapter 1. What Is Closely Held Business Valuation?</div>
+<div class="rowArrow_template"><embed src="common/images/gr-arrow.svg" width="8px" height="11px"></embed></div>
+</li>
+<li class="CategoryRowTemplate_template " onclick="openPrintPage('p2.htm ')">
+<div class="toolsLabel_template" onclick="">
+						Chapter 2. Guideline Companies</div>
+<div class="rowArrow_template"><embed src="common/images/gr-arrow.svg" width="8px" height="11px"></embed></div>
+</li>
+</ul>
+</div>
+</div>
+<div id="helpItem" class="clsGlossaryText">
+<div class="categoryView" style="overflow:auto;">
+<ul class="categoryList">
+<li class="subcategoryrowtemplate_template" onclick="showToolsFrame('introduction.htm',event)">
+<div class="toolsLabel_template">Introduction</div>
+</li>
+<li class="subcategoryrowtemplate_template" onclick="showToolsFrame('exercise.htm',event)" style="min-height:50px;">
+<div class="toolsLabel_template" style="text-overflow:initial;white-space:normal;height:40px;">Practice Exercises and Study Question</div>
+</li>
+<li class="subcategoryrowtemplate_template" onclick="showToolsFrame('test_help.htm',event)">
+<div class="toolsLabel_template">Tests</div>
+</li>
+<li class="subcategoryrowtemplate_template" onclick="showToolsFrame('media.htm',event)">
+<div class="toolsLabel_template">Media Elements</div>
+</li>
+<li class="subcategoryrowtemplate_template" onclick="showToolsFrame('support.htm',event)">
+<div class="toolsLabel_template">Support</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="gotopopuptitle" class="popupTitle"></div>
+<div id="gotocalcpopupL" style="display:none;">
+<div id="gotocaltop"><a class="popupheader calculatorHeaderLeft" style="">Calculator </a></div>
+<div id="cal" class="clsGlossaryText">
+<iframe id="califrame" src="common/flash/calculator_mlearning.htm" style="display:none;height:435px;" frameborder="0"></iframe>
+</div>
+<div id="privacy" class="clsGlossaryText">
+<iframe id="privacyiframe" src="privacy.htm" style="display:none;height:425px;width:288px;margin-left:12px;top:0px;" frameborder="0"></iframe>
+</div>
+<div id="gotocalleftimage"></div>
+<div id="gotocalrightimage"></div>
+<div id="gotocalbottom"></div>
+</div>
+<div id="backgroundpopup" class="backgroundCover" onclick="closePopUpMsg();"></div>
+<div id="popupMsg" class="popupMsg">
+<div id="popuptitleMsg" class="popupTitleMsg">
+<div id="lblPopupTitleMsg"></div>
+</div>
+<div class="popupL1Msg">
+<div id="popupL1Msg"></div>
+</div>
+<div id="bottomMsg" class="popBottomMsg" onclick="closePopUpMsg();"></div>
+</div>
+<div id="confirmPopupMsg" class="confirmPopupMsg">
+<div id="confirmPopuptitleMsg" class="confirmPopupTitleMsg">
+<div id="lblconfirmPopupTitleMsg"></div>
+</div>
+<div class="confirmPopupL1Msg">
+<div>
+<div id="confirmPopupL1Msg"></div>
+</div>
+</div>
+<div>
+<div id="confirmbottomMsgok" class="confirmPopBottomok" onclick="closeconfirmPopUpMsgOk();">Ok</div>
+<div id="confirmbottomMsgcancel" class="confirmPopBottomcancel" onclick="closeconfirmPopUpMsg();">Cancel</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<iframe id="authorIframe" src="authors.htm" style="display:none"></iframe><img id="gotopopupRight" src="" style="display:none;top:55px;"><img id="gotopopupLeft" src="" style="display:none;top:55px;"><div id="backgroundForVideo" class="backgroundCoverVideo" onclick="closePopUp();" style="display:none"></div>
+<div id="purchaseCancel" style="display:none;position:absolute;z-index:211;left:268px;top:335px;width:358px;height:35px;"></div>
+<div id="TranscriptpopupForEbook" name="glsItemMainName" style=";display:none;position:absolute;width:30%;height:450px;left:630px;">
+<div style="position:relative;top:0px;border-left:1px solid #EDEDED;float:left;left:-10px;height:390px;"></div>
+<div id="TranscriptpopupL1" style="position:relative;height:390px;overflow-y:auto;top:0px;margin-left:10px;margin-right;"></div>
+</div>
+<div id="FeedBackPopup" style=";display:'';position:relative;width:820px;height:auto;z-index:100;top:360px;left:63px;"><img style="margin-top:-21px;position:absolute;display:none;left:14px;" src="common/images/goto_up_arrow.png" alt=""><div id="FeedBackHead" style="position:relative;width:730px;font-size:24px;font-family:K-Medium;margin-bottom:5px;"></div>
+<div id="FeedBackPopupL1" style="position:relative;width:727px;"></div>
+</div>
+<div id="modaldiv" style="position:absolute;z-index:200;width:1024px;height:712px;display:none;background:black;opacity:0.5"></div><img id="playaudio" src="common/images/play-icon.png" alt="select to play audio" role="button" style="position:absolute;left:448px;top:273.5px;display:none;z-index:201;" onclick="playAudioInteractivity();"><div id="orientationmodaldiv" style="position:absolute;z-index:220;width:1024px;height:712px;display:none;background:black;opacity:0.5"></div>
+<div id="navigationdemo" style="position:absolute;top:10px;left:25px;width:900px;padding:20px 35px 20px 35px;background:white;z-index:210;display:none;height:610px;border-radius:4px;moz-border-radius:4px;-webkit-border-radius:4px;">
+<div style="position:absolute;text-align:center;font-family:K-Medium;left:385px;top:15px;"> Navigation Demo </div>
+<div id="" style="position:absolute;top:15px;right:10px;cursor:pointer;width:16px" onclick="closeNavDemo();" role="button" aria-labelledby="closenav-label"><embed src="common/images/closenav-icon.svg" width="36px" height="28px"></embed></div>
+<p id="closenav-label" style="display:none;">close navigation demo</p>
+<div id="carousel" style="position:relative; height:605px;width:968px;background:#FAFAFA;overflow:hidden;left:-35px;top:25px;border:1px solid #EDEDED;border-bottom-left-radius:4px;-webkit-border-bottom-left-radius:4px;-moz-border-bottom-left-radius:4px;border-bottom-right-radius:4px;-webkit-border-bottom-right-radius:4px;-moz-border-bottom-right-radius:4px;" ontouchstart="navTouchStart(event);" ontouchend="navTouchEnd(event);">
+<div class="invisible" style="position:absolute; height:605px;width:968px;top:0px;left:0px;"><img style="height:100%;width:100%;" src=""></div>
+<div class="visible" style="position:absolute; height:605px;width:968px;top:0px;left:0px;"><img style="height:100%;width:100%;" src=""></div>
+</div>
+<div id="carouselnav" style="position:relative;bottom:10px;height:30px;width:355px;left:278px;float:left;"></div>
+<div id="carouselnavmask" style="position:relative;top:-14px;height:25px;width:355px;left:-88px;float:left;z-index:212;display:none;"></div>
+</div>
+<div id="nGeneralPopup" style="position:absolute;z-index:210;top:200px; left:267px;width:460px;height:325px;display:none;background:white;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;">
+<div style="border-bottom:1px solid #EDEDED;">
+<div id="nGeneralPopupHeader" style="text-align:center;height:30px;padding-top:10px;font-family:K-Medium;"></div>
+<div id="closeBtnnGeneralPopup" style="position:absolute; left:425px;height:25px;width:23px;top:12px;cursor:pointer;" onclick="closeGeneralPopup()" aria-labelledby="closepopup-label" role="button"><embed src="common/images/close-icon.svg" width="36px" height="28px"></embed></div>
+<p id="closepopup-label" style="display:none;"></p>
+</div>
+<div id="nGeneralPopupBody" style="overflow:auto;position:absolute;height:270px;padding-left:30px;padding-right:30px;padding-bottoom:5px;padding-top:20px;"></div>
+</div>
+<div id="nGeneralPopupOk" style="position:absolute;z-index:210;top:200px; left:267px;width:460px;height:325px;display:none;background:white;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;">
+<div style="border-bottom:1px solid #EDEDED;">
+<div id="nGeneralPopupOkHeader" style="text-align:center;height:30px;padding-top:10px;font-family:K-Medium;"></div>
+</div>
+<div id="nGeneralPopupOkBody" style="border-top:1px solid rgb(237,237,237);overflow:auto;position:absolute;height:270px;padding-left:30px;padding-right:30px;padding-bottoom:5px;padding-top:20px;"></div>
+<div id="okBtnnGeneralPopup" role="button" class="btnLightDefault" style="position:absolute;left:425px;top:165px;width:80px" onclick="closeGeneralPopup()">Ok</div>
+</div>
+<div id="nGeneralFramesetPopup" style="position:absolute;z-index:230;top:232.5px; left:322px;width:380px;height:190px;display:none;background:white;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;border:1px solid #DBDBDB">
+<div style="border-bottom:1px solid #EDEDED;">
+<div id="nGeneralFramesetPopupHeader" style="text-align:center;height:30px;padding-top:10px;font-family:K-Medium;"></div>
+</div>
+<div id="nGeneralFramesetPopupBody" style="overflow:auto;position:absolute;height:55px;padding-left:30px;padding-right:30px;padding-bottoom:5px;padding-top:20px;"></div>
+<div class="btnLightDefault" role="button" style="position:absolute;left:145px;top:125px;width:80px" onclick="nGeneralFramesetPopupOkBtn();">Ok</div>
+</div>
+<div id="nGradedAnswerPopup" style="position:absolute;z-index:210;top:60px; left:125px;width:770px;height:560px;display:none;background:white;">
+<div style="position:relative;height:35px;width:auto;"><div style="font-size:18px;height:30px;margin-left:5px;">Graded Answers</div><img src="common/images/search_close.png" style="position:absolute;right:2px;top:5px;" onclick="document.getElementById('modaldiv').style.display='none'; document.getElementById('nGradedAnswerPopup').style.display='none';"></div>
+<div id="nGradedAnswerPopupL" style="overflow:auto; height:525px;"></div>
+</div>
+<p id="label-correct" style="display:none;">Correct</p>
+<p id="label-incorrect" style="display:none;">Incorrect</p>
+<iframe id="gradedAnsweriframe" style="display:none;" src=""></iframe>
+<iframe id="printPageFrame" style="visibility:hidden;" src=""></iframe>
+<div id="containerdiv" style="display:none;height:430px;width:295px;left:715px;top:53px;position:absolute;overflow:hidden;z-index:20;background:#FAFAFA;border-radius:7px;-webkit-border-radius:7px;border:1px solid #DBDBDB;box-shadow:0 0 5px #999999;">
+<div style="position:relative;top:10px;left:0px;width:302px;height:465px; overflow:hidden;">
+<div id="animdiv" style="position:relative;width:920px;">
+<div id="contentdiv1" style="position:relative; float:left;width:300px;height:298px;background:#FAFAFA;">
+<div class="categoryRowTemplate_template" style="text-align:center;">
+<div class="toolsLabel_template ResourcesMenu" style="font-family:K-Medium;font-size:18px;cursor:auto;top:4px;">Resources</div>
+</div>
+<div style="position:relative;">
+<div class="chapItemMain" name="glsItemMainName" style="height:80px;">
+<div>
+<ul class="categoryList">
+<li class="categoryRowTemplate_template" onclick="nSelectMenu('calculator');">
+<div class="toolsLabel_template ResourcesMenu">Calculator</div>
+<div class="rowArrow_template"><embed src="common/images/gr-arrow.svg" width="8px" height="11px"></embed></div>
+</li>
+<li class="categoryRowTemplate_template " onclick="nSelectMenu('glossary');" id="glossaryDiv">
+<div class="toolsLabel_template ResourcesMenu" style="left:20px;">Glossary</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="chapItemMain" name="glsItemMainName" style="height:161px;margin-top:20px;">
+<div>
+<ul class="categoryList">
+<li class="categoryRowTemplate_template" onclick="nSelectMenu('tools');" style="border-top-width:1px">
+<div class="toolsLabel_template ResourcesMenu">Course References</div>
+<div class="rowArrow_template"><embed src="common/images/gr-arrow.svg" width="8px" height="11px"></embed></div>
+</li>
+<li class="categoryRowTemplate_template" onclick="nSelectMenu('help');" id="printDiv">
+<div class="toolsLabel_template ResourcesMenu">FAQs</div>
+</li>
+<li class="categoryRowTemplate_template" id="Navigation" onclick="nShowNavigationDemo();">
+<div class="toolsLabel_template ResourcesMenu">Navigation Demo</div>
+</li>
+<li class="categoryRowTemplate_template" id="Privacypolicy" onclick="nShowPrivacyPolicy();">
+<div class="toolsLabel_template ResourcesMenu">Privacy Policy</div>
+<div class="rowArrow_template"><embed src="common/images/gr-arrow.svg" width="8px" height="11px"></embed></div>
+</li>
+</ul>
+</div>
+</div>
+<div class="chapItemMain" name="glsItemMainName" style="height:32px;margin-top:20px;">
+<div id="versionDiv">
+<ul class="categoryList"></ul>
+</div>
+</div>
+</div>
+</div>
+<div style="position:relative;float:left;width:300px;margin-left:7px;background:#FAFAFA;">
+<div id="ToolsBack" style="z-index:2;position:absolute;left:15px;width:30px;height:20px;top:4px;" onclick="document.getElementById('containerdiv').style.height=370;HideMenu(0,1);" aria-labelledby="back-button" role="button"><embed src="common/images/toolsback-icon.svg" width="36px" height="28px"></embed></div>
+<div class="categoryRowTemplate_template" style="text-align:center;">
+<div class="toolsLabel_template ResourcesMenu" id="contentdiv2head" style="font-family:K-Medium;font-size:18px;cursor:auto;top:4px;"></div>
+</div>
+<div id="contentdiv2" style="position:relative;"></div>
+</div>
+<div style="position:relative;float:left;width:300px;height:234px;background:#FAFAFA;">
+<div id="HelpBack" style="z-index:2;position:absolute;left:15px;width:30px;height:20px;top:4px;" onclick="document.getElementById('containerdiv').style.height=260;HideMenu(0,2);" aria-labelledby="back-button" role="button"><embed src="common/images/helpback-icon.svg" width="36px" height="28px"></embed></div>
+<div class="categoryRowTemplate_template" style="text-align:center;">
+<div class="toolsLabel_template ResourcesMenu" id="contentdiv3head" style="font-family:K-Medium;font-size:18px;cursor:auto;top:4px;"></div>
+</div>
+<div id="contentdiv3" style="position:relative;"></div>
+</div>
+</div>
+</div>
+</div>
+<div id="BookmarkContainerdiv" style="display:none;height:330px;width:296px;left:715px;top:53px;position:absolute;overflow:hidden;z-index:20;background:#FAFAFA;border-radius:7px; -webkit-border-radius:7px;border:1px solid #DBDBDB;box-shadow:0 0 5px #999999;">
+<div style="position:relative; width:296px; height:330px;">
+<div class="categoryRowTemplate_template" style="position:relative;text-align:center;top:10px;">
+<div class="toolsLabel_template ResourcesMenu" style="font-family:K-Medium;font-size:18px;cursor:auto;top:4px;">Bookmarks</div>
+</div>
+<div id="bkeditbtn" style="position:absolute;height:20px; width:45px;left:235px;top:16px;font-size:14px;font-family:K-Medium;cursor:pointer;" onclick="editBookMark();"> Edit</div>
+<div style="position:relative;height:270px;top:10px;">
+<div id="bookmarksContent" class="categoryView" style="height:270px;overflow-y:auto;"></div>
+</div>
+</div>
+</div>
+<div id="FAQGloss" style="display:none;position:absolute;color:#333333;z-index:210;top:60px; left:75px;width:845px;height:548px;background:white;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius: 4px;">
+<div style="position:relative;height:45px;top:0px;width:845px;display:block;background:white;text-align:center;padding-top:2px;padding-top:2px;border-top-left-radius:4px;border-top-right-radius:4px;-webkit-border-top-left-radius:4px;-webkit-border-top-right-radius:4px;-moz-border-top-left-radius: 4px;-moz-border-top-right-radius: 4px;background:#FAFAFA;border-bottom:1px solid #EDEDED">
+<div id="FAQGlossHead" style="width:800px;float:left;margin-top:10px;font-family:K-Medium;"></div><div id="closeFAQGloss" style="display:block;position:absolute;z-index:211;width:45px; margin-top:13px; left:800px;" onclick="closeFAQGloss();" aria-labelledby="closefaq-label" role="button"><embed src="common/images/closefaq-icon.svg" width="36px" height="28px"></embed></div>
+<p id="closefaq-label" style="display:none;"></p>
+</div>
+<div id="FAQGlossLeft" style="position:relative;height:500px;width:295px;display:block;background:white;float:left;border-right:1px solid #EDEDED;border-bottom-left-radius:4px;-webkit-border-bottom-left-radius:4px;-moz-border-bottom-left-radius:4px;"></div>
+<div id="FAQGlossRight" style="position:relative;height:473px;width:517px;display:block;background:white;float:left;background:#FAFAFA;padding-left:15px;padding-right:15px;padding-bottom:5px;padding-top:20px;overflow-y:auto;"></div>
+</div>
+<div id="searchcontainer" style="display:none;position:absolute;top:53px; left:715px;height:435px; width:294px; z-index:4;background:#FAFAFA;border-radius:7px;-webkit-border-radius:7px;border:1px solid #DBDBDB;box-shadow:0 0 5px #999999;">
+<div id="gotosearchpopupL" style="position:relative;visibility:visible !important;">
+<div id="searchscrollpopup" class="clsGlossaryText" style="position:relative; top:5px;width:294px;">
+<div id="searchpopup" style="position:relative;z-index:6;left:3px;">
+<div class="subChapterLabel_template" style="left:3px;width:280px;height:28px;border:1px solid #EDEDED;border-radius:20px;-webkit-border-radius:20px;background:white;"><input name="QueryString" id="searchText" class="clsSearchTextBox" onkeyup="searchOnEnterKey(event);" type="text" size="20" placeholder="Search keywords" accesskey="s" results="0" onfocus="searchFieldOnFocus();removeTouchListeners();" onblur="searchFieldOnBlur();addTouchListeners();" style="margin-left:22px !important;height:28px; width:233px;border:0px;"><img src="common/images/lens.png" onclick="callSearchFns()" class="searchImage" alt="Search"><div id="searchCancelButton" style="position:absolute;right:2px;top:4px;display:none;" onclick="document.getElementById('searchText').value='';createRecentSearch();document.getElementById('searchText').focus();this.style.display='none';" role="button" aria-labelledby="clear-label"><embed src="common/images/clear-search.svg" width="19px" height="19px"></embed></div>
+</div>
+</div>
+<p id="clear-label" style="display:none;">clear text</p>
+<div class="subCategoryRowTemplate_template" style="" onclick="document.getElementById('searchText').blur();">
+<div id="searchHead" class="nonChapterLabel_template" style="cursor:auto;font-family:K-Medium;"></div>
+</div>
+<div class="searchItemMain" id="searchResult" style="z-index:6;postion:relative;height:340px;visibility:visible;" onclick="document.getElementById('searchText').blur();">
+<div class="glsItemMain" id="glsItemMainId" name="glsItemMainName" style="height:340px;overflow-y:auto;">
+<div id="searchL1" class="clsGlossaryText">
+<div id="searchWait" class="searchWaiting">Please wait...</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="shufflebkmrk" style="position:absolute;height:50px; width:296px; top:100px ;left:716px;background:gray;z-index:20;opacity:0.8;display:none;">
+<div class="categoryView" style="margin-top:2px;">
+<ul class="categoryList"></ul>
+</div>
+</div>
+<iframe id="suppiframe" src="mobile_faq.htm" style="display:none;"></iframe>
+</body>
+</html>

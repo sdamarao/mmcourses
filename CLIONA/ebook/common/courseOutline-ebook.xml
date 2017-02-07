@@ -1,0 +1,135 @@
+<?xml version="1.0" ?>
+<!DOCTYPE course [
+<!ELEMENT course (glossary,supplements,chapters)>
+<!ATTLIST course instanceId CDATA #REQUIRED>
+<!ATTLIST course courseCode CDATA #REQUIRED>
+<!ATTLIST course courseTitle CDATA #REQUIRED>
+<!ATTLIST course exam-position CDATA #REQUIRED>
+<!ATTLIST course courseType CDATA #REQUIRED>
+<!ATTLIST course noOfAttempts CDATA #REQUIRED>
+<!ATTLIST course passingPercent CDATA #REQUIRED>
+<!ATTLIST course courseVersion CDATA #REQUIRED>
+<!ATTLIST course customtitle CDATA #IMPLIED>
+<!ATTLIST course customlogo CDATA #IMPLIED>
+<!ATTLIST course demoChapters CDATA #REQUIRED>
+<!ATTLIST course isEbookEthicCourse CDATA #REQUIRED>
+<!ATTLIST course FinalExamTotalQuestions CDATA #IMPLIED>
+<!ATTLIST course publisher CDATA #IMPLIED>
+<!ELEMENT glossary (#PCDATA|term)*>
+<!ELEMENT term (#PCDATA)>
+<!ATTLIST term id CDATA #REQUIRED>
+<!ELEMENT supplements (#PCDATA|supplement)*>
+<!ELEMENT supplement (#PCDATA)>
+<!ATTLIST supplement id CDATA #REQUIRED>
+<!ELEMENT chapters (chapter+)>
+<!ELEMENT chapter (type,title*,bullets,defStartPageNo*,defEndPageNo*,NoOfQuestionsToDisplay*,totalTestQuestionsCount*,subChapters*,courseInstance*,chapterReferenceId*)>
+<!ATTLIST chapter id ID #REQUIRED>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT bullets (#PCDATA)>
+<!ELEMENT defStartPageNo (#PCDATA)>
+<!ELEMENT defEndPageNo (#PCDATA)>
+<!ELEMENT NoOfQuestionsToDisplay (#PCDATA)>
+<!ELEMENT totalTestQuestionsCount (#PCDATA)>
+<!ELEMENT courseInstance (#PCDATA)>
+<!ELEMENT chapterReferenceId (#PCDATA)>
+<!ELEMENT subChapters (subChapter+)>
+<!ELEMENT subChapter (subtitle,bullets,startPageNo*,endPageNo*)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT bullets (#PCDATA)>
+<!ELEMENT startPageNo (#PCDATA)>
+<!ELEMENT endPageNo (#PCDATA)>
+]>
+<course instanceId="628869" courseCode="CLIONA" courseTitle="Introduction to Business Valuation and Use of Comparables" exam-position="bycourse" courseType="MicroMash" noOfAttempts="99" passingPercent="70.00" courseVersion="12_00" publisher="CheckpointLearning-SelfStudy" demoChapters="1" isEbookEthicCourse="false" FinalExamTotalQuestions="10" >
+<glossary>
+	<term id="d987.htm">Business Segment</term>
+	<term id="pf40.htm">Business Valuation</term>
+	<term id="d641.htm">Debt-to-Equity Ratio</term>
+	<term id="d1010.htm">Fair Market Value (FMV)</term>
+	<term id="djb102.htm">Going Concern</term>
+	<term id="d1001.htm">Merger</term>
+	<term id="d362.htm">Property</term>
+	<term id="pf41.htm">Revenue Ruling 59-60</term>
+</glossary>
+<supplements>
+<h1>This course does not require supplementary material.</h1>
+</supplements>
+<chapters>
+	<chapter id="CLIONA_CH_1_12_00">
+		<type>node</type>
+		<title>What Is Closely Held Business Valuation?</title>
+			<bullets> 1</bullets>
+		<defStartPageNo>4</defStartPageNo>
+		<defEndPageNo>60</defEndPageNo>
+		<NoOfQuestionsToDisplay>5</NoOfQuestionsToDisplay>
+		<totalTestQuestionsCount>14</totalTestQuestionsCount>
+		<subChapters>
+			<subChapter>
+				<subtitle>Defining a Closely Held Business</subtitle>
+				<bullets>A</bullets>
+				<startPageNo>4</startPageNo>
+				<endPageNo>15</endPageNo>
+			</subChapter>
+			<subChapter>
+				<subtitle>Defining Value</subtitle>
+				<bullets>B</bullets>
+				<startPageNo>16</startPageNo>
+				<endPageNo>26</endPageNo>
+			</subChapter>
+			<subChapter>
+				<subtitle>Reasons to Value Closely Held Businesses</subtitle>
+				<bullets>C</bullets>
+				<startPageNo>27</startPageNo>
+				<endPageNo>41</endPageNo>
+			</subChapter>
+			<subChapter>
+				<subtitle>Methods of Valuation</subtitle>
+				<bullets>D</bullets>
+				<startPageNo>42</startPageNo>
+				<endPageNo>60</endPageNo>
+			</subChapter>
+		</subChapters>
+	</chapter>
+	<chapter id="CLIONA_CH_2_12_00">
+		<type>node</type>
+		<title>Guideline Companies</title>
+			<bullets> 2</bullets>
+		<defStartPageNo>61</defStartPageNo>
+		<defEndPageNo>121</defEndPageNo>
+		<NoOfQuestionsToDisplay>5</NoOfQuestionsToDisplay>
+		<totalTestQuestionsCount>14</totalTestQuestionsCount>
+		<subChapters>
+			<subChapter>
+				<subtitle>Use of Guidelines for Valuation</subtitle>
+				<bullets>A</bullets>
+				<startPageNo>61</startPageNo>
+				<endPageNo>81</endPageNo>
+			</subChapter>
+			<subChapter>
+				<subtitle>Beginning the Search for Guideline Companies</subtitle>
+				<bullets>B</bullets>
+				<startPageNo>82</startPageNo>
+				<endPageNo>97</endPageNo>
+			</subChapter>
+			<subChapter>
+				<subtitle>Guideline Public and Guideline Transaction Valuation Methods</subtitle>
+				<bullets>C</bullets>
+				<startPageNo>98</startPageNo>
+				<endPageNo>105</endPageNo>
+			</subChapter>
+			<subChapter>
+				<subtitle>Finding Guideline Companies</subtitle>
+				<bullets>D</bullets>
+				<startPageNo>106</startPageNo>
+				<endPageNo>112</endPageNo>
+			</subChapter>
+			<subChapter>
+				<subtitle>Problems with Guidelines</subtitle>
+				<bullets>E</bullets>
+				<startPageNo>113</startPageNo>
+				<endPageNo>121</endPageNo>
+			</subChapter>
+		</subChapters>
+	</chapter>
+</chapters>
+</course>

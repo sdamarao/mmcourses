@@ -1,0 +1,126 @@
+<Interaction name="Character Dialog" version="1.3" iscompliancerequired="False" type="Regular" height="460" width="658" swfHeight="500" swfWidth="715" trackingThrough="" SharedObjectName="" RtoLflag="False" ShowPropFlag="False">
+  <node id="Image Scaling"><![CDATA[Stretch]]></node>
+  <node id="Show Replay Button"><![CDATA[True]]></node>
+  <node id="Replay Button Image"><![CDATA[Character_Dialog_Replay.png]]></node>
+  <node id="Replay Button ImageWidth"><![CDATA[68]]></node>
+  <node id="Replay Button ImageHeight"><![CDATA[25]]></node>
+  <node id="Background Type"><![CDATA[Background Image]]></node>
+  <node id="Background Image"><![CDATA[]]></node>
+  <node id="Background ImageWidth"><![CDATA[100]]></node>
+  <node id="Background ImageHeight"><![CDATA[100]]></node>
+  <node id="Background Color"><![CDATA[0x008040]]></node>
+  <node id="Introduction Sound File"><![CDATA[]]></node>
+  <node id="Play Introduction Sound"><![CDATA[False]]></node>
+  <node id="SndPosition" type="POSITION"><![CDATA[624.86993006993$17.6693706293706$0.92027972027972$0.92027972027972$1]]></node>
+  <node id="Show Audio Control"><![CDATA[False]]></node>
+  <node id="Audio Control Image Type"><![CDATA[Default Audio Graphic]]></node>
+  <node id="Image for audio ON"><![CDATA[]]></node>
+  <node id="Image for audio ONWidth"><![CDATA[100]]></node>
+  <node id="Image for audio ONHeight"><![CDATA[100]]></node>
+  <node id="Image for audio OFF"><![CDATA[]]></node>
+  <node id="Image for audio OFFWidth"><![CDATA[100]]></node>
+  <node id="Image for audio OFFHeight"><![CDATA[100]]></node>
+  <node id="Title"><![CDATA[]]></node>
+  <node id="TitlePosition" type="POSITION"><![CDATA[12.8839160839161$5.52167832167832$382.836363636364$47.9005594405594$1]]></node>
+  <node id="RestartPosition" type="POSITION"><![CDATA[633.014405594406$447.255944055944$1.9786013986014$0$1]]></node>
+  <node id="CorrectBtnPosition" type="POSITION"><![CDATA[204.302097902098$340.503496503496$112.274125874126$38.6977622377622$1]]></node>
+  <node id="IncorrectBtnPosition" type="POSITION"><![CDATA[328.53986013986$340.503496503496$112.274125874126$38.6517482517483$1]]></node>
+  <node id="TimerPosition" type="POSITION"><![CDATA[527.32027972028$57.9776223776224$184.055944055944$184.055944055944$1]]></node>
+  <node id="OptionPosition" type="POSITION"><![CDATA[174.853146853147$115.034965034965$294.489510489511$220.867132867133$1]]></node>
+  <node id="QuestionPosition" type="POSITION"><![CDATA[170.251748251748$69.020979020979$345.104895104895$33.1760839160839$1]]></node>
+  <node id="GoalPosition" type="POSITION"><![CDATA[3.68111888111888$3.68111888111888$0.92027972027972$0.92027972027972$1]]></node>
+  <node id="CollectionPosition" type="POSITION"><![CDATA[140.802797202797$3.68111888111888$0.92027972027972$0.92027972027972$1]]></node>
+  <node id="Instruction"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Example</B></textformat></Font></p></html>]]></node>
+  <node id="InstructionPosition" type="POSITION"><![CDATA[4.00321678321678$0$147.980979020979$35.0166433566434$1]]></node>
+  <node id="Show Introduction Screen"><![CDATA[True]]></node>
+  <node id="Start Button Image"><![CDATA[Mine_Gold_start.png]]></node>
+  <node id="Start Button ImageWidth"><![CDATA[70]]></node>
+  <node id="Start Button ImageHeight"><![CDATA[30]]></node>
+  <node id="Introduction Background Color"><![CDATA[0x6B4114]]></node>
+  <node id="Select Introduction Type"><![CDATA[Text and Image]]></node>
+  <node id="Introduction Text"><![CDATA[<html><p align="Left"><Font face="Verdana" size="13" color="#ffffff"><textformat tabstops='[20]' leftmargin='0'>
+Use down arrow key to move the claw towards the gold to grab it. Once grabbed, it will get reeled up.</textformat></Font></p>
+</Font></p>
+<p align="Left"><Font face="Verdana" size="13" color="#ffffff" ><textformat tabstops='[20]' leftmargin='0'>Size of the gold nuggets suggests the difficulty level of questions. Attempt bonus questions by mining diamonds from the earth.</textformat></Font></p>
+</Font></p>
+<p align="Left"><Font face="Verdana" size="13" color="#ffffff" ><textformat tabstops='[20]' leftmargin='0'>For an incorrect answer, the gold nugget disappears. For a correct answer, the score gets updated.</textformat></Font></p></html>]]></node>
+  <node id="Introduction Image"><![CDATA[Mine_Gold_intro.jpg]]></node>
+  <node id="Introduction ImageWidth"><![CDATA[360]]></node>
+  <node id="Introduction ImageHeight"><![CDATA[270]]></node>
+  <node id="Number of Characters"><![CDATA[2]]></node>
+  <node id="Character Image1"><![CDATA[Untitled-2 copy.png]]></node>
+  <node id="Character ImageWidth1"><![CDATA[180]]></node>
+  <node id="Character ImageHeight1"><![CDATA[669]]></node>
+  <node id="Appear at1"><![CDATA[With First Callout]]></node>
+  <node id="Time in Seconds1"><![CDATA[5]]></node>
+  <node id="Appear Character With Effect1"><![CDATA[Fade]]></node>
+  <node id="Disappear Character With Effect1"><![CDATA[Fade]]></node>
+  <node id="CharacterPosition1" type="POSITION"><![CDATA[10.2611188811189$106.476363636364$113.654545454545$310.042237762238$1]]></node>
+  <node id="CharacterCalloutPosition1" type="POSITION"><![CDATA[129.483356643357$8.8806993006993$464.465174825175$173.932867132867$1]]></node>
+  <node id="CharacterCalloutTextPosition1" type="POSITION"><![CDATA[81.169635899929$10.0345884884347$380.861443356643$157.8240077461$1]]></node>
+  <node id="Callout Type1"><![CDATA[Left Rounded Rectangle Callout]]></node>
+  <node id="Callout Color1"><![CDATA[0xF0F0F0]]></node>
+  <node id="Character Image2"><![CDATA[Untitled-3 copy.PNG]]></node>
+  <node id="Character ImageWidth2"><![CDATA[276]]></node>
+  <node id="Character ImageHeight2"><![CDATA[666]]></node>
+  <node id="Appear at2"><![CDATA[After Specific Time]]></node>
+  <node id="Time in Seconds2"><![CDATA[19]]></node>
+  <node id="Appear Character With Effect2"><![CDATA[Fade]]></node>
+  <node id="Disappear Character With Effect2"><![CDATA[Fade]]></node>
+  <node id="CharacterPosition2" type="POSITION"><![CDATA[44.4034965034965$143.471608391608$147.198741258741$299.965174825175$1]]></node>
+  <node id="CharacterCalloutPosition2" type="POSITION"><![CDATA[125.066013986014$23.7432167832168$505.877762237762$215.345454545455$1]]></node>
+  <node id="CharacterCalloutTextPosition2" type="POSITION"><![CDATA[88.4068731012303$12.4237762237762$414.819765034965$195.401152447552$1]]></node>
+  <node id="Callout Type2"><![CDATA[Left Rounded Rectangle Callout]]></node>
+  <node id="Callout Color2"><![CDATA[0xF0F0F0]]></node>
+  <node id="Number of Callouts"><![CDATA[2]]></node>
+  <node id="Callout Text1"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>If a buyer was purchasing a dry cleaning business on a corner lot that he intended to continue operating, he would be concerned about the future value that could be created. He would be purchasing a going concern and would be most interested in the potential future income of the establishment.</textformat></Font></p></html>]]></node>
+  <node id="Callout Sound1"><![CDATA[]]></node>
+  <node id="Callout Duration (seconds)1"><![CDATA[18]]></node>
+  <node id="Hide Callout1"><![CDATA[False]]></node>
+  <node id="Display Type1"><![CDATA[Display till next callout]]></node>
+  <node id="Associate Character with Callout1"><![CDATA[Character 1]]></node>
+  <node id="Disappear Character(s) with callout1"><![CDATA[1%%$%%0]]></node>
+  <node id="Callout Text2"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>If the buyer was purchasing this same business in order to obtain the land so that a parking ramp could be constructed after razing the current facility, he would be concerned about the future value that could be created by the proposed parking lot. In this case, the purchaser would be concerned about the liquidation value of the assets to be sold and the fair market value of the land.</textformat></Font></p></html>]]></node>
+  <node id="Callout Sound2"><![CDATA[]]></node>
+  <node id="Callout Duration (seconds)2"><![CDATA[40]]></node>
+  <node id="Hide Callout2"><![CDATA[false]]></node>
+  <node id="Display Type2"><![CDATA[Display till next callout]]></node>
+  <node id="Associate Character with Callout2"><![CDATA[Character 2]]></node>
+  <node id="Disappear Character(s) with callout2"><![CDATA[0%%$%%1]]></node>
+  <node id="Number of Nodes"><![CDATA[1]]></node>
+  <node id="ToolBoxPosition" type="POSITION"><![CDATA[16.565034965035$323.938461538462$0.92027972027972$0.92027972027972$1]]></node>
+  <node id="Node1" type="POSITION"><![CDATA[148.901258741259$316.162097902098$496.951048951049$65.4318881118881$1]]></node>
+  <node id="Select Object Type1"><![CDATA[Text]]></node>
+  <node id="Set Image1"><![CDATA[]]></node>
+  <node id="Set ImageWidth1"><![CDATA[]]></node>
+  <node id="Set ImageHeight1"><![CDATA[]]></node>
+  <node id="Set Text1"><![CDATA[<html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>This is an automated animation and the callouts will appear one after another.</B></textformat></Font></p></html>]]></node>
+  <node id="Set Video1"><![CDATA[]]></node>
+  <node id="Set Video Size1"><![CDATA[Small]]></node>
+  <node id="Video Skin Background Color1"><![CDATA[0x999999]]></node>
+  <node id="Mute other Audio1"><![CDATA[True]]></node>
+  <node id="Select Button Label Type1"><![CDATA[Button Text]]></node>
+  <node id="Button Template1"><![CDATA[Rectangle Button]]></node>
+  <node id="Button Image1"><![CDATA[]]></node>
+  <node id="Button ImageWidth1"><![CDATA[]]></node>
+  <node id="Button ImageHeight1"><![CDATA[]]></node>
+  <node id="Button Text1"><![CDATA[]]></node>
+  <node id="Button Background Color1"><![CDATA[0xCCCCCC]]></node>
+  <node id="Button Action Type1"><![CDATA[Popup Text]]></node>
+  <node id="Set Popup Title1"><![CDATA[]]></node>
+  <node id="Set Popup Image1"><![CDATA[]]></node>
+  <node id="Set Popup ImageWidth1"><![CDATA[]]></node>
+  <node id="Set Popup ImageHeight1"><![CDATA[]]></node>
+  <node id="Set Popup Text1"><![CDATA[]]></node>
+  <node id="Set Popup Video1"><![CDATA[]]></node>
+  <node id="Set Popup Background Color1"><![CDATA[0xC6D9EC]]></node>
+  <node id="Link1"><![CDATA[]]></node>
+  <node id="TrialImagePosition"><![CDATA[372.713286713287$0.92027972027972$242.033566433566$25.7678321678322$1]]></node>
+  <node id="ButtonPopupDisplayText"><![CDATA[9.2027972027972$18.4055944055944$496.951048951049$23.006993006993$1]]></node>
+  <node id="ButtonPopupVideo"><![CDATA[64.4195804195804$36.8111888111888$414.125874125874$294.489510489511$1]]></node>
+  <node id="ButtonPopupText"><![CDATA[9.2027972027972$46.013986013986$524.559440559441$276.083916083916$1]]></node>
+  <node id="ButtonPopupImage"><![CDATA[82.8251748251748$46.013986013986$368.111888111888$276.083916083916$1]]></node>
+  <node id="ButtonPopupPosition"><![CDATA[55.2167832167832$55.2167832167832$536.523076923077$349.706293706294$1]]></node>
+  <node id="CloseButtonPosition"><![CDATA[511.675524475524$18.4055944055944$16.565034965035$16.565034965035$1]]></node>
+  <node id="ScrollPosition"><![CDATA[0$0$13.8041958041958$18.4055944055944$1]]></node>
+</Interaction>

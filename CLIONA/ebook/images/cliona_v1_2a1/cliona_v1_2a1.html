@@ -1,0 +1,153 @@
+<html   >
+  <head><meta http-equiv='X-UA-Compatible' content='IE=Edge' />
+    <META http-equiv="Content-Type" content="text/html; charset=utf-16"><script src="./jquery-1.4.2.js" type="text/javascript"></script><script src="jsScroller.js" type="text/javascript"></script><script src="processactivity.js" type="text/javascript"></script><link href="scroll.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=715"><script type="text/javascript">
+
+          var FontDifference=4;
+          var PlayIntroductionSound='False';
+          var picPath='./';
+          var wavePath='./';
+          var videoPath='./';
+          
+              var OnImage = 'sound_on.png';
+              var OffImage = 'sound_of.png';
+            
+
+          var BackGroundType='Background Image';
+          
+
+          var ProcessElementCount = 4;
+          var LineelementCount = 1;
+
+          var autobuild = 'False';
+          var DescriptionboxEffect = 'Iris';
+
+          
+          var LineColor = '#ffffff';
+
+          var RtoLflag = 'False';
+
+          var TimeIntProcessArray = new Array(
+          1000
+        ,2000
+        ,3000
+        ,4000);
+
+          var TimeIntLineArray = new Array(
+          8000);
+
+          var diamondShapeColor = new Array(
+          
+        '#99CDE5'
+      
+        ,'#99CDE5'
+      
+        ,'#99CDE5'
+      
+        ,'#99CDE5'
+      );
+
+
+          var TargetViewSizeFactor = 1;
+          </script><style type="text/css">
+          .scrollArrowClass
+          {
+          position:absolute;
+          top:0px;
+          left:0px;
+          width:17px;
+          height:19px;
+          border:none;
+          }
+
+          .Scroller{overflow:hidden;position:absolute;top:0px;left:0px;}
+
+          .Scrollbar-Up1{cursor:pointer;right:0px;position:absolute;top:0px;z-index:10;}
+          .Scrollbar-Down1{cursor:pointer;right:0px;position:absolute;bottom:0px;z-index:10;}
+          .ScrIcons{
+          width:17px;
+          height:19px;
+          }
+          .Scroller-Container1{left:0;position:absolute;top:0}
+
+        </style>
+  </head>
+  <body>
+    <div id="mainPanel" sound="./" style="position: absolute; top: 0px; left: 0px; overflow: hidden; width:715px; height:500px"><img id="interactionBackgroundImage" class="MAR imgClass" imageSetting="$715$500" src="./121111.jpg" alt="" style="position:absolute;top:0px;left:0px;width:715px;height:500px; background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none"><div id="interactionTitleText" class="txtControl" style="position:absolute;top:11.6px;left:7.2px;width:701px;height:168.7px;overflow:hidden;margin:0 0 0 0 0;z-index:auto"><html><p align="Center"><Font face="Verdana" size="16" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The Earning Capacity of the Company</B></textformat></Font></p>
+</p>
+<p align="Left"><Font face="Verdana" size="14" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Revenue Ruling 59-60 states that detailed, representative income statements for a period of preferably five or more years immediately preceding the valuation date need to be acquired. It is important to review the following:</textformat></Font></p>
+</p>
+<p align="Center"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'><B><I>Select each image to learn more.</I></B></textformat></Font></p></html></div>
+      <div id="interactionInstructionText" class="txtControl" style="position:absolute;top:464px;left:12px;width:687.15px;height:35.55px;overflow:hidden;margin:0 0 0 0 0;z-index:auto"><html><p align="Left"><Font face="Verdana" size="14" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Rev. Rul. 59-60, §4.02(d-f)</B></textformat></Font></p></html></div><canvas id="pathCanvas1" height="0" width="0" style="position: absolute; top: 385px;left: 514.8px;display:block" arrowtype="Dig1"></canvas><div id="dummydiv" style="display:none;z-index:110;background-color:#E0D727;opacity:0;position: absolute; top: 0px; left: 0px; overflow: hidden; width:715px; height:500px"></div>
+      <div id="processdiv1" style="cursor:pointer;background-color:#99CDE5;background-image:url('Process_Rectangle.png');background-size:100% 100%;z-index:9;display:block;position:absolute;top:209px;left:76px;width:137px;height:204px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="onProcessClicked(1);">
+        <div id="processCircleimage1" style="cursor:pointer;background-image:url('iStock_80825829_SMALL.jpg');background-size:100% 100%;z-index:9;position:relative;cursor:pointer;top:0px;left:0px;width:137px;height:204px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none"></div>
+      </div>
+      <div id="processdiv2" style="cursor:pointer;background-color:#99CDE5;background-image:url('Process_Rectangle.png');background-size:100% 100%;z-index:9;display:block;position:absolute;top:209px;left:218px;width:137px;height:204px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="onProcessClicked(2);">
+        <div id="processCircleimage2" style="cursor:pointer;background-image:url('iStock_27645247_SMALL.jpg');background-size:100% 100%;z-index:9;position:relative;cursor:pointer;top:0px;left:0px;width:137px;height:204px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none"></div>
+      </div>
+      <div id="processdiv3" style="cursor:pointer;background-color:#99CDE5;background-image:url('Process_Rectangle.png');background-size:100% 100%;z-index:9;display:block;position:absolute;top:209px;left:359.9px;width:137px;height:204px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="onProcessClicked(3);">
+        <div id="processCircleimage3" style="cursor:pointer;background-image:url('iStock_68605719_SMALL.jpg');background-size:100% 100%;z-index:9;position:relative;cursor:pointer;top:0px;left:-0.25px;width:136.35px;height:204px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none"></div>
+      </div>
+      <div id="processdiv4" style="cursor:pointer;background-color:#99CDE5;background-image:url('Process_Rectangle.png');background-size:100% 100%;z-index:9;display:block;position:absolute;top:209px;left:500px;width:137px;height:204px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="onProcessClicked(4);">
+        <div id="processCircleimage4" style="cursor:pointer;background-image:url('iStock_71795353_SMALL.jpg');background-size:100% 100%;z-index:9;position:relative;cursor:pointer;top:0px;left:0px;width:137px;height:204px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none"></div>
+      </div>
+      <div id="descContainer1" style="z-index:110;display:none;position:absolute;top:33.5px;left:40px;width:639px;height:433px;border-style:none;overflow: hidden">
+        <div id="processDescriptiondiv1" sound="./" style="background-image:url('process_Description.png');border-radius:10px;background-color:#F2F9FF;background-size:100% 100%;z-index:11;display:none;position:relative;top:0px;left:0px;width:639px;height:433px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none">
+          <div id="processdescCloseBtn" style="cursor:pointer;background-image:url('process_close.png');background-size:100% 100%;z-index:11;position:relative;cursor:pointer;top:15px;left:610px;width:18px;height:18px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="closeDescPopup();"></div>
+          <div id="processDesctitle1" class="txtControl" style="overflow:hidden;z-index:9;position:absolute;top:15px;left:15px;width:590px;height:20px"></div>
+          <style>
+            .scrClass1{width: 579px;}
+          </style>
+          <div class="fbMsgPanel1" style="position:relative;width:600px;height:345px;top:50px;left:15px"><img src="arrow_top.png" class="Scrollbar-Up1 ScrIcons" onmouseover="scrollerFb.startScroll(0, 5);" onmouseout="scrollerFb.stopScroll();"><img src="arrow_down.png" class="Scrollbar-Down1 ScrIcons" onmouseover="scrollerFb.startScroll(0, -5);" onmouseout="scrollerFb.stopScroll();"><div id="FbScroller1" class="Scroller" style="position:absolute;width:600px;height:345px">
+              <div class="fbMsgContainer Scroller-Container1 txtControl"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>
+<B>Gross revenue by principle items:</B> This is important so that the business valuator can determine the lifecycle and potential of the products or services sold by the organization. Principle expenses include operating expenses, interest expense, depreciation, officer's salaries, contributions, taxes, and non-operating costs. It is important that the valuator determine whether these categories are reasonable and industry or region appropriate.</textformat></Font></p></html></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="descContainer2" style="z-index:110;display:none;position:absolute;top:33.5px;left:40px;width:639px;height:433px;border-style:none;overflow: hidden">
+        <div id="processDescriptiondiv2" sound="./" style="background-image:url('process_Description.png');border-radius:10px;background-color:#F2F9FF;background-size:100% 100%;z-index:11;display:none;position:relative;top:0px;left:0px;width:639px;height:433px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none">
+          <div id="processdescCloseBtn" style="cursor:pointer;background-image:url('process_close.png');background-size:100% 100%;z-index:11;position:relative;cursor:pointer;top:15px;left:610px;width:18px;height:18px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="closeDescPopup();"></div>
+          <div id="processDesctitle2" class="txtControl" style="overflow:hidden;z-index:9;position:absolute;top:15px;left:15px;width:590px;height:20px"></div>
+          <style>
+            .scrClass2{width: 579px;}
+          </style>
+          <div class="fbMsgPanel2" style="position:relative;width:600px;height:345px;top:50px;left:15px"><img src="arrow_top.png" class="Scrollbar-Up1 ScrIcons" onmouseover="scrollerFb.startScroll(0, 5);" onmouseout="scrollerFb.stopScroll();"><img src="arrow_down.png" class="Scrollbar-Down1 ScrIcons" onmouseover="scrollerFb.startScroll(0, -5);" onmouseout="scrollerFb.stopScroll();"><div id="FbScroller2" class="Scroller" style="position:absolute;width:600px;height:345px">
+              <div class="fbMsgContainer Scroller-Container1 txtControl"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>
+<B>Net income and net income available for dividends:</B> Since value is closely tied to profitability, it is important to examine the profit capacity of the organization as well as determine whether the organization has the cash flow necessary to pay dividends.</textformat></Font></p></html></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="descContainer3" style="z-index:110;display:none;position:absolute;top:33.5px;left:40px;width:639px;height:433px;border-style:none;overflow: hidden">
+        <div id="processDescriptiondiv3" sound="./" style="background-image:url('process_Description.png');border-radius:10px;background-color:#F2F9FF;background-size:100% 100%;z-index:11;display:none;position:relative;top:0px;left:0px;width:639px;height:433px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none">
+          <div id="processdescCloseBtn" style="cursor:pointer;background-image:url('process_close.png');background-size:100% 100%;z-index:11;position:relative;cursor:pointer;top:15px;left:610px;width:18px;height:18px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="closeDescPopup();"></div>
+          <div id="processDesctitle3" class="txtControl" style="overflow:hidden;z-index:9;position:absolute;top:15px;left:15px;width:590px;height:20px"></div>
+          <style>
+            .scrClass3{width: 579px;}
+          </style>
+          <div class="fbMsgPanel3" style="position:relative;width:600px;height:345px;top:50px;left:15px"><img src="arrow_top.png" class="Scrollbar-Up1 ScrIcons" onmouseover="scrollerFb.startScroll(0, 5);" onmouseout="scrollerFb.stopScroll();"><img src="arrow_down.png" class="Scrollbar-Down1 ScrIcons" onmouseover="scrollerFb.startScroll(0, -5);" onmouseout="scrollerFb.stopScroll();"><div id="FbScroller3" class="Scroller" style="position:absolute;width:600px;height:345px">
+              <div class="fbMsgContainer Scroller-Container1 txtControl"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>
+<B>Rates and amounts of dividends paid on each class of stock:</B> This is perhaps one of the trickier areas of the valuation since many small companies try to avoid the double taxation of dividends by increasing officer's income and reducing dividends.</textformat></Font></p></html></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="descContainer4" style="z-index:110;display:none;position:absolute;top:33.5px;left:40px;width:639px;height:433px;border-style:none;overflow: hidden">
+        <div id="processDescriptiondiv4" sound="./" style="background-image:url('process_Description.png');border-radius:10px;background-color:#F2F9FF;background-size:100% 100%;z-index:11;display:none;position:relative;top:0px;left:0px;width:639px;height:433px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none">
+          <div id="processdescCloseBtn" style="cursor:pointer;background-image:url('process_close.png');background-size:100% 100%;z-index:11;position:relative;cursor:pointer;top:15px;left:610px;width:18px;height:18px;background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none" onclick="closeDescPopup();"></div>
+          <div id="processDesctitle4" class="txtControl" style="overflow:hidden;z-index:9;position:absolute;top:15px;left:15px;width:590px;height:20px"></div>
+          <style>
+            .scrClass4{width: 579px;}
+          </style>
+          <div class="fbMsgPanel4" style="position:relative;width:600px;height:345px;top:50px;left:15px"><img src="arrow_top.png" class="Scrollbar-Up1 ScrIcons" onmouseover="scrollerFb.startScroll(0, 5);" onmouseout="scrollerFb.stopScroll();"><img src="arrow_down.png" class="Scrollbar-Down1 ScrIcons" onmouseover="scrollerFb.startScroll(0, -5);" onmouseout="scrollerFb.stopScroll();"><div id="FbScroller4" class="Scroller" style="position:absolute;width:600px;height:345px">
+              <div class="fbMsgContainer Scroller-Container1 txtControl"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>
+<B>Level of profits retained in the business:</B> It is important to determine whether the company is retaining enough of the profits in the organization to support growth without the need for external financing.</textformat></Font></p></html></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="logMsg" style="overflow:auto;width:100px;height:100px"></div>
+  </body>
+</html>

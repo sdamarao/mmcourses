@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>credit</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+function DoLoad()
+{
+    var numchapters = parent.opener.document.progress.NumberChaptersPassed()
+
+    if (numchapters == parent.opener.TotalChapters)
+    {
+        parent.frame_a.certificate.innerHTML =
+            "<div style='position:absolute; top:0; left:0; width:661; height:418; background-image:url(common/images/credit.gif);'>" +
+            "   <div id='div1' style='position:absolute; top:363; left:71; width:29; height:21; cursor:hand; z-index:10;' onclick='OnOff()'></div>" +
+            "   <div style='position:absolute; top:363; left:309; width:119; height:21; cursor:hand;' onclick='ShowSurvey()'></div>" +
+            "   <div style='position:absolute; top:363; left:437; width:159; height:21; cursor:hand;' onclick='Cert()'></div>" +
+            "</div>" +
+            "<div style='position:absolute; top:50; left:74; width:512; font-family: Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#333366; font-weight:bold;'>" +
+            "   <p>You have completed the course <b><i>" + parent.opener.coursetitle.innerText + "</i></b>. To receive your credits, you must register with MicroMash. To register, you must first be connected to the internet and then press the 'Register Credit' button.</p>" +
+            "   <p>If you then want to print your own Certificate, press the 'Print Certificate Now' button for an official copy.</p>" +
+            "   <p>If you cannot print your own Certificate, check the 'Mail My Certificate' box before you register with MicroMash and we will print your certificate and return it to you.</p>" +
+            "   <p>MicroMash is required by the 'Statement on Standards for Continuing Professional Education Programs,' issued by the AICPA and the National Association of State Boards of Public Accountancy (NASBA), to maintain a record of individuals who take our courses. If you should ever be audited by your state board, MicroMash may have to confirm that you have completed this course.</p>" +
+            "</div>"
+    }
+    else
+    {
+        parent.frame_a.certificate.innerHTML =
+            "<div style='position:absolute; top:0; left:0; width:661; height:418; background-image:url(common/images/creditnone.gif);'></div>" +
+            "<div style='position:absolute; top:65; left:80; width:500; font-family:Verdana,Arial,Helvetica,sans-serif; font-size:11px; color:#333366; font-weight:bold; background-color:#fafaff;'>" +
+            "   <div style='border:2 solid #000066; padding:2; margin-bottom:40; background-color:#ddddff;'>" +
+            "   <div style='border:1 solid #000066; padding:0 15 0 15; background-color:#FFFFFF;'>" +
+            "       <p>" +
+            parent.opener.document.progress.FirstName() + " " + parent.opener.document.progress.LastName() +
+            " has passed " +
+            numchapters +
+            " of " +
+            parent.opener.TotalChapters +
+            " chapters of</p><p class='courseTitleClass'>" +
+            parent.opener.coursetitle.innerText +
+            "</p>" +
+            "   </div>" +
+            "   </div>" +
+            "   <p>If documentation of course progress is required, print this screen.</p>" +
+            "   <p>Please note that the NASBA/QAS Certificate of Completion for CPE credit will only be issued upon successful completion of the full course.</p>" +
+            "</div>";
+    }
+}
+</script>
+</head>
+
+<body bgcolor="#CCCCFF" onload="setTimeout('DoLoad();',1000)";>
+</body>
+</html>

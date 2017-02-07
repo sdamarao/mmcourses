@@ -1,0 +1,56 @@
+﻿.Container {
+  
+}
+
+.DataContainer {
+ 
+}
+
+#Scroller-1 { 
+  
+ 
+}
+
+#DataScroller-1 { 
+ 
+}
+
+#Scroller-1 p {
+ 
+}
+
+.Scroller-Container {
+  position: absolute;
+  top: 0px; 
+  left: 0px;
+  padding:6px;	
+  width:430px;
+  height:111px;
+  }
+  
+ 
+ 
+.Scrollbar-Up {
+  cursor: pointer;
+  position: absolute;
+  top: 0px; left: 310px;
+  border:0;
+  width:18px;  
+}
+
+.Image-Up
+{
+	
+}
+
+.Scrollbar-Down {
+  cursor: pointer;
+  position: absolute;
+  border:0;
+  width:18px;
+
+}
+
+.Link-Up {
+ 
+}

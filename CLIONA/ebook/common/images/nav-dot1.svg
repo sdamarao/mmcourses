@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="13px" height="13px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 35 35"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ version="1.1"
+ xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+ enable-background="new 0 0 38 38">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#95989C;stroke-width:2.08356}
+    .fil0 {fill:white}
+   ]]>
+  </style>
+    <clipPath id="id0">
+     <rect x="291.23" y="-89.8977" width="118.756" height="118.756"/>
+    </clipPath>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="nav-dot1.svg">
+   <g style="clip-path:url(#id0)">
+    <image id="_93293352" transform="matrix(1 0 0 1 273.73 11.358)" x="17.5" y="-101.256" width="118.756" height="118.756" xlink:href="nav01_Images\nav01_ImgID1.png"/>
+   </g>
+  </g>
+  <circle class="fil0 str0" cx="18.151" cy="18.1344" r="15.2558"/>
+ </g>
+</svg>

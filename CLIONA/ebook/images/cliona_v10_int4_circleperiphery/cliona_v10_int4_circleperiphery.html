@@ -1,0 +1,161 @@
+<html   >
+  <head><meta http-equiv='X-UA-Compatible' content='IE=Edge' />
+    <META http-equiv="Content-Type" content="text/html; charset=utf-16">
+    <meta name="viewport" content="width=715"><script src="./jquery-1.4.2.js" type="text/javascript"></script><script src="./jquery-animate-css-rotate-scale.js" type="text/javascript"></script><script src="./SqeezeCycle.js" type="text/javascript"></script><script src="./Sqeezing.js" type="text/javascript"></script><script src="./jquery-ui.min.js" type="text/javascript"></script><script src="./jquery-css-transform.js" type="text/javascript"></script><script src="./jquery-animate-css-rotate-scale.js" type="text/javascript"></script><script src="jsScroller.js" type="text/javascript"></script><link href="./PeripheralVision.css" rel="stylesheet" type="text/css"><script type="text/javascript">
+
+
+          var FontDifference=4;
+          var PlayIntroductionSound='False';
+          var picPath='./';
+          var wavePath='./';
+
+
+          var ShowRestartButton='False';
+          var timeInterval = 1500;
+
+          var NumberofElements= 2;
+          var BackGroundType='Background Image';
+
+          var widthMainText='9.35';
+          var heightMainText='5';
+
+          var ElementAnimationAppearance='Wipe';
+          var ShowElementShapes='True';
+
+
+          var highlight='#D6D6D6';
+          
+    var shapecolorArray = new Array(
+    
+
+
+      '#83C2D8',
+
+
+      '#83C2D8');
+              var OnImage = 'sound_on.png';
+              var OffImage = 'sound_of.png';
+            </script><style type="text/css">
+
+          .myZoom {
+
+          transform: scale(1.0);
+          -o-transform: scale(1.0);
+          -moz-transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+          transition: 1s ease-out;
+          -o-transition: 1s ease-out;
+          -moz-transition: 1s ease-out;
+          -webkit-transition: 1s ease-out;
+          -moz-transition-duration: 1.5s; /* Firefox 4 */
+          -webkit-transition-duration: 1.5s; /* Safari and Chrome */
+          -o-transition-duration: 1.5s; /* Opera */
+          }
+
+
+          #OuterDiv.dock {
+          left: 450px; top: 170px;
+          transform: scale(0.5);
+          -o-transform: scale(0.3);
+          -moz-transform: scale(0.3);
+          -webkit-transform: scale(0.3);
+          transition: 1s ease-out;
+          -o-transition: 1s ease-out;
+          -moz-transition: 1s ease-out;
+          -webkit-transition: 1s ease-out;
+          -moz-transition-duration: 1.5s; /* Firefox 4 */
+          -webkit-transition-duration: 1.5s; /* Safari and Chrome */
+          -o-transition-duration: 1.5s; /* Opera */
+          }
+
+          #animationdiv.dock {
+
+          position:absolute;
+          left:0px;
+          transform: scale(0.5);
+          -o-transform: scale(0.3);
+          -moz-transform: scale(0.3);
+          -webkit-transform: scale(0.3);
+          transition: 1s ease-out;
+          -o-transition: 1s ease-out;
+          -moz-transition: 1s ease-out;
+          -webkit-transition: 1s ease-out;
+          -moz-transition-duration: 1.5s; /* Firefox 4 */
+          -webkit-transition-duration: 1.5s; /* Safari and Chrome */
+          -o-transition-duration: 1.5s; /* Opera */
+          }
+
+          #animationdiv{
+          background: #transparent;
+          overflow: hidden;
+          width: 715px;
+          height:500px;
+          position: absolute;
+          transform: scale(1.0);
+          -o-transform: scale(1.0);
+          -moz-transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+          transition: 0.6s ease-in;
+          -o-transition: 0.6s ease-in;
+          -moz-transition: 0.6s ease-in;
+          -webkit-transition: 0.6s ease-in;
+          border:1px solid black;
+          -moz-transition-duration: 1.5s; /* Firefox 4 */
+          -webkit-transition-duration: 1.5s; /* Safari and Chrome */
+          -o-transition-duration: 1.5s; /* Opera */
+          }
+        </style><script src="./PeripheralVision.js" type="text/javascript"></script><link href="scroll.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="interactionContainer" class="interactionSize" style="position:absolute;left:0px;top:0px;width:715px;height:500px" sound="./">
+      <div id="TransparentContainer" style="display:none;z-Index:2000;position:absolute;left:0px;top:0px;width:715px;height:500px"></div><img src="./Untitled-12.jpg" id="interactionBackgroundImage" alt="" style="position:absolute;top:0px;left:0px;width:715px;height:500px; background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none"><div id="interactionTitleText" class="txtControl" style="position:absolute;top:6px;left:22px;width:547px;height:36.05px;overflow:hidden;margin:0 0 0 0 0;z-index:auto"></div>
+      <div id="interactionInstructionText" class="txtControl" style="position:absolute;top:3.45px;left:4.6px;width:505.4px;height:70.1px;overflow:hidden;margin:0 0 0 0 0;z-index:auto"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Select each tab for more information.</B></textformat></Font></p></html></div>
+      <div id="OuterDiv" sound="./" style="left:0px;border:0px">
+        <div id="MainOuterText" class="txtControl" style="display:block;background-color:transparent;position: absolute; top:14.35px;left:674.2px; width:9.35px; height:5px;overflow:hidden; z-index:0">
+          <div id="ScrollContainer2" class="Scroller-Container2">
+            <div id="MainImageText" class="txtControl" style="display:block;background-color:transparent;position: relative; top: 5px;left: -3px; width:-5.65px;"></div>
+          </div><a href="#" id="imgArrowUp" onmouseover="scroller2.startScroll(0, 5);" onmouseout="scroller2.stopScroll();" style="z-Index:30;position:absolute; left:-4.65px; top: 0px;width:18px;height:21px;display:none;"><img id="arrowTop" src="arrow_top.png" alt=""></a><a href="#" id="imgArrowDown" onmouseover="scroller2.startScroll(0, -5);" onmouseout="scroller2.stopScroll();" style="z-Index:30;position:absolute; left:-4.65px; top:-18px;width:18px;height:21px;display:none;"><img id="arrowDown" src="arrow_down.png" alt=""></a></div>
+        <div id="Element1" class="txtControl" border="none" onclick="onElementClick(1)" style="position:absolute;left:16.7px;top:174.4px;cursor:pointer;display:block;width:366.4px;height:51.95px;background-color:transparent;background-size: 100% 100%;background-repeat:  no-repeat;background-image: url(Square.png);overflow:hidden">
+          <div id="ElementInnerGradience1" style="background-color:#83C2D8;background-image: url(innerDiv.png);background-size: 100% 100%;background-repeat:no-repeat;position:absolute;top:0px;left:0px;width:366.4px;height:51.95px;border-radius:5px">
+            <div id="ElementInnerText1" border="none" style="overflow:hidden;position:absolute;left:0px;top:9.049999999999983px;display:block;width:355.75px;height:36.05px;background-color:transparent;"><html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The debt to equity ratio</B></textformat></Font></p></html></div>
+          </div>
+        </div>
+        <div id="Element2" class="txtControl" border="none" onclick="onElementClick(2)" style="position:absolute;left:19px;top:236.4px;cursor:pointer;display:block;width:367.4px;height:56.1px;background-color:transparent;background-size: 100% 100%;background-repeat:  no-repeat;background-image: url(Square.png);overflow:hidden">
+          <div id="ElementInnerGradience2" style="background-color:#83C2D8;background-image: url(innerDiv.png);background-size: 100% 100%;background-repeat:no-repeat;position:absolute;top:0px;left:0px;width:367.4px;height:56.1px;border-radius:5px">
+            <div id="ElementInnerText2" border="none" style="overflow:hidden;position:absolute;left:0px;top:9px;display:block;width:352.6px;height:40.05px;background-color:transparent;"><html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The times interest earned ratio</B></textformat></Font></p></html></div>
+          </div>
+        </div>
+      </div>
+      <div id="animationdiv" style="left:0px;border:0px">
+        <div id="animateMainOuterText" class="txtControl" style="display:block;background-color:transparent;position: absolute; top:14.35px;left:674.2px; width:9.35px; height:5px;overflow:hidden; z-index: 5000">
+          <div id="animateScrollContainer2" class="Scroller-Container2">
+            <div id="animateMainImageText" class="txtControl" style="display:block;background-color:transparent;position: relative; top: 5px;left: -3px; width:-5.65px;"></div>
+          </div><a href="#" id="imgArrowUp" onmouseover="scroller2.startScroll(0, 5);" onmouseout="scroller2.stopScroll();" style="z-Index:30;position:absolute; left:-4.65px; top: 0px;width:18px;height:21px;display:none;"><img id="arrowTop" src="arrow_top.png" alt=""></a><a href="#" id="imgArrowDown" onmouseover="scroller2.startScroll(0, -5);" onmouseout="scroller2.stopScroll();" style="z-Index:30;position:absolute; left:-4.65px; top:-18px;width:18px;height:21px;display:none;"><img id="arrowDown" src="arrow_down.png" alt=""></a></div>
+        <div id="animateElement1" class="txtControl" border="none" onclick="onElementClick(1)" style="position:absolute;left:16.7px;top:174.4px;cursor:pointer;display:block;width:366.4px;height:51.95px;background-color:transparent;background-size: 100% 100%;background-repeat:  no-repeat;background-image: url(Square.png);overflow:hidden">
+          <div id="animateElementInnerGradience1" style="background-color:#83C2D8;background-image: url(innerDiv.png);background-size: 100% 100%;background-repeat:no-repeat;position:absolute;top:0px;left:0px;width:366.4px;height:51.95px;border-radius:5px">
+            <div id="animateElementInnerText1" border="none" style="overflow:hidden;position:absolute;left:0px;top:9.049999999999983px;display:block;width:355.75px;height:36.05px;background-color:transparent;"><html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The debt to equity ratio</B></textformat></Font></p></html></div>
+          </div>
+        </div>
+        <div id="animateElement2" class="txtControl" border="none" onclick="onElementClick(2)" style="position:absolute;left:19px;top:236.4px;cursor:pointer;display:block;width:367.4px;height:56.1px;background-color:transparent;background-size: 100% 100%;background-repeat:  no-repeat;background-image: url(Square.png);overflow:hidden">
+          <div id="animateElementInnerGradience2" style="background-color:#83C2D8;background-image: url(innerDiv.png);background-size: 100% 100%;background-repeat:no-repeat;position:absolute;top:0px;left:0px;width:367.4px;height:56.1px;border-radius:5px">
+            <div id="animateElementInnerText2" border="none" style="overflow:hidden;position:absolute;left:0px;top:9px;display:block;width:352.6px;height:40.05px;background-color:transparent;"><html><p align="Center"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The times interest earned ratio</B></textformat></Font></p></html></div>
+          </div>
+        </div>
+      </div>
+      <div id="description1" class="descriptionShadow" sound="./" style="overflow:hidden;display:none;z-index:1000;position:absolute;top: 70px; left: 115px; width: 475px; height: 290px;background-Color:#D6D6D6;border-radius:10px;background-repeat:no-repeat;background-size:100% 100%;"><img src="close_icon.png" id="close1" alt="" style="cursor:pointer;top:3px;left:453px;position:absolute;z-index:2000;display:block" onclick="CloseDescription()"><div id="DescriptionContainer1" class="txtControl" style="position:absolute;overflow:hidden;top:26px;left:15.5px;width:424px;height:224.25px;">
+          <div id="ScrollContainer11" class="Scroller-Container1">
+            <div id="descriptionText1" class="txtControl" style="position:relative;left:0px;width:404px;"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The debt to equity ratio measures the relationship of debt to capital sources. The ratio of the dollars of debt per dollar of equity is determined. It shows the degree to which stockholders have a stake in the organization.</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Debt to Equity = Total Debt/Total Stockholder Equity</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>The company's ability to meet long-term obligations is measured. From a creditor's point of view, the lower the ratio, the lower the risk of insolvency.</textformat></Font></p></html></div>
+          </div><a href="#" id="imgArrowUp1" onmouseover="scroller1.startScroll(0, 5);" onmouseout="scroller1.stopScroll();" style="z-Index:30;position:absolute; left:406px; top: 0px;width:18px;height:21px;display:none;"><img id="arrowTop" src="arrow_top.png" alt=""></a><a href="#" id="imgArrowDown1" onmouseover="scroller1.startScroll(0, -5);" onmouseout="scroller1.stopScroll();" style="z-Index:30;position:absolute; left:406px; top:198.25px;width:18px;height:21px;display:none;"><img id="arrowDown" src="arrow_down.png" alt=""></a></div>
+      </div>
+      <div id="description2" class="descriptionShadow" sound="./" style="overflow:hidden;display:none;z-index:1000;position:absolute;top: 70px; left: 115px; width: 475px; height: 290px;background-Color:#D6D6D6;border-radius:10px;background-repeat:no-repeat;background-size:100% 100%;"><img src="close_icon.png" id="close1" alt="" style="cursor:pointer;top:3px;left:453px;position:absolute;z-index:2000;display:block" onclick="CloseDescription()"><div id="DescriptionContainer2" class="txtControl" style="position:absolute;overflow:hidden;top:24px;left:8.5px;width:472px;height:270.3px;">
+          <div id="ScrollContainer12" class="Scroller-Container1">
+            <div id="descriptionText2" class="txtControl" style="position:relative;left:0px;width:452px;"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'>The times interest earned ratio measures the ability of the company to cover interest charges. This is important because, at minimum, a company would need to pay current interest charges.</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Times Interest Earned = Net Income Before Interest and Taxes/Interest Expense</textformat></Font></p></html></div>
+          </div><a href="#" id="imgArrowUp2" onmouseover="scroller1.startScroll(0, 5);" onmouseout="scroller1.stopScroll();" style="z-Index:30;position:absolute; left:454px; top: 0px;width:18px;height:21px;display:none;"><img id="arrowTop" src="arrow_top.png" alt=""></a><a href="#" id="imgArrowDown2" onmouseover="scroller1.startScroll(0, -5);" onmouseout="scroller1.stopScroll();" style="z-Index:30;position:absolute; left:454px; top:244.3px;width:18px;height:21px;display:none;"><img id="arrowDown" src="arrow_down.png" alt=""></a></div>
+      </div><img id="RestartButtonImage" alt="" src="./" style="display:block;position:absolute;top:466px;left:630px;width:77px;height:29px;cursor:pointer" onclick="onRestartPress()"><div id="MediaText1" class="txtControl" style="z-Index:3000;position:absolute;top:16.3px;left:688px;width:26.15px;height:25.05px;overflow:hidden;margin:0 0 0 0 0;"></div>
+    </div>
+    <div id="logMsg" style="overflow:auto;width:100px;height:100px"></div>
+  </body>
+</html>

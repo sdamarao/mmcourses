@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<TITLE>MicroMash CPE</TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF" background="common/images/backgrdither.gif">
+<SCRIPT LANGUAGE=JavaScript>
+var ShockMode = 0;
+if (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"] && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin) 
+{
+	if (navigator.plugins && navigator.plugins["Shockwave Flash"])
+		ShockMode = 1;
+}
+if (ShockMode) 
+{
+	document.write('<EMBED SRC="common/flash/start_x.swf"');
+	document.write(' swLiveConnect=FALSE WIDTH=100% HEIGHT=100%');
+	document.write(' LOOP=false QUALITY=high WMODE=transparent BGCOLOR=#FFFFFF');
+	document.write(' TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">');
+	document.write('</EMBED>');
+} 
+else 
+{
+	document.location = "frame_x.htm"
+}
+</SCRIPT>
+</BODY>
+</HTML>

@@ -1,0 +1,195 @@
+<html>
+<head>
+<title>Certificate of Completion</title>
+<style>
+.courseTitleClass {font-family:Verdana,Arial,Helvetica,sans-serif; font-size:18px; font-style:italic; font-weight:bold; color:#000066; padding:0 0 0 0; text-align:center;}
+</style>
+<link rel="stylesheet" href="../common/cert-styles.css" type="text/css">
+
+<script language="JavaScript">
+
+// 1/27/09 - Addition of call to SilentRegisterCredit, about line 46 to ensure internet connection
+
+
+function OnOff()
+{
+	if (div1.innerHTML == "")
+		div1.innerHTML = "<img src='../common/images/credit_chk.gif'>"
+	else
+		div1.innerHTML = ""
+}
+
+
+function Cert()
+{
+	if (parent.opener.document.progress.Online())
+	{
+		parent.frame_b.document.location='cert2.htm';
+	}
+	else
+	{
+		if (parent.opener.document.progress.CreditRequested() == -1)
+		{
+			parent.frame_b.document.location='cert2.htm';
+		}
+		else
+		{
+			alert("Before you can print your certificate, you must register the completion of your course. (Do not forget to connect to the internet.)\n\nAfter you have connected to the internet and registered, your certificate will state your date of completion, " + parent.opener.document.progress.DateTestPassed()+".")
+		}
+	}
+}
+
+
+function ShowSurvey()
+{
+	var result;
+	result = parent.opener.document.progress.SilentRegisterCredit();
+
+	if (result == 0)
+	{
+		if (div1.innerHTML != "")
+			parent.opener.document.progress.SendCertificate(true)
+		else
+			parent.opener.document.progress.SendCertificate(false)
+
+		if (parent.opener.document.progress.CreditRequested() != -1)
+		{
+			parent.frame_b.document.location = 'survey.htm'
+		}
+		else // survey has already been filled out, skip to cert
+		{
+			parent.frame_b.document.location='cert2.htm'
+		}
+	}
+	else
+	{
+		alert("There is a problem connecting to the MicroMash server. Please make sure your computer is connected to the internet.")
+	}
+}
+
+
+function RegisterCredit()
+{
+	var i;
+
+	if (addressdiv.style.visibility=="visible")
+	{
+
+		if ((document.forms[0].Address1.value == "") ||
+		    (document.forms[0].City.value     == "") ||
+		    (document.forms[0].State.value    == "") ||
+		    (document.forms[0].Zip.value      == ""))
+		{
+			alert("You need to provide your {address, city, state code, zip code}.  We cannot send your certificate without it.")
+			return
+		}
+		else
+		{
+			parent.opener.document.progress.Address1(document.forms[0].Address1.value)
+			if (document.forms[0].Address2.value != "")
+				parent.opener.document.progress.Address2(document.forms[0].Address2.value)
+			parent.opener.document.progress.City(document.forms[0].City.value)
+			parent.opener.document.progress.State(document.forms[0].State.value)
+			parent.opener.document.progress.ZipCode(document.forms[0].Zip.value)
+		}
+	}
+	if(document.forms[0].WantAccountingAuditing.checked)   parent.opener.document.progress.WantAccountingAuditing("yes")
+	if(document.forms[0].WantManagement.checked)           parent.opener.document.progress.WantManagement("yes")
+	if(document.forms[0].WantTaxation.checked)             parent.opener.document.progress.WantTaxation("yes")
+	if(document.forms[0].WantSoftwareApplications.checked) parent.opener.document.progress.WantSoftwareApplications("yes")
+	if(document.forms[0].WantPersonalDevelopment.checked)  parent.opener.document.progress.WantPersonalDevelopment("yes")
+	if(document.forms[0].WantSpecializedKnowledge.checked) parent.opener.document.progress.WantSpecializedKnowledge("yes")
+
+	for(i=0; i < document.forms[0].UseMeInAds.length; i++)
+	{
+		if (document.forms[0].UseMeInAds[i].checked)
+		{
+			parent.opener.document.progress.UseMeInAds(document.forms[0].UseMeInAds[i].value)
+			break
+		}
+	}
+
+	for(i=0; i < document.forms[0].SendMeAds.length; i++)
+	{
+		if (document.forms[0].SendMeAds[i].checked)
+		{
+			parent.opener.document.progress.SendMeAds(document.forms[0].SendMeAds[i].value)
+			break
+		}
+	}
+
+	if (document.forms[0].LikedMost.value != "")
+		parent.opener.document.progress.LikedMost(document.forms[0].LikedMost.value)
+
+	if(document.forms[0].MoreTopics.value != "")
+		parent.opener.document.progress.MoreTopics(document.forms[0].MoreTopics.value)
+
+// below for survey v02
+
+//	 Pack 15 new fields, A thru O, into ForCLE
+//	   "v02:AnBnCn" + ...+ "NnOn", where n {1,2,3,4,5," "}, 4 + (15 x 2) chars = 34 chars
+//    ForCLE in mmsite.CPECredit is varchar(50), so there is room for 8 more questions (16 more chars)
+
+	var j
+	var k
+	var radioClicked;
+	var theLetter
+	stringForCLE = "v02:"
+
+	for (i=0; i<15; i++) // 15 letters, 'A' to 'O'
+	{
+		theLetter = String.fromCharCode(i+65)
+		eval("j = document.forms[0]." + theLetter + ".length;");
+		for (k=0; k<j; k++)
+		{
+			eval ("radioClicked = document.forms[0]." + theLetter + "[k].checked;");
+			if(radioClicked)
+			{
+				eval("stringForCLE = stringForCLE + theLetter + document.forms[0]." + theLetter + "[k].value;");
+				break;
+			}
+		}
+		if(!radioClicked) stringForCLE = stringForCLE + theLetter + " "
+	}
+
+	parent.opener.document.progress.ForCLE(stringForCLE)
+
+//	Put TimeToComplete into ForMCLE
+
+	if (document.forms[0].TimeToComplete.value != "")
+		parent.opener.document.progress.ForMCLE("v02:" + document.forms[0].TimeToComplete.value)
+
+//	Put GeneralComments into ForCPE, then ForCE, and then ForCPD; "v02:" + 46 chars each.
+
+	j = document.forms[0].GeneralComments.value.length
+
+	if (j < 47)
+	{
+		parent.opener.document.progress.ForCPE("v02:" + document.forms[0].GeneralComments.value)
+		parent.opener.document.progress.ForCE ("v02:")
+		parent.opener.document.progress.ForCPD("v02:")
+	}
+	else if (j < 93)
+	{
+		parent.opener.document.progress.ForCPE("v02:" + document.forms[0].GeneralComments.value.substring(0,46))
+		parent.opener.document.progress.ForCE ("v02:" + document.forms[0].GeneralComments.value.substring(46,j))
+		parent.opener.document.progress.ForCPD("v02:")
+	}
+	else // truncate after 138
+	{
+		parent.opener.document.progress.ForCPE("v02:" + document.forms[0].GeneralComments.value.substring(0,46))
+		parent.opener.document.progress.ForCE ("v02:" + document.forms[0].GeneralComments.value.substring(46,92))
+		parent.opener.document.progress.ForCPD("v02:" + document.forms[0].GeneralComments.value.substring(92,138))
+	}
+
+	parent.opener.document.progress.Update();
+	parent.opener.document.progress.RegisterCredit()
+}
+</script>
+</head>
+
+<body bgcolor="#FFFFFF">
+<div id=certificate>
+</div>
+</body>
+</html>

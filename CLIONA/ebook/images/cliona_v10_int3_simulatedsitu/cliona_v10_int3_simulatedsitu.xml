@@ -1,0 +1,71 @@
+<Interaction name="Simulated Situation with Text and Image" version="6.6" iscompliancerequired="False" type="Regular" height="500" width="715" swfHeight="500" swfWidth="715" trackingThrough="" SharedObjectName="" RtoLflag="False" ShowPropFlag="False">
+  <node id="Play Introduction Sound"><![CDATA[False]]></node>
+  <node id="Introduction Sound File"><![CDATA[]]></node>
+  <node id="TitlePosition" type="POSITION"><![CDATA[661.65$17.15$23$28.05$1]]></node>
+  <node id="InstructionPosition" type="POSITION"><![CDATA[186.3$0$350$32.05$1]]></node>
+  <node id="SndPosition" type="POSITION"><![CDATA[673.65$17$1$1$1]]></node>
+  <node id="situationPosition" type="POSITION"><![CDATA[285.4$35.9$425.5$458$1]]></node>
+  <node id="sentencePosition" type="POSITION"><![CDATA[55.5$36.65$221.55$92$1]]></node>
+  <node id="imgPosition" type="POSITION"><![CDATA[510.95$3.45$8.45$10$1]]></node>
+  <node id="optionsPosition" type="POSITION"><![CDATA[13$142.3$1$1$1]]></node>
+  <node id="NextBtnPosition" type="POSITION"><![CDATA[554.5$0$70$31$1]]></node>
+  <node id="feedbackPosition" type="POSITION"><![CDATA[44.1$323.3$1$1$1]]></node>
+  <node id="Show Audio Control"><![CDATA[False]]></node>
+  <node id="Audio Control Image Type"><![CDATA[Default Audio Graphic]]></node>
+  <node id="Image for audio ON"><![CDATA[]]></node>
+  <node id="Image for audio ONWidth"><![CDATA[]]></node>
+  <node id="Image for audio ONHeight"><![CDATA[]]></node>
+  <node id="Image for audio OFF"><![CDATA[]]></node>
+  <node id="Image for audio OFFWidth"><![CDATA[]]></node>
+  <node id="Image for audio OFFHeight"><![CDATA[]]></node>
+  <node id="Title"><![CDATA[]]></node>
+  <node id="Always display the Instruction"><![CDATA[False]]></node>
+  <node id="Instruction"><![CDATA[<html><p align="Left"><Font face="Verdana" size="14" color="#000000"><textformat tabstops='[20]' leftmargin='0'>Select <B>Next</B> to continue.</textformat></Font></p></html>]]></node>
+  <node id="Description Text Background Color"><![CDATA[0xCFE2FE]]></node>
+  <node id="Navigate"><![CDATA[On Click]]></node>
+  <node id="Next Button Image"><![CDATA[boosterpack_next.png]]></node>
+  <node id="Next Button ImageWidth"><![CDATA[70]]></node>
+  <node id="Next Button ImageHeight"><![CDATA[30]]></node>
+  <node id="Time Interval (in seconds)"><![CDATA[5]]></node>
+  <node id="Number of Screens"><![CDATA[5]]></node>
+  <node id="Screen Image1"><![CDATA[]]></node>
+  <node id="Screen ImageWidth1"><![CDATA[100]]></node>
+  <node id="Screen ImageHeight1"><![CDATA[100]]></node>
+  <node id="Description Text1"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Liquidity Ratios</B></textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Liquidity measures the adequacy of an organization's working capital (current assets) to meet the current obligations. In other words, does an organization have enough cash or other current assets that can be quickly turned into cash?</textformat></Font></p></html>]]></node>
+  <node id="Sound File1"><![CDATA[]]></node>
+  <node id="Screen Image2"><![CDATA[]]></node>
+  <node id="Screen ImageWidth2"><![CDATA[100]]></node>
+  <node id="Screen ImageHeight2"><![CDATA[100]]></node>
+  <node id="Description Text2"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Current ratio</B></textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>The current ratio focuses on the current assets that are available to honor the current liabilities that are incurred as a result of normal operations. The current ratio is a relative comparison of current assets to current liabilities. It calculates the number of dollars of current assets that are available to cover each dollar of current liabilities.</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Current Ratio = Current Assets/Current Liabilities</textformat></Font></p></html>]]></node>
+  <node id="Sound File2"><![CDATA[]]></node>
+  <node id="Screen Image3"><![CDATA[]]></node>
+  <node id="Screen ImageWidth3"><![CDATA[]]></node>
+  <node id="Screen ImageHeight3"><![CDATA[]]></node>
+  <node id="Description Text3"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The accounts receivable turnover ratio</B></textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>The accounts receivable turnover ratio measures the quality and liquidity of the accounts receivable.</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Accounts Receivable Turnover = Net Credit Sales/Average Accounts Receivable</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>The quality of the receivables is defined as collection without losses. It is assumed that the longer the receivables are outstanding, the less likely that they will be collected. The turnover is an indicator of the age of the receivables. It indicates how many times, on average, the receivables revolve (how many times they are generated and collected during the year). The credit terms should determine an expected turnover rate. For example, if the credit terms are net 60, it would be expected that the turnover would be six times if receivables were actually collected within the 60 days. A low actual ratio in comparison to the expected ratio may indicate the possibility of collection problems.</textformat></Font></p></html>]]></node>
+  <node id="Sound File3"><![CDATA[]]></node>
+  <node id="Screen Image4"><![CDATA[]]></node>
+  <node id="Screen ImageWidth4"><![CDATA[]]></node>
+  <node id="Screen ImageHeight4"><![CDATA[]]></node>
+  <node id="Description Text4"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The working capital turnover ratio</B></textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>The working capital turnover ratio measures the sales created through the use of net working capital. Cash and accounts payable are used to purchase inventory that is then sold. Other current assets and current liabilities are used or incurred to support operations necessary to create sales</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Working Capital Turnover = Sales/Net Working Capital</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>In other words, this ratio measures how effectively management uses current funds to create sales. A higher ratio in comparison to net working capital is preferred.</textformat></Font></p></html>]]></node>
+  <node id="Sound File4"><![CDATA[]]></node>
+  <node id="Screen Image5"><![CDATA[]]></node>
+  <node id="Screen ImageWidth5"><![CDATA[]]></node>
+  <node id="Screen ImageHeight5"><![CDATA[]]></node>
+  <node id="Description Text5"><![CDATA[<html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Inventory turnover ratio</B></textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>The inventory turnover ratio measures the speed with which inventory can be converted into sales. In other words, the control that management has over inventory is assessed. The quality of the inventory is determined by the company's ability to use and dispose of inventory without a loss.</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Inventory Turnover Ratio = Cost of Goods Sold/Average Inventory</textformat></Font></p></html>]]></node>
+  <node id="Sound File5"><![CDATA[]]></node>
+  <node id="Image Scaling"><![CDATA[Stretch]]></node>
+  <node id="Background Image"><![CDATA[stk_chan11.jpg]]></node>
+  <node id="Background ImageWidth"><![CDATA[715]]></node>
+  <node id="Background ImageHeight"><![CDATA[515]]></node>
+</Interaction>

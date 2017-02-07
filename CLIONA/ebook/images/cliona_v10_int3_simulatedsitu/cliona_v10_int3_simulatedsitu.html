@@ -1,0 +1,63 @@
+	
+		<!--[if gte IE 10]>
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		<![endif]-->
+		
+		<!--[if IE 9]>
+		<!DOCTYPE html >
+		<![endif]-->
+	<html   >
+  <head><meta http-equiv='X-UA-Compatible' content='IE=Edge' />
+    <META http-equiv="Content-Type" content="text/html; charset=utf-16">
+    <meta name="viewport" content="width=715"><script src="./jquery-1.4.2.js" type="text/javascript"></script><script src="jsScroller.js" type="text/javascript"></script><script type="text/javascript">
+
+          var FontDifference=4;
+          var PlayIntroductionSound='False';
+          var picPath='./';
+          var wavePath='./';
+          var videoPath='./';
+          
+          
+          var RtoLflag = 'False';
+          
+          
+              var OnImage = 'sound_on.png';
+              var OffImage = 'sound_of.png';
+            
+              var AlwaysDisplayInstruction ='False';
+            
+            var NumberofScreens='5';
+            var NavigateType='On Click';
+            var EndFeedbackTextBackgroundcolor='';
+            var TimeInterval = '5000'
+
+            var BackGroundType='';
+          </script><script src="TextImageMapping.js" type="text/javascript"></script><script src="jsScroller.js" type="text/javascript"></script><link href="scroll.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="mainPanel" sound="./" style="position: absolute; top: 0px; left: 0px; overflow: hidden; width: 715px; height: 500px"><img src="./stk_chan11.jpg" id="interactionBackgroundImage" alt="" style="position:absolute;top:0px;left:0px;width:715px;height:500px; background-repeat: no-repeat;margin:0 0 0 0 0;border-style:none"><div id="interactionTitleText" class="txtControl" style="position:absolute;top:17.15px;left:661.65px;width:23px;height:26.05px;overflow:hidden;margin:0 0 0 0 0;z-index:auto"></div>
+      <div id="interactionInstructionText" class="txtControl" style="position:absolute;top:0px;left:186.3px;width:350px;height:32.05px;overflow:hidden;margin:0 0 0 0 0;z-index:auto"><html><p align="Left"><Font face="Verdana" size="14" color="#000000"><textformat tabstops='[20]' leftmargin='0'>Select <B>Next</B> to continue.</textformat></Font></p></html></div>
+      <div id="SceneContainer" class="txtControl shadow" style="background-Color:#CFE2FE;background-image:url(description.png);background-repeat: no-repeat;background-size:100% 100%;overflow:hidden;position:absolute;top:35.9px;left:285.4px;width:425.5px;height:458px;">
+        <div id="tempdiv" class="txtControl" style="overflow:hidden;position:relative;top:5px;left:3px;width:421.5px;height:446px;">
+          <div id="ScrollContainer" class="Scroller-Container">
+            <div id="DescriptionText1" class="txtControl desc" sound="./" style="position:relative;top:0px;left:0px;width:393.5px"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Liquidity Ratios</B></textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Liquidity measures the adequacy of an organization's working capital (current assets) to meet the current obligations. In other words, does an organization have enough cash or other current assets that can be quickly turned into cash?</textformat></Font></p></html></div>
+            <div id="DescriptionText2" class="txtControl desc" sound="./" style="display:none;position:relative;top:0px;left:0px;width:393.5px"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Current ratio</B></textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>The current ratio focuses on the current assets that are available to honor the current liabilities that are incurred as a result of normal operations. The current ratio is a relative comparison of current assets to current liabilities. It calculates the number of dollars of current assets that are available to cover each dollar of current liabilities.</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Current Ratio = Current Assets/Current Liabilities</textformat></Font></p></html></div>
+            <div id="DescriptionText3" class="txtControl desc" sound="./" style="display:none;position:relative;top:0px;left:0px;width:393.5px"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The accounts receivable turnover ratio</B></textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>The accounts receivable turnover ratio measures the quality and liquidity of the accounts receivable.</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Accounts Receivable Turnover = Net Credit Sales/Average Accounts Receivable</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>The quality of the receivables is defined as collection without losses. It is assumed that the longer the receivables are outstanding, the less likely that they will be collected. The turnover is an indicator of the age of the receivables. It indicates how many times, on average, the receivables revolve (how many times they are generated and collected during the year). The credit terms should determine an expected turnover rate. For example, if the credit terms are net 60, it would be expected that the turnover would be six times if receivables were actually collected within the 60 days. A low actual ratio in comparison to the expected ratio may indicate the possibility of collection problems.</textformat></Font></p></html></div>
+            <div id="DescriptionText4" class="txtControl desc" sound="./" style="display:none;position:relative;top:0px;left:0px;width:393.5px"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>The working capital turnover ratio</B></textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>The working capital turnover ratio measures the sales created through the use of net working capital. Cash and accounts payable are used to purchase inventory that is then sold. Other current assets and current liabilities are used or incurred to support operations necessary to create sales</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Working Capital Turnover = Sales/Net Working Capital</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>In other words, this ratio measures how effectively management uses current funds to create sales. A higher ratio in comparison to net working capital is preferred.</textformat></Font></p></html></div>
+            <div id="DescriptionText5" class="txtControl desc" sound="./" style="display:none;position:relative;top:0px;left:0px;width:393.5px"><html><p align="Left"><Font face="Verdana" size="15" color="#000000"><textformat tabstops='[20]' leftmargin='0'><B>Inventory turnover ratio</B></textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>The inventory turnover ratio measures the speed with which inventory can be converted into sales. In other words, the control that management has over inventory is assessed. The quality of the inventory is determined by the company's ability to use and dispose of inventory without a loss.</textformat></Font></p>
+<p align="Left"><Font face="Verdana" size="15" color="#000000" ><textformat tabstops='[20]' leftmargin='0'>Inventory Turnover Ratio = Cost of Goods Sold/Average Inventory</textformat></Font></p></html></div>
+          </div>
+        </div><a href="#" class="Scrollbar-Up" id="imgArrowUp" onmouseover="scroller.startScroll(0, 5);" onmouseout="scroller.stopScroll();" style="display:none;z-Index:10;position:absolute; left:407.5px; top:10px;width:18px;height:21px"><img id="TermArrowUp" src="arrow_top.png" style="border:none" alt=""></a><a href="#" class="Scrollbar-Down Image-Up" id="imgArrowDown" onmouseover="scroller.startScroll(0, -5);" onmouseout="scroller.stopScroll();" style="display:none;z-Index:10;position:absolute; left:407.5px;  top:428px;width:18px;height:21px"><img id="TermArrowDown" src="arrow_down.png" style="border:none" alt=""></a></div><img id="NextButtonImage" src="boosterpack_next.png" style="position:absolute;left:554.5px;top:0px;height:31px;width:70px;cursor:pointer" onclick="nextButtonClick();"></div>
+    <div id="logMsg" style="overflow:auto;width:100px;height:100px"></div>
+  </body>
+</html>

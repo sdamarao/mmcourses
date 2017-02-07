@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title>Thomson Reuters</title>
+<!-- Start HRB: Added for compliance updating course status -->
+<script src="common/CommonFunctions.js"></script>
+<script language="javascript">
+function updateCourse(){	
+	// update progress information only in case of online.
+	var basePath= window.document.location.href;
+	
+	if (basePath.indexOf("file:/") == -1){
+		var sub = getSubscription();
+		if(!sub.offlinePlayer)
+		{
+			if(!sub.isInternetConnected)
+			{
+				return;
+			}
+		}	
+		if(window.frames["frame_1"].frames["frame_a"].g_flagfinish == false){
+			window.frames["frame_1"].frames["frame_a"].updateCourse();			
+			
+			alert('This will end your session, in future, please use \'Exit\' menu to close the session.');
+		}	
+	}
+}
+</script>
+<!-- End HRB: Added for compliance updating course status -->
+</head>
+    <frameset rows="*,1" frameborder=0 framespacing=0 onbeforeunload="updateCourse();">
+		<frame title="Main Frame" src="frameset1.htm" name="frame_1" frameborder=0 noresize scrolling="NO">
+		<frame src='blank.htm' tabindex="-1" name="frame_2" frameborder=0 noresize scrolling="NO">
+    </frameset>
+<noframes><body bgcolor="#FFFFFF">
+
+</body></noframes>
+</html>
